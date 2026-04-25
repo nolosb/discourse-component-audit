@@ -1,0 +1,13 @@
+{
+  "name": "d-segmented-control",
+  "slug": "d-segmented-control",
+  "primaryFiles": ["common/components/d-segmented-control.scss"],
+  "identitySelectors": [
+    ".d-segmented-control",
+    ".d-segmented-control__slider",
+    ".d-segmented-control__label",
+    ".d-segmented-control__input",
+    ".d-segmented-control__legend"
+  ],
+  "cssCustomPropertyPrefixes": ["--slider-"]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "discourse-component-audit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "audit": "node src/index.mjs",
+    "audit:toggle": "node src/index.mjs --component d-toggle-switch",
+    "audit:modal": "node src/index.mjs --component d-modal",
+    "audit:button": "node src/index.mjs --component d-button"
+  },
+  "dependencies": {
+    "postcss": "^8.5.10",
+    "postcss-scss": "^4.0.9",
+    "glob": "^11.0.0"
+  }
+}

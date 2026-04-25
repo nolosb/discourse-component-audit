@@ -1,0 +1,21 @@
+{
+  "name": "d-icon-grid-picker",
+  "slug": "d-icon-grid-picker",
+  "primaryFiles": ["common/components/d-icon-grid-picker.scss"],
+  "identitySelectors": [
+    ".d-icon-grid-picker",
+    ".d-icon-grid-picker__content",
+    ".d-icon-grid-picker__grid",
+    ".d-icon-grid-picker__grid-wrapper",
+    ".d-icon-grid-picker__icon",
+    ".d-icon-grid-picker__caret",
+    ".d-icon-grid-picker__filter",
+    ".d-icon-grid-picker__filter-container",
+    ".d-icon-grid-picker__selected-name",
+    ".d-icon-grid-picker__favorites",
+    ".d-icon-grid-picker__empty",
+    ".d-icon-grid-picker__loading",
+    ".d-icon-grid-picker__clear"
+  ],
+  "cssCustomPropertyPrefixes": ["--icon-grid-", "--icon-color"]
+}

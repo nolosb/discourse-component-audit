@@ -1,0 +1,30 @@
+{
+  "name": "d-button",
+  "slug": "d-button",
+  "primaryFiles": [
+    "common/components/buttons.scss"
+  ],
+  "identitySelectors": [
+    ".btn",
+    ".btn-default",
+    ".btn-primary",
+    ".btn-danger",
+    ".btn-success",
+    ".btn-flat",
+    ".btn-transparent",
+    ".btn-link",
+    ".btn-social",
+    ".btn-small",
+    ".btn-large",
+    ".btn-icon",
+    ".btn-icon-text",
+    ".btn-mini-toggle",
+    ".d-button-label",
+    ".d-button__suffix-icon",
+    ".no-text"
+  ],
+  "cssCustomPropertyPrefixes": [
+    "--d-button-"
+  ],
+  "tokens": []
+}

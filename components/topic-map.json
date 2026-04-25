@@ -1,0 +1,18 @@
+{
+  "name": "topic-map",
+  "slug": "topic-map",
+  "primaryFiles": ["common/components/topic-map.scss"],
+  "identitySelectors": [
+    ".topic-map",
+    ".topic-map__contents",
+    ".topic-map__stats",
+    ".topic-map__count",
+    ".topic-map__date",
+    ".topic-map__user",
+    ".topic-map__likes",
+    ".topic-map__buttons",
+    ".topic-map__inner-content",
+    ".topic-map__wrapper"
+  ],
+  "cssCustomPropertyPrefixes": ["--chart-"]
+}

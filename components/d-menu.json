@@ -1,0 +1,14 @@
+{
+  "name": "d-menu",
+  "slug": "d-menu",
+  "primaryFiles": ["common/float-kit/d-menu.scss", "common/float-kit/d-menu-modal.scss"],
+  "identitySelectors": [
+    ".fk-d-menu",
+    ".fk-d-menu__trigger",
+    ".fk-d-menu__inner-content",
+    ".fk-d-menu__item",
+    ".fk-d-menu__divider",
+    ".fk-d-menu-modal"
+  ],
+  "cssCustomPropertyPrefixes": ["--d-menu-"]
+}

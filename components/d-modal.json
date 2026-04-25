@@ -1,0 +1,27 @@
+{
+  "name": "d-modal",
+  "slug": "d-modal",
+  "primaryFiles": [
+    "common/base/modal.scss",
+    "common/modal/modal-overrides.scss",
+    "common/modal/_index.scss"
+  ],
+  "identitySelectors": [
+    ".d-modal",
+    ".d-modal__container",
+    ".d-modal__header",
+    ".d-modal__body",
+    ".d-modal__footer",
+    ".d-modal__backdrop",
+    ".d-modal__title",
+    ".d-modal__title-text",
+    ".d-modal__subtitle-text",
+    ".d-modal__primary-action",
+    ".d-modal__dismiss-action",
+    ".modal-close"
+  ],
+  "cssCustomPropertyPrefixes": [
+    "--modal-"
+  ],
+  "tokens": []
+}

@@ -1,0 +1,12 @@
+{
+  "name": "user-card",
+  "slug": "user-card",
+  "primaryFiles": ["common/components/user-card.scss"],
+  "identitySelectors": [
+    ".user-card",
+    ".user-card__description",
+    ".group-card",
+    ".card-avatar-placeholder"
+  ],
+  "cssCustomPropertyPrefixes": ["--card-", "--avatar-"]
+}

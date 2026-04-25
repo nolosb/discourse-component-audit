@@ -1,0 +1,10 @@
+{
+  "name": "nav-pills",
+  "slug": "nav-pills",
+  "primaryFiles": ["common/components/navs.scss"],
+  "identitySelectors": [
+    ".nav-pills",
+    ".nav-stacked"
+  ],
+  "cssCustomPropertyPrefixes": ["--d-nav-"]
+}

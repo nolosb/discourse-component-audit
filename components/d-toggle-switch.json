@@ -1,0 +1,17 @@
+{
+  "name": "d-toggle-switch",
+  "slug": "d-toggle-switch",
+  "primaryFiles": [
+    "common/components/d-toggle-switch.scss"
+  ],
+  "identitySelectors": [
+    ".d-toggle-switch",
+    ".d-toggle-switch__checkbox",
+    ".d-toggle-switch__checkbox-slider",
+    ".d-toggle-switch__label"
+  ],
+  "cssCustomPropertyPrefixes": [
+    "--toggle-switch-"
+  ],
+  "tokens": []
+}

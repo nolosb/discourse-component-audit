@@ -1,0 +1,13 @@
+{
+  "name": "badges",
+  "slug": "badges",
+  "primaryFiles": ["common/components/badges.scss"],
+  "identitySelectors": [
+    ".badge-category__wrapper",
+    ".badge-category__name",
+    ".badge-notification",
+    ".badge-posts",
+    ".badge-group"
+  ],
+  "cssCustomPropertyPrefixes": ["--category-badge-"]
+}
