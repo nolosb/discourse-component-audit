@@ -88,3 +88,62 @@ Percentage of externally overridden themeable properties that have a correspondi
 ## Current Components
 
 badges, d-button, d-icon-grid-picker, d-menu, d-modal, d-segmented-control, d-toggle-switch, nav-pills, topic-map, user-card
+
+## Future: Token Manifests and Enforcement
+
+The audit is step one. The end goal is that each component manifest declares an explicit **tokens** array — the full list of CSS custom properties that external code is allowed to set:
+
+```json
+{
+  "name": "d-modal",
+  "slug": "d-modal",
+  "primaryFiles": ["common/base/modal.scss"],
+  "identitySelectors": [".d-modal", ".d-modal__container"],
+  "cssCustomPropertyPrefixes": ["--modal-"],
+  "tokens": [
+    "--d-modal-padding-block",
+    "--d-modal-padding-inline",
+    "--d-modal-border-radius",
+    "--d-modal-max-width"
+  ]
+}
+```
+
+Components expose a controlled surface area for customization through tokens. The naming convention is `--d-{component}-{property}`.
+
+### Allowed
+
+External code sets tokens to customize a component in context:
+
+```scss
+.topic-list .d-modal {
+  --d-modal-padding-block: 0.5rem;
+}
+```
+
+### Not Allowed
+
+External code must not set concrete CSS properties on component selectors directly:
+
+```scss
+.topic-list .d-modal__container {
+  padding-block: 0.5rem;  // use --d-modal-padding-block instead
+}
+```
+
+Direct property overrides bypass the component's API, create invisible coupling, and break when internals change. Tokens give the component author control over what is customizable.
+
+### Enforcement
+
+Planned as a **stylelint plugin** (`ui-kit/no-direct-override`) that:
+
+1. Loads component manifests from `components/*.json`
+2. For each external declaration targeting a component's identity selectors, checks whether it sets a property listed in `tokens`
+3. Flags everything else as a violation
+
+### Workflow
+
+1. **Audit** — run this tool to see all own and external declarations
+2. **Author tokens** — based on the audit, add the right custom properties to the manifest's `tokens` array and the component's SCSS
+3. **Enforce** — the stylelint plugin prevents new direct overrides
+4. **Re-audit** — as the codebase evolves, re-run to surface new overrides that need tokens or migration
