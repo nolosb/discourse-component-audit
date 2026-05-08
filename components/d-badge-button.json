@@ -1,0 +1,12 @@
+{
+  "name": "badge-button",
+  "slug": "d-badge-button",
+  "primaryFiles": [
+    "common/base/user-badges.scss"
+  ],
+  "identitySelectors": [
+    ".user-badge",
+    ".badge-display-name"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

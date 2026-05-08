@@ -1,0 +1,1877 @@
+{
+  "component": {
+    "name": "d-icon-grid-picker",
+    "slug": "d-icon-grid-picker",
+    "primaryFiles": [
+      "common/components/d-icon-grid-picker.scss"
+    ],
+    "identitySelectors": [
+      ".d-icon-grid-picker",
+      ".d-icon-grid-picker__content",
+      ".d-icon-grid-picker__grid",
+      ".d-icon-grid-picker__grid-wrapper",
+      ".d-icon-grid-picker__icon",
+      ".d-icon-grid-picker__caret",
+      ".d-icon-grid-picker__filter",
+      ".d-icon-grid-picker__filter-container",
+      ".d-icon-grid-picker__selected-name",
+      ".d-icon-grid-picker__favorites",
+      ".d-icon-grid-picker__empty",
+      ".d-icon-grid-picker__loading",
+      ".d-icon-grid-picker__clear"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.086Z",
+  "summary": {
+    "totalDeclarations": 101,
+    "ownDeclarations": 98,
+    "externalDeclarations": 3,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 42,
+    "uniqueSelectors": 34,
+    "valueBreakdown": {
+      "css-var": 27,
+      "other": 47,
+      "hardcoded": 21,
+      "calc": 2,
+      "function": 4
+    },
+    "concernBreakdown": {
+      "resolved": 26,
+      "structural": 31,
+      "hardcoded": 37,
+      "mixed": 3,
+      "review": 4
+    },
+    "mostOverridden": [
+      {
+        "property": "width",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "min-width",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "color",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "min-width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "min-width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 1,
+    "externalFiles": [
+      "common/form-kit/_control-icon.scss"
+    ],
+    "ownTokenizedPct": 36,
+    "ownTokenizedCount": 24,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 67,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 3
+  },
+  "own": [
+    {
+      "selector": ".d-icon-grid-picker .fk-d-menu__trigger > .d-icon",
+      "property": "color",
+      "value": "var(--icon-color, currentColor)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 17,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker.--has-clear",
+      "property": "display",
+      "value": "inline-flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 22,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker.--has-clear .fk-d-menu__trigger",
+      "property": "border-top-right-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 25,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker.--has-clear .fk-d-menu__trigger",
+      "property": "border-bottom-right-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 26,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker.--has-clear .fk-d-menu__trigger",
+      "property": "border-right-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 27,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker.--has-clear .d-icon-grid-picker__clear",
+      "property": "border-top-left-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 31,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker.--has-clear .d-icon-grid-picker__clear",
+      "property": "border-bottom-left-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 32,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker.--has-clear .d-icon-grid-picker__clear",
+      "property": "border-left-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 33,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker.--has-clear .d-icon-grid-picker__clear",
+      "property": "margin-left",
+      "value": "0.1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 34,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker.--has-clear .d-icon-grid-picker__clear",
+      "property": "padding",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 35,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker.--has-clear .d-icon-grid-picker__clear",
+      "property": "min-width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 36,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker.--has-clear .d-icon-grid-picker__clear .d-icon",
+      "property": "font-size",
+      "value": "var(--font-down-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 39,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__caret",
+      "property": "margin-left",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 45,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__caret",
+      "property": "font-size",
+      "value": "var(--font-down-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 46,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__content",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 50,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__content",
+      "property": "flex-direction",
+      "value": "column",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 51,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__content",
+      "property": "width",
+      "value": "calc(\n      var(--icon-grid-columns) * var(--icon-grid-cell) +\n        (var(--icon-grid-columns) - 1) * var(--icon-grid-gap) +\n        var(--icon-grid-h-padding) * 2 + 8px\n    )",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 52,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__content",
+      "property": "max-height",
+      "value": "380px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 57,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__filter-container",
+      "property": "background",
+      "value": "var(--primary-very-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 62,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__filter-container",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 63,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__filter-container",
+      "property": "height",
+      "value": "50px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 64,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__filter",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 69,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__filter",
+      "property": "margin",
+      "value": "0.5rem",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 70,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__filter",
+      "property": "border-radius",
+      "value": "var(--d-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 71,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__filter",
+      "property": "box-sizing",
+      "value": "border-box",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 72,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__filter input",
+      "property": "background-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 75,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-icon-grid-picker__filter input",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 76,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__filter .d-icon",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 80,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__filter.filter-input-container",
+      "property": "border-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 84,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__filter.filter-input-container",
+      "property": "background",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 85,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__grid-wrapper",
+      "property": "display",
+      "value": "grid",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 91,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__grid-wrapper",
+      "property": "grid-template-columns",
+      "value": "repeat(\n      var(--icon-grid-columns),\n      var(--icon-grid-cell)\n    )",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "function"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 92,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__grid-wrapper",
+      "property": "gap",
+      "value": "var(--icon-grid-gap)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 96,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__grid-wrapper",
+      "property": "padding",
+      "value": "var(--icon-grid-h-padding)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 97,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__grid-wrapper",
+      "property": "overflow-x",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 98,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__grid-wrapper",
+      "property": "overflow-y",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 99,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__grid-wrapper",
+      "property": "max-height",
+      "value": "300px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 100,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__grid-wrapper",
+      "property": "scrollbar-width",
+      "value": "thin",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 101,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__grid-wrapper",
+      "property": "box-sizing",
+      "value": "border-box",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 102,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__favorites",
+      "property": "display",
+      "value": "grid",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 107,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__favorites",
+      "property": "grid-template-columns",
+      "value": "subgrid",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 108,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__favorites",
+      "property": "grid-column",
+      "value": "1 / -1",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 109,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__favorites",
+      "property": "padding-bottom",
+      "value": "0.25rem",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 110,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__selected-name",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 114,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__selected-name",
+      "property": "white-space",
+      "value": "nowrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 115,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__selected-name",
+      "property": "padding-left",
+      "value": "0.3em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 116,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__selected-name",
+      "property": "padding-right",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 117,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__grid",
+      "property": "display",
+      "value": "grid",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 122,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__grid",
+      "property": "grid-template-columns",
+      "value": "subgrid",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 123,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__grid",
+      "property": "grid-column",
+      "value": "1 / -1",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 124,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 128,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 129,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 130,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon",
+      "property": "width",
+      "value": "var(--icon-grid-cell)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 131,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon",
+      "property": "height",
+      "value": "var(--icon-grid-cell)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 132,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon",
+      "property": "cursor",
+      "value": "pointer",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 133,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon",
+      "property": "color",
+      "value": "var(--icon-color, var(--primary-high))",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 134,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon",
+      "property": "border",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 135,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon",
+      "property": "background",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 136,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 137,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon",
+      "property": "font",
+      "value": "inherit",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 138,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon",
+      "property": "transition",
+      "value": "transform 0.15s ease",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 141,
+      "column": 7,
+      "atRuleContext": [
+        "@media (prefers-reduced-motion: no-preference)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon:hover",
+      "property": "background",
+      "value": "var(--primary-very-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 146,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon:focus",
+      "property": "background",
+      "value": "var(--primary-very-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 146,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon:hover",
+      "property": "border-radius",
+      "value": "var(--d-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 147,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon:focus",
+      "property": "border-radius",
+      "value": "var(--d-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 147,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon:hover",
+      "property": "transform",
+      "value": "scale(1.25)",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function"
+        ]
+      },
+      "concern": "review",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 150,
+      "column": 9,
+      "atRuleContext": [
+        "@media (prefers-reduced-motion: no-preference)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon:focus",
+      "property": "transform",
+      "value": "scale(1.25)",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function"
+        ]
+      },
+      "concern": "review",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 150,
+      "column": 9,
+      "atRuleContext": [
+        "@media (prefers-reduced-motion: no-preference)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon.--selected",
+      "property": "background",
+      "value": "var(--tertiary-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 155,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon.--selected",
+      "property": "color",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 156,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon.--selected",
+      "property": "border-radius",
+      "value": "var(--d-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 157,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip",
+      "property": "display",
+      "value": "grid",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 162,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip",
+      "property": "grid-template-columns",
+      "value": "var(--icon-grid-cell) 1fr",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 163,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 164,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip",
+      "property": "text-align",
+      "value": "left",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 165,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 166,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip:hover",
+      "property": "transform",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 173,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip:focus",
+      "property": "transform",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 173,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip:hover .d-icon",
+      "property": "transform",
+      "value": "scale(1.25)",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function"
+        ]
+      },
+      "concern": "review",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 177,
+      "column": 13,
+      "atRuleContext": [
+        "@media (prefers-reduced-motion: no-preference)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip:focus .d-icon",
+      "property": "transform",
+      "value": "scale(1.25)",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function"
+        ]
+      },
+      "concern": "review",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 177,
+      "column": 13,
+      "atRuleContext": [
+        "@media (prefers-reduced-motion: no-preference)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip .d-icon",
+      "property": "justify-self",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 183,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip .d-icon",
+      "property": "transition",
+      "value": "transform 0.15s ease",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 186,
+      "column": 11,
+      "atRuleContext": [
+        "@media (prefers-reduced-motion: no-preference)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__icon .d-icon",
+      "property": "font-size",
+      "value": "var(--font-up-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 192,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__loading",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 197,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__loading",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 198,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__loading",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 199,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__loading",
+      "property": "min-height",
+      "value": "150px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 200,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__loading",
+      "property": "grid-column",
+      "value": "1 / -1",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 201,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__empty",
+      "property": "padding",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 205,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__empty",
+      "property": "text-align",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 206,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__empty",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 207,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__empty",
+      "property": "grid-column",
+      "value": "1 / -1",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 208,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.d-icon-grid-picker-content .d-icon-grid-picker__content",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 221,
+      "column": 9,
+      "atRuleContext": [
+        "@media screen and (width <= 767px)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.d-icon-grid-picker-content .d-icon-grid-picker__filter-container",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 225,
+      "column": 9,
+      "atRuleContext": [
+        "@media screen and (width <= 767px)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.d-icon-grid-picker-content .d-icon-grid-picker__grid-wrapper",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 229,
+      "column": 9,
+      "atRuleContext": [
+        "@media screen and (width <= 767px)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.d-icon-grid-picker-content .d-icon-grid-picker__grid-wrapper",
+      "property": "grid-template-columns",
+      "value": "repeat(auto-fill, var(--icon-grid-cell))",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "function"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 230,
+      "column": 9,
+      "atRuleContext": [
+        "@media screen and (width <= 767px)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.d-icon-grid-picker-content .d-icon-grid-picker__grid-wrapper",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 231,
+      "column": 9,
+      "atRuleContext": [
+        "@media screen and (width <= 767px)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.d-icon-grid-picker-content .d-icon-grid-picker__grid-wrapper",
+      "property": "max-height",
+      "value": "calc(\n          var(--composer-vh, 1dvh) * 100 - 50px - env(safe-area-inset-bottom)\n        )",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc",
+          "function",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 232,
+      "column": 9,
+      "atRuleContext": [
+        "@media screen and (width <= 767px)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".form-kit__control-icon .d-icon-grid-picker",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/form-kit/_control-icon.scss",
+      "line": 3,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-icon .d-icon-grid-picker",
+      "property": "min-width",
+      "value": "var(--form-kit-small-input)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/form-kit/_control-icon.scss",
+      "line": 4,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-icon .d-icon-grid-picker__caret",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/form-kit/_control-icon.scss",
+      "line": 8,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

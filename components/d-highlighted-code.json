@@ -1,0 +1,13 @@
+{
+  "name": "highlighted-code",
+  "slug": "d-highlighted-code",
+  "primaryFiles": [
+    "common/base/code_highlighting.scss"
+  ],
+  "identitySelectors": [
+    ".hljs"
+  ],
+  "cssCustomPropertyPrefixes": [
+    "--hljs-"
+  ]
+}

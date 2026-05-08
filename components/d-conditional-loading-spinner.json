@@ -1,0 +1,12 @@
+{
+  "name": "conditional-loading-spinner",
+  "slug": "d-conditional-loading-spinner",
+  "primaryFiles": [
+    "common/base/discourse.scss"
+  ],
+  "identitySelectors": [
+    ".spinner",
+    ".loading-container"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

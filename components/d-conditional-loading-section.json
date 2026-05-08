@@ -1,0 +1,11 @@
+{
+  "name": "conditional-loading-section",
+  "slug": "d-conditional-loading-section",
+  "primaryFiles": [
+    "common/components/conditional-loading-section.scss"
+  ],
+  "identitySelectors": [
+    ".conditional-loading-section"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

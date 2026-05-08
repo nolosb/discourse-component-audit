@@ -1,0 +1,1388 @@
+{
+  "component": {
+    "name": "horizontal-overflow-nav",
+    "slug": "d-horizontal-overflow-nav",
+    "primaryFiles": [
+      "common/components/horizontal-overflow-nav.scss"
+    ],
+    "identitySelectors": [
+      ".horizontal-overflow-nav",
+      ".horizontal-overflow-nav__scroll-right",
+      ".horizontal-overflow-nav__scroll-left"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.078Z",
+  "summary": {
+    "totalDeclarations": 73,
+    "ownDeclarations": 58,
+    "externalDeclarations": 15,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 30,
+    "uniqueSelectors": 27,
+    "valueBreakdown": {
+      "other": 32,
+      "hardcoded": 22,
+      "css-var": 15,
+      "calc": 2,
+      "function": 2
+    },
+    "concernBreakdown": {
+      "structural": 24,
+      "hardcoded": 28,
+      "definition": 6,
+      "resolved": 12,
+      "review": 2,
+      "mixed": 1
+    },
+    "mostOverridden": [
+      {
+        "property": "display",
+        "count": 6,
+        "fileCount": 2
+      },
+      {
+        "property": "background",
+        "count": 5,
+        "fileCount": 3
+      },
+      {
+        "property": "--fade-color",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "border-block",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "grid-area",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "background",
+        "fileCount": 3,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "border-block",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-area",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "background",
+        "fileCount": 3,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "border-block",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-area",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [
+      "--fade-color",
+      "--fade-width"
+    ],
+    "externalFileCount": 5,
+    "externalFiles": [
+      "admin/admin_base.scss",
+      "admin/plugins.scss",
+      "common/base/new-user.scss",
+      "common/base/user.scss",
+      "common/components/d-page-header.scss"
+    ],
+    "ownTokenizedPct": 27,
+    "ownTokenizedCount": 10,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 37,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 3
+  },
+  "own": [
+    {
+      "selector": ".horizontal-overflow-nav",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 2,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav",
+      "property": "min-width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 3,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 4,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav .nav-pills",
+      "property": "overflow",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 7,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav .nav-pills",
+      "property": "min-width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 8,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav .nav-pills",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 9,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav .nav-pills",
+      "property": "height",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 10,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav .nav-pills",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 11,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav .nav-pills",
+      "property": "scroll-behavior",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 14,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav .nav-pills",
+      "property": "scrollbar-width",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 17,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav .nav-pills::-webkit-scrollbar",
+      "property": "height",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 20,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav.has-scroll .nav-pills",
+      "property": "scroll-behavior",
+      "value": "smooth",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 26,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right",
+      "property": "--fade-width",
+      "value": "1.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "definition",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 33,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left",
+      "property": "--fade-width",
+      "value": "1.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "definition",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 33,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right",
+      "property": "--fade-color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "definition",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 34,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left",
+      "property": "--fade-color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "definition",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 34,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right",
+      "property": "opacity",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 35,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left",
+      "property": "opacity",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 35,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 36,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 36,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right",
+      "property": "z-index",
+      "value": "2",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 37,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left",
+      "property": "z-index",
+      "value": "2",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 37,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right",
+      "property": "background-color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 38,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left",
+      "property": "background-color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 38,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right",
+      "property": "top",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 39,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left",
+      "property": "top",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 39,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right",
+      "property": "bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 40,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left",
+      "property": "bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 40,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 41,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 41,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 42,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 42,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right",
+      "property": "transition",
+      "value": "opacity 0.25s",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 43,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left",
+      "property": "transition",
+      "value": "opacity 0.25s",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 43,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right .d-icon",
+      "property": "pointer-events",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 46,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left .d-icon",
+      "property": "pointer-events",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 46,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right .d-icon",
+      "property": "margin-bottom",
+      "value": "0.2em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 47,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left .d-icon",
+      "property": "margin-bottom",
+      "value": "0.2em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 47,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right .d-icon",
+      "property": "color",
+      "value": "var(--d-nav-color--active)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 48,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left .d-icon",
+      "property": "color",
+      "value": "var(--d-nav-color--active)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 48,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right.disabled",
+      "property": "opacity",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 53,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left.disabled",
+      "property": "opacity",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 53,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right.disabled",
+      "property": "pointer-events",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 54,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left.disabled",
+      "property": "pointer-events",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 54,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right",
+      "property": "right",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 60,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right::before",
+      "property": "content",
+      "value": "\"\"",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 63,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right::before",
+      "property": "margin-left",
+      "value": "calc(var(--fade-width) * -1)",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 66,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right::before",
+      "property": "height",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 67,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right::before",
+      "property": "width",
+      "value": "var(--fade-width)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 68,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-right::before",
+      "property": "background",
+      "value": "linear-gradient(to left, var(--fade-color), transparent)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "function"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 71,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".rtl .horizontal-overflow-nav__scroll-right .d-icon",
+      "property": "transform",
+      "value": "scaleX(1)",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function"
+        ]
+      },
+      "concern": "review",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 76,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left",
+      "property": "left",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 82,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left::after",
+      "property": "content",
+      "value": "\"\"",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 85,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left::after",
+      "property": "margin-right",
+      "value": "calc(var(--fade-width) * -1)",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 88,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left::after",
+      "property": "height",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 89,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left::after",
+      "property": "width",
+      "value": "var(--fade-width)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 90,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".horizontal-overflow-nav__scroll-left::after",
+      "property": "background",
+      "value": "linear-gradient(to right, var(--fade-color), transparent)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "function"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 93,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".rtl .horizontal-overflow-nav__scroll-left .d-icon",
+      "property": "transform",
+      "value": "scaleX(1)",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function"
+        ]
+      },
+      "concern": "review",
+      "file": "common/components/horizontal-overflow-nav.scss",
+      "line": 98,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".admin-controls .horizontal-overflow-nav__scroll-right",
+      "property": "--fade-color",
+      "value": "var(--primary-low-rgb)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "definition",
+      "file": "admin/admin_base.scss",
+      "line": 838,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-controls .horizontal-overflow-nav__scroll-left",
+      "property": "--fade-color",
+      "value": "var(--primary-low-rgb)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "definition",
+      "file": "admin/admin_base.scss",
+      "line": 838,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-controls .horizontal-overflow-nav__scroll-right",
+      "property": "background",
+      "value": "var(--primary-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "admin/admin_base.scss",
+      "line": 839,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-controls .horizontal-overflow-nav__scroll-left",
+      "property": "background",
+      "value": "var(--primary-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "admin/admin_base.scss",
+      "line": 839,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-plugin-config-page .d-nav-submenu .horizontal-overflow-nav",
+      "property": "background",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/plugins.scss",
+      "line": 97,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-plugin-config-page .d-nav-submenu .horizontal-overflow-nav::before",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/plugins.scss",
+      "line": 100,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-plugin-config-page .d-nav-submenu .horizontal-overflow-nav::after",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/plugins.scss",
+      "line": 104,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-messages-page .user-navigation-secondary .horizontal-overflow-nav",
+      "property": "grid-area",
+      "value": "nav-pills",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/new-user.scss",
+      "line": 254,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".user-content-wrapper .user-primary-navigation .horizontal-overflow-nav",
+      "property": "border-block",
+      "value": "1px solid var(--content-border-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/user.scss",
+      "line": 20,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header .d-nav-submenu .horizontal-overflow-nav",
+      "property": "background",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 48,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-subheader .d-nav-submenu .horizontal-overflow-nav",
+      "property": "background",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 48,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header .d-nav-submenu .horizontal-overflow-nav::before",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 51,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-subheader .d-nav-submenu .horizontal-overflow-nav::before",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 51,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header .d-nav-submenu .horizontal-overflow-nav::after",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 55,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-subheader .d-nav-submenu .horizontal-overflow-nav::after",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 55,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

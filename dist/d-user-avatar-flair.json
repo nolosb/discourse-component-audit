@@ -1,0 +1,4287 @@
+{
+  "component": {
+    "name": "user-avatar-flair",
+    "slug": "d-user-avatar-flair",
+    "primaryFiles": [
+      "common/base/topic-post.scss"
+    ],
+    "identitySelectors": [
+      ".avatar-flair"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.162Z",
+  "summary": {
+    "totalDeclarations": 231,
+    "ownDeclarations": 113,
+    "externalDeclarations": 118,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 17,
+    "uniqueSelectors": 43,
+    "valueBreakdown": {
+      "other": 91,
+      "hardcoded": 103,
+      "css-var": 14,
+      "scss-var": 22,
+      "calc": 1
+    },
+    "concernBreakdown": {
+      "structural": 55,
+      "hardcoded": 139,
+      "resolved": 15,
+      "scss-var": 22
+    },
+    "mostOverridden": [
+      {
+        "property": "width",
+        "count": 14,
+        "fileCount": 7
+      },
+      {
+        "property": "height",
+        "count": 14,
+        "fileCount": 7
+      },
+      {
+        "property": "background-size",
+        "count": 12,
+        "fileCount": 7
+      },
+      {
+        "property": "display",
+        "count": 12,
+        "fileCount": 6
+      },
+      {
+        "property": "border-radius",
+        "count": 9,
+        "fileCount": 6
+      },
+      {
+        "property": "align-items",
+        "count": 8,
+        "fileCount": 5
+      },
+      {
+        "property": "justify-content",
+        "count": 8,
+        "fileCount": 5
+      },
+      {
+        "property": "right",
+        "count": 7,
+        "fileCount": 4
+      },
+      {
+        "property": "background-repeat",
+        "count": 7,
+        "fileCount": 5
+      },
+      {
+        "property": "bottom",
+        "count": 6,
+        "fileCount": 4
+      },
+      {
+        "property": "font-size",
+        "count": 6,
+        "fileCount": 4
+      },
+      {
+        "property": "color",
+        "count": 5,
+        "fileCount": 2
+      },
+      {
+        "property": "position",
+        "count": 3,
+        "fileCount": 2
+      },
+      {
+        "property": "background-position",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "margin-right",
+        "count": 2,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "background-size",
+        "fileCount": 7,
+        "distinctValues": 6,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 7,
+        "distinctValues": 8,
+        "hasDef": false
+      },
+      {
+        "property": "height",
+        "fileCount": 7,
+        "distinctValues": 8,
+        "hasDef": false
+      },
+      {
+        "property": "border-radius",
+        "fileCount": 6,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "background-repeat",
+        "fileCount": 5,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "right",
+        "fileCount": 4,
+        "distinctValues": 5,
+        "hasDef": false
+      },
+      {
+        "property": "bottom",
+        "fileCount": 4,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 4,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 2,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "background-position",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "background",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "background-size",
+        "fileCount": 7,
+        "distinctValues": 6,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 7,
+        "distinctValues": 8,
+        "hasDef": false
+      },
+      {
+        "property": "height",
+        "fileCount": 7,
+        "distinctValues": 8,
+        "hasDef": false
+      },
+      {
+        "property": "border-radius",
+        "fileCount": 6,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "background-repeat",
+        "fileCount": 5,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "right",
+        "fileCount": 4,
+        "distinctValues": 5,
+        "hasDef": false
+      },
+      {
+        "property": "bottom",
+        "fileCount": 4,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 4,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 2,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "background-position",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "background",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 9,
+    "externalFiles": [
+      "common/base/categories-topic-list.scss",
+      "common/base/group.scss",
+      "common/base/groups.scss",
+      "common/base/search-menu.scss",
+      "common/base/user.scss",
+      "common/components/topic-map.scss",
+      "common/components/user-card.scss",
+      "common/nested-view.scss",
+      "common/select-kit/flair-row.scss"
+    ],
+    "ownTokenizedPct": 2,
+    "ownTokenizedCount": 2,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 89,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 13
+  },
+  "own": [
+    {
+      "selector": ".topic-avatar .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1056,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1056,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1056,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1056,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1056,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1056,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1057,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1057,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1057,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1057,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1057,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1057,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1058,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1058,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1058,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1058,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1058,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1058,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair",
+      "property": "background-repeat",
+      "value": "no-repeat",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1059,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair",
+      "property": "background-repeat",
+      "value": "no-repeat",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1059,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair",
+      "property": "background-repeat",
+      "value": "no-repeat",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1059,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair",
+      "property": "background-repeat",
+      "value": "no-repeat",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1059,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair",
+      "property": "background-repeat",
+      "value": "no-repeat",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1059,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair",
+      "property": "background-repeat",
+      "value": "no-repeat",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1059,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair",
+      "property": "background-position",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1060,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair",
+      "property": "background-position",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1060,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair",
+      "property": "background-position",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1060,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair",
+      "property": "background-position",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1060,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair",
+      "property": "background-position",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1060,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair",
+      "property": "background-position",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1060,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1061,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1061,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1061,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1061,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1061,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1061,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair",
+      "property": "bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1062,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair",
+      "property": "bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1062,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair",
+      "property": "bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1062,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair",
+      "property": "bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1062,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair",
+      "property": "bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1062,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair",
+      "property": "bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1062,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair",
+      "property": "right",
+      "value": "-6px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1063,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair",
+      "property": "right",
+      "value": "-6px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1063,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair",
+      "property": "right",
+      "value": "-6px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1063,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair",
+      "property": "right",
+      "value": "-6px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1063,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair",
+      "property": "right",
+      "value": "-6px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1063,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair",
+      "property": "right",
+      "value": "-6px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1063,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair",
+      "property": "background-size",
+      "value": "20px 20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1072,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair",
+      "property": "background-size",
+      "value": "20px 20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1072,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".collapsed-info .user-profile-avatar .avatar-flair",
+      "property": "background-size",
+      "value": "20px 20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1072,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair",
+      "property": "background-size",
+      "value": "20px 20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1072,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair",
+      "property": "background-size",
+      "value": "20px 20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1072,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair",
+      "property": "width",
+      "value": "20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1073,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair",
+      "property": "width",
+      "value": "20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1073,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".collapsed-info .user-profile-avatar .avatar-flair",
+      "property": "width",
+      "value": "20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1073,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair",
+      "property": "width",
+      "value": "20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1073,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair",
+      "property": "width",
+      "value": "20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1073,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair",
+      "property": "height",
+      "value": "20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1074,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair",
+      "property": "height",
+      "value": "20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1074,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".collapsed-info .user-profile-avatar .avatar-flair",
+      "property": "height",
+      "value": "20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1074,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair",
+      "property": "height",
+      "value": "20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1074,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair",
+      "property": "height",
+      "value": "20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1074,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair.rounded",
+      "property": "background-size",
+      "value": "18px 18px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1077,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair.rounded",
+      "property": "background-size",
+      "value": "18px 18px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1077,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".collapsed-info .user-profile-avatar .avatar-flair.rounded",
+      "property": "background-size",
+      "value": "18px 18px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1077,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair.rounded",
+      "property": "background-size",
+      "value": "18px 18px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1077,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair.rounded",
+      "property": "background-size",
+      "value": "18px 18px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1077,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair.rounded",
+      "property": "border-radius",
+      "value": "12px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1078,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair.rounded",
+      "property": "border-radius",
+      "value": "12px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1078,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".collapsed-info .user-profile-avatar .avatar-flair.rounded",
+      "property": "border-radius",
+      "value": "12px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1078,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair.rounded",
+      "property": "border-radius",
+      "value": "12px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1078,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair.rounded",
+      "property": "border-radius",
+      "value": "12px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1078,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair.rounded",
+      "property": "width",
+      "value": "24px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1079,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair.rounded",
+      "property": "width",
+      "value": "24px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1079,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".collapsed-info .user-profile-avatar .avatar-flair.rounded",
+      "property": "width",
+      "value": "24px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1079,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair.rounded",
+      "property": "width",
+      "value": "24px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1079,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair.rounded",
+      "property": "width",
+      "value": "24px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1079,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair.rounded",
+      "property": "height",
+      "value": "24px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1080,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair.rounded",
+      "property": "height",
+      "value": "24px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1080,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".collapsed-info .user-profile-avatar .avatar-flair.rounded",
+      "property": "height",
+      "value": "24px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1080,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair.rounded",
+      "property": "height",
+      "value": "24px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1080,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair.rounded",
+      "property": "height",
+      "value": "24px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1080,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair.rounded",
+      "property": "bottom",
+      "value": "-2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1081,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair.rounded",
+      "property": "bottom",
+      "value": "-2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1081,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".collapsed-info .user-profile-avatar .avatar-flair.rounded",
+      "property": "bottom",
+      "value": "-2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1081,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair.rounded",
+      "property": "bottom",
+      "value": "-2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1081,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair.rounded",
+      "property": "bottom",
+      "value": "-2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1081,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-avatar .avatar-flair.rounded",
+      "property": "right",
+      "value": "-8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1082,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".avatar-flair-preview .avatar-flair.rounded",
+      "property": "right",
+      "value": "-8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1082,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".collapsed-info .user-profile-avatar .avatar-flair.rounded",
+      "property": "right",
+      "value": "-8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1082,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-image .avatar-flair.rounded",
+      "property": "right",
+      "value": "-8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1082,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .avatar-flair.rounded",
+      "property": "right",
+      "value": "-8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1082,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair",
+      "property": "background-size",
+      "value": "40px 40px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1088,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair",
+      "property": "background-size",
+      "value": "40px 40px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1088,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair",
+      "property": "width",
+      "value": "40px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1089,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair",
+      "property": "width",
+      "value": "40px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1089,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair",
+      "property": "height",
+      "value": "40px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1090,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair",
+      "property": "height",
+      "value": "40px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1090,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair.rounded",
+      "property": "background-size",
+      "value": "30px 30px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1093,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair.rounded",
+      "property": "background-size",
+      "value": "30px 30px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1093,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair.rounded",
+      "property": "border-radius",
+      "value": "24px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1094,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair.rounded",
+      "property": "border-radius",
+      "value": "24px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1094,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair.rounded",
+      "property": "width",
+      "value": "40px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1095,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair.rounded",
+      "property": "width",
+      "value": "40px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1095,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair.rounded",
+      "property": "height",
+      "value": "40px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1096,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair.rounded",
+      "property": "height",
+      "value": "40px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1096,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair.rounded",
+      "property": "bottom",
+      "value": "-2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1097,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair.rounded",
+      "property": "bottom",
+      "value": "-2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1097,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair.rounded",
+      "property": "right",
+      "value": "-4px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1098,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair.rounded",
+      "property": "right",
+      "value": "-4px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 1098,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card-avatar .avatar-flair .fa",
+      "property": "font-size",
+      "value": "var(--font-up-4)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/topic-post.scss",
+      "line": 1102,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-avatar .avatar-flair .fa",
+      "property": "font-size",
+      "value": "var(--font-up-4)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/topic-post.scss",
+      "line": 1102,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".latest-topic-list-item .topic-poster .avatar-flair",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/categories-topic-list.scss",
+      "line": 35,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .topic-poster .avatar-flair",
+      "property": "bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/categories-topic-list.scss",
+      "line": 36,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .topic-poster .avatar-flair",
+      "property": "right",
+      "value": "10px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/categories-topic-list.scss",
+      "line": 37,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-info .avatar-flair",
+      "property": "background-size",
+      "value": "$size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/base/group.scss",
+      "line": 110,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-info .avatar-flair",
+      "property": "height",
+      "value": "$size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/base/group.scss",
+      "line": 111,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-info .avatar-flair",
+      "property": "width",
+      "value": "$size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/base/group.scss",
+      "line": 112,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-info .avatar-flair",
+      "property": "border-radius",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/group.scss",
+      "line": 113,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-info .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/group.scss",
+      "line": 114,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-info .avatar-flair",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/group.scss",
+      "line": 115,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-info .avatar-flair",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/group.scss",
+      "line": 116,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-info .avatar-flair",
+      "property": "background-repeat",
+      "value": "no-repeat",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/group.scss",
+      "line": 117,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-info .avatar-flair .d-icon",
+      "property": "height",
+      "value": "$icon-size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/base/group.scss",
+      "line": 120,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-info .avatar-flair .d-icon",
+      "property": "width",
+      "value": "$icon-size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/base/group.scss",
+      "line": 121,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".groups-boxes .group-box .group-avatar-flair .avatar-flair",
+      "property": "background-size",
+      "value": "$size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/base/groups.scss",
+      "line": 124,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".groups-boxes .group-box .group-avatar-flair .avatar-flair",
+      "property": "height",
+      "value": "$size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/base/groups.scss",
+      "line": 125,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".groups-boxes .group-box .group-avatar-flair .avatar-flair",
+      "property": "width",
+      "value": "$size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/base/groups.scss",
+      "line": 126,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".groups-boxes .group-box .group-avatar-flair .avatar-flair",
+      "property": "border-radius",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/groups.scss",
+      "line": 127,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".groups-boxes .group-box .group-avatar-flair .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/groups.scss",
+      "line": 128,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".groups-boxes .group-box .group-avatar-flair .avatar-flair",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/groups.scss",
+      "line": 129,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".groups-boxes .group-box .group-avatar-flair .avatar-flair",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/groups.scss",
+      "line": 130,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".groups-boxes .group-box .group-avatar-flair .avatar-flair",
+      "property": "background-repeat",
+      "value": "no-repeat",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/groups.scss",
+      "line": 131,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".groups-boxes .group-box .group-avatar-flair .avatar-flair .d-icon",
+      "property": "height",
+      "value": "$icon-size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/base/groups.scss",
+      "line": 134,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".groups-boxes .group-box .group-avatar-flair .avatar-flair .d-icon",
+      "property": "width",
+      "value": "$icon-size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/base/groups.scss",
+      "line": 135,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu .search-result-group .group-result .avatar-flair",
+      "property": "width",
+      "value": "1.62em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search-menu.scss",
+      "line": 316,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu-container .search-result-group .group-result .avatar-flair",
+      "property": "width",
+      "value": "1.62em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search-menu.scss",
+      "line": 316,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu .search-result-group .group-result .avatar-flair",
+      "property": "height",
+      "value": "1.6em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search-menu.scss",
+      "line": 317,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu-container .search-result-group .group-result .avatar-flair",
+      "property": "height",
+      "value": "1.6em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search-menu.scss",
+      "line": 317,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu .search-result-group .group-result .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/search-menu.scss",
+      "line": 318,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu-container .search-result-group .group-result .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/search-menu.scss",
+      "line": 318,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu .search-result-group .group-result .avatar-flair",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/search-menu.scss",
+      "line": 319,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu-container .search-result-group .group-result .avatar-flair",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/search-menu.scss",
+      "line": 319,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu .search-result-group .group-result .avatar-flair",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/search-menu.scss",
+      "line": 320,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu-container .search-result-group .group-result .avatar-flair",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/search-menu.scss",
+      "line": 320,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu .search-result-group .group-result .avatar-flair",
+      "property": "background",
+      "value": "var(--primary-200)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search-menu.scss",
+      "line": 321,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu-container .search-result-group .group-result .avatar-flair",
+      "property": "background",
+      "value": "var(--primary-200)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search-menu.scss",
+      "line": 321,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu .search-result-group .group-result .avatar-flair",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search-menu.scss",
+      "line": 322,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu-container .search-result-group .group-result .avatar-flair",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search-menu.scss",
+      "line": 322,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu .search-result-group .group-result .avatar-flair",
+      "property": "border-radius",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search-menu.scss",
+      "line": 323,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu-container .search-result-group .group-result .avatar-flair",
+      "property": "border-radius",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search-menu.scss",
+      "line": 323,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu .search-result-group .group-result .avatar-flair.avatar-flair-image",
+      "property": "background-repeat",
+      "value": "no-repeat",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search-menu.scss",
+      "line": 326,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu-container .search-result-group .group-result .avatar-flair.avatar-flair-image",
+      "property": "background-repeat",
+      "value": "no-repeat",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search-menu.scss",
+      "line": 326,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu .search-result-group .group-result .avatar-flair.avatar-flair-image",
+      "property": "background-size",
+      "value": "100% 100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search-menu.scss",
+      "line": 327,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu-container .search-result-group .group-result .avatar-flair.avatar-flair-image",
+      "property": "background-size",
+      "value": "100% 100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search-menu.scss",
+      "line": 327,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu .search-result-group .group-result .avatar-flair .d-icon",
+      "property": "font-size",
+      "value": "var(--font-down-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search-menu.scss",
+      "line": 331,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu-container .search-result-group .group-result .avatar-flair .d-icon",
+      "property": "font-size",
+      "value": "var(--font-down-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search-menu.scss",
+      "line": 331,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu .search-result-group .group-result .avatar-flair .d-icon",
+      "property": "color",
+      "value": "currentcolor",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search-menu.scss",
+      "line": 332,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu-container .search-result-group .group-result .avatar-flair .d-icon",
+      "property": "color",
+      "value": "currentcolor",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search-menu.scss",
+      "line": 332,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-main .about .details .user-profile-avatar .avatar-flair",
+      "property": "right",
+      "value": "2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 282,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-main .about .details .user-profile-avatar .avatar-flair",
+      "property": "right",
+      "value": "16px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 285,
+      "column": 13,
+      "atRuleContext": [
+        "@include viewport.from(md)"
+      ],
+      "mixinCalls": [
+        "viewport.from(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".user-main .about .details .user-profile-avatar .avatar-flair",
+      "property": "bottom",
+      "value": "8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 286,
+      "column": 13,
+      "atRuleContext": [
+        "@include viewport.from(md)"
+      ],
+      "mixinCalls": [
+        "viewport.from(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".user-main .about.collapsed-info .user-profile-avatar .avatar-flair",
+      "property": "bottom",
+      "value": "8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 419,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-main .about.collapsed-info .user-profile-avatar .avatar-flair",
+      "property": "right",
+      "value": "2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 420,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-main .about.collapsed-info .user-profile-avatar .avatar-flair .d-icon",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 423,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary .avatar-flair",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 78,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__users-content .avatar-flair",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 392,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__users-content .avatar-flair",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 392,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__users-content .avatar-flair",
+      "property": "border-radius",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 393,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__users-content .avatar-flair",
+      "property": "border-radius",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 393,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__users-content .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 394,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__users-content .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 394,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__users-content .avatar-flair",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 395,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__users-content .avatar-flair",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 395,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__users-content .avatar-flair",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 396,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__users-content .avatar-flair",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 396,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__users-content .avatar-flair",
+      "property": "right",
+      "value": "-0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 408,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__users-content .avatar-flair",
+      "property": "right",
+      "value": "-0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 408,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__users-content .avatar-flair",
+      "property": "bottom",
+      "value": "-0.15em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 409,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__users-content .avatar-flair",
+      "property": "bottom",
+      "value": "-0.15em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 409,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__users-content .avatar-flair",
+      "property": "font-size",
+      "value": "var(--font-down-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 410,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__users-content .avatar-flair",
+      "property": "font-size",
+      "value": "var(--font-down-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 410,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__users-content .avatar-flair",
+      "property": "width",
+      "value": "1.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 411,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__users-content .avatar-flair",
+      "property": "width",
+      "value": "1.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 411,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__users-content .avatar-flair",
+      "property": "height",
+      "value": "1.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 412,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__users-content .avatar-flair",
+      "property": "height",
+      "value": "1.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 412,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__users-content .avatar-flair",
+      "property": "background-size",
+      "value": "contain",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 413,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__users-content .avatar-flair",
+      "property": "background-size",
+      "value": "contain",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 413,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-card .first-row .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-card.scss",
+      "line": 511,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-card .first-row .avatar-flair",
+      "property": "background-size",
+      "value": "contain",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-card.scss",
+      "line": 512,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-card .first-row .avatar-flair",
+      "property": "background-repeat",
+      "value": "no-repeat",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-card.scss",
+      "line": 513,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-card .first-row .avatar-flair",
+      "property": "width",
+      "value": "var(--avatar-width)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-card.scss",
+      "line": 514,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-card .first-row .avatar-flair",
+      "property": "height",
+      "value": "var(--avatar-width)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-card.scss",
+      "line": 515,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-card .first-row .avatar-flair",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-card.scss",
+      "line": 516,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-card .first-row .avatar-flair .d-icon",
+      "property": "margin",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-card.scss",
+      "line": 519,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-card .first-row .avatar-flair .d-icon",
+      "property": "font-size",
+      "value": "calc(var(--avatar-width) / 1.5)",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-card.scss",
+      "line": 520,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-card .first-row .avatar-flair.rounded",
+      "property": "border-radius",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-card.scss",
+      "line": 524,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".nested-post__gutter .topic-avatar .avatar-flair",
+      "property": "background-size",
+      "value": "12px 12px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/nested-view.scss",
+      "line": 361,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".nested-post__gutter .topic-avatar .avatar-flair",
+      "property": "width",
+      "value": "12px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/nested-view.scss",
+      "line": 362,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".nested-post__gutter .topic-avatar .avatar-flair",
+      "property": "height",
+      "value": "12px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/nested-view.scss",
+      "line": 363,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".nested-post__gutter .topic-avatar .avatar-flair",
+      "property": "right",
+      "value": "-3px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/nested-view.scss",
+      "line": 364,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".nested-post__gutter .topic-avatar .avatar-flair",
+      "property": "bottom",
+      "value": "-2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/nested-view.scss",
+      "line": 365,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .select-kit-header .avatar-flair",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 9,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .flair-row .avatar-flair",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 9,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .select-kit-header .avatar-flair",
+      "property": "background-position",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 10,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .flair-row .avatar-flair",
+      "property": "background-position",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 10,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .select-kit-header .avatar-flair",
+      "property": "background-repeat",
+      "value": "no-repeat",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 11,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .flair-row .avatar-flair",
+      "property": "background-repeat",
+      "value": "no-repeat",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 11,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .select-kit-header .avatar-flair",
+      "property": "background-size",
+      "value": "$flair-size $flair-size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 12,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .flair-row .avatar-flair",
+      "property": "background-size",
+      "value": "$flair-size $flair-size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 12,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .select-kit-header .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 13,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .flair-row .avatar-flair",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 13,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .select-kit-header .avatar-flair",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 14,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .flair-row .avatar-flair",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 14,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .select-kit-header .avatar-flair",
+      "property": "margin-right",
+      "value": "5px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 15,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .flair-row .avatar-flair",
+      "property": "margin-right",
+      "value": "5px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 15,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .select-kit-header .avatar-flair",
+      "property": "height",
+      "value": "$flair-size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 16,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .flair-row .avatar-flair",
+      "property": "height",
+      "value": "$flair-size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 16,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .select-kit-header .avatar-flair",
+      "property": "width",
+      "value": "$flair-size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 17,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .flair-row .avatar-flair",
+      "property": "width",
+      "value": "$flair-size",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 17,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .select-kit-header .avatar-flair.rounded",
+      "property": "background-size",
+      "value": "math.div($flair-size, 1.4) math.div($flair-size, 1.4)",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "function"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 20,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .flair-row .avatar-flair.rounded",
+      "property": "background-size",
+      "value": "math.div($flair-size, 1.4) math.div($flair-size, 1.4)",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "function"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 20,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .select-kit-header .avatar-flair.rounded",
+      "property": "border-radius",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 21,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .flair-row .avatar-flair.rounded",
+      "property": "border-radius",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 21,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .select-kit-header .avatar-flair .d-icon",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 25,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .flair-row .avatar-flair .d-icon",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 25,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .select-kit-header .avatar-flair .d-icon",
+      "property": "height",
+      "value": "math.div($flair-size, 1.8)",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "function"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 26,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .flair-row .avatar-flair .d-icon",
+      "property": "height",
+      "value": "math.div($flair-size, 1.8)",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "function"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 26,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .select-kit-header .avatar-flair .d-icon",
+      "property": "width",
+      "value": "math.div($flair-size, 1.8)",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "function"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 27,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.flair-chooser .flair-row .avatar-flair .d-icon",
+      "property": "width",
+      "value": "math.div($flair-size, 1.8)",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "function"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/select-kit/flair-row.scss",
+      "line": 27,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

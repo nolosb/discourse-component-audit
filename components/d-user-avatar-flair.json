@@ -1,0 +1,11 @@
+{
+  "name": "user-avatar-flair",
+  "slug": "d-user-avatar-flair",
+  "primaryFiles": [
+    "common/base/topic-post.scss"
+  ],
+  "identitySelectors": [
+    ".avatar-flair"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

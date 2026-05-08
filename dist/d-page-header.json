@@ -1,0 +1,984 @@
+{
+  "component": {
+    "name": "page-header",
+    "slug": "d-page-header",
+    "primaryFiles": [
+      "common/components/d-page-header.scss"
+    ],
+    "identitySelectors": [
+      ".d-page-header",
+      ".d-page-header__title-row",
+      ".d-page-header__actions",
+      ".d-page-header__drawer"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.121Z",
+  "summary": {
+    "totalDeclarations": 50,
+    "ownDeclarations": 46,
+    "externalDeclarations": 4,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 14,
+    "uniqueSelectors": 19,
+    "valueBreakdown": {
+      "other": 29,
+      "css-var": 13,
+      "hardcoded": 8
+    },
+    "concernBreakdown": {
+      "structural": 23,
+      "resolved": 12,
+      "hardcoded": 14,
+      "mixed": 1
+    },
+    "mostOverridden": [
+      {
+        "property": "margin-bottom",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "line-height",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "gap",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "margin-bottom",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "line-height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "margin-bottom",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "line-height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 3,
+    "externalFiles": [
+      "admin/customize.scss",
+      "common/base/tag-settings.scss",
+      "common/base/uc-simplified-category-setup-edit-categories.scss"
+    ],
+    "ownTokenizedPct": 39,
+    "ownTokenizedCount": 9,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 23,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 3
+  },
+  "own": [
+    {
+      "selector": ".d-page-header__title-row",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 6,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row",
+      "property": "flex-wrap",
+      "value": "wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 7,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row",
+      "property": "justify-content",
+      "value": "space-between",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 8,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row",
+      "property": "align-items",
+      "value": "stretch",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 9,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row",
+      "property": "margin-bottom",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-page-header.scss",
+      "line": 10,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row h1",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 14,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row h2",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 14,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row h2",
+      "property": "font-size",
+      "value": "var(--font-up-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-page-header.scss",
+      "line": 18,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-header__actions",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 23,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-subheader__actions",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 23,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-subheader__title-row .d-page-header__actions",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 23,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-header__actions",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 24,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-subheader__actions",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 24,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-subheader__title-row .d-page-header__actions",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 24,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-header__actions",
+      "property": "justify-content",
+      "value": "flex-end",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 25,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-subheader__actions",
+      "property": "justify-content",
+      "value": "flex-end",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 25,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-subheader__title-row .d-page-header__actions",
+      "property": "justify-content",
+      "value": "flex-end",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 25,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-header__actions",
+      "property": "flex-direction",
+      "value": "column",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 28,
+      "column": 9,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-subheader__actions",
+      "property": "flex-direction",
+      "value": "column",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 28,
+      "column": 9,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-subheader__title-row .d-page-header__actions",
+      "property": "flex-direction",
+      "value": "column",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 28,
+      "column": 9,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-header__actions button",
+      "property": "margin-left",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-page-header.scss",
+      "line": 32,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-subheader__actions button",
+      "property": "margin-left",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-page-header.scss",
+      "line": 32,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-subheader__title-row .d-page-header__actions button",
+      "property": "margin-left",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-page-header.scss",
+      "line": 32,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-header__actions button",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 35,
+      "column": 11,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-subheader__actions button",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 35,
+      "column": 11,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-subheader__title-row .d-page-header__actions button",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 35,
+      "column": 11,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-header__actions button",
+      "property": "margin-bottom",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-page-header.scss",
+      "line": 36,
+      "column": 11,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-subheader__actions button",
+      "property": "margin-bottom",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-page-header.scss",
+      "line": 36,
+      "column": 11,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-subheader__title-row .d-page-header__actions button",
+      "property": "margin-bottom",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-page-header.scss",
+      "line": 36,
+      "column": 11,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-header__actions button",
+      "property": "margin-left",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 37,
+      "column": 11,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-subheader__actions button",
+      "property": "margin-left",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 37,
+      "column": 11,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-subheader__title-row .d-page-header__actions button",
+      "property": "margin-left",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 37,
+      "column": 11,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header .d-nav-submenu",
+      "property": "background",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 44,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header .d-nav-submenu",
+      "property": "border-bottom",
+      "value": "1px solid var(--content-border-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/d-page-header.scss",
+      "line": 45,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header .d-nav-submenu .horizontal-overflow-nav",
+      "property": "background",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 48,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header .d-nav-submenu .horizontal-overflow-nav::before",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 51,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header .d-nav-submenu .horizontal-overflow-nav::after",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 55,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header .d-nav-submenu .nav-pills",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 60,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header .d-nav-submenu .nav-pills",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 61,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row",
+      "property": "flex-direction",
+      "value": "row",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 69,
+      "column": 7,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 70,
+      "column": 7,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__title-row .d-page-header__actions button",
+      "property": "margin-bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-page-header.scss",
+      "line": 74,
+      "column": 11,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__drawer",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 81,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__drawer",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 82,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__drawer",
+      "property": "margin-bottom",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-page-header.scss",
+      "line": 83,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-page-header__drawer:not(:has(*))",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-page-header.scss",
+      "line": 86,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".admin-customize.admin-customize-themes .d-page-header",
+      "property": "margin-bottom",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/customize.scss",
+      "line": 75,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tag-settings .d-page-header__title-row",
+      "property": "margin-bottom",
+      "value": "var(--space-4)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/tag-settings.scss",
+      "line": 27,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".uc-enable-simplified-category-creation .d-page-header__title-row",
+      "property": "line-height",
+      "value": "var(--line-height-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/uc-simplified-category-setup-edit-categories.scss",
+      "line": 5,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".uc-enable-simplified-category-creation .d-page-header__title-row",
+      "property": "gap",
+      "value": "var(--space-4)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/uc-simplified-category-setup-edit-categories.scss",
+      "line": 6,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

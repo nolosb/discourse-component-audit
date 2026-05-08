@@ -1,0 +1,13 @@
+{
+  "name": "date-picker",
+  "slug": "d-date-picker",
+  "primaryFiles": [
+    "common/components/date-picker.scss"
+  ],
+  "identitySelectors": [
+    ".date-picker-wrapper",
+    ".pika-single",
+    ".pika-table"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

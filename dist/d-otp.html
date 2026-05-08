@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>otp — Style Audit</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; line-height: 1.5; color: #111827; background: #f5f5f7; margin: 0; padding: 40px; max-width: 1200px; margin: 0 auto; }
+    code { font-family: "SF Mono", ui-monospace, monospace; font-size: 12px; }
+    a { color: #2563eb; }
+
+    .header { background: #fff; border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; border: 1px solid #e5e7eb; }
+    .header h1 { margin: 0 0 8px; font-size: 22px; }
+    .meta { color: #6b7280; font-size: 13px; margin: 0; }
+    .scorecard { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #f3f4f6; }
+    .dual-scores { display: flex; gap: 48px; margin-bottom: 20px; }
+    .score-block { flex: 1; }
+    .score-headline { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+    .score-pct { font-size: 36px; font-weight: 800; letter-spacing: -1px; }
+    .score-label { font-size: 14px; color: #6b7280; }
+    .score-detail { font-size: 12px; color: #9ca3af; }
+    .stacked-bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; margin-bottom: 8px; gap: 1px; }
+    .stacked-seg { min-width: 3px; }
+    .stacked-legend { display: flex; flex-wrap: wrap; gap: 12px; }
+    .legend-item { font-size: 11px; color: #6b7280; display: flex; align-items: center; gap: 4px; }
+    .legend-dot { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
+
+    .scope-line { font-size: 12px; color: #6b7280; margin: 14px 0 0; }
+    .scope-line strong { color: #374151; font-weight: 600; }
+    .scope-line span { margin: 0 6px; color: #d1d5db; }
+    .analysis-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+    .analysis-col h4 { margin: 0 0 10px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: #6b7280; display: flex; align-items: center; gap: 6px; }
+    .action-count { font-size: 12px; color: #dc2626; font-weight: 600; }
+    .analysis-note { font-size: 12px; color: #9ca3af; margin: 0 0 10px; }
+
+    .section { background: #fff; border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; border: 1px solid #e5e7eb; }
+    .section h3 { margin: 0 0 16px; font-size: 16px; }
+
+    .selector-group { margin-bottom: 20px; }
+    .selector-group h4, .selector-group h5 { margin: 0 0 6px; font-size: 13px; font-weight: 600; }
+    .selector-group.nested { margin-left: 16px; }
+    .count { font-size: 11px; color: #9ca3af; font-weight: 400; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 8px; table-layout: fixed; }
+    th { text-align: left; padding: 5px 8px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #9ca3af; border-bottom: 2px solid #f3f4f6; }
+    td { padding: 5px 8px; border-bottom: 1px solid #f3f4f6; vertical-align: top; overflow: hidden; text-overflow: ellipsis; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fafafa; }
+    .prop { font-weight: 500; color: #374151; white-space: nowrap; }
+    .val code { color: #4b5563; word-break: break-all; }
+    .file { font-family: monospace; font-size: 11px; color: #6b7280; white-space: nowrap; }
+    .ctx code { font-size: 10px; background: #f3f4f6; padding: 1px 4px; border-radius: 2px; }
+    .imp { font-size: 9px; color: #dc2626; font-weight: 700; }
+    .ctx { font-size: 11px; color: #6b7280; }
+    .ctx-code { font-size: 10px; background: #f3f4f6; padding: 1px 4px; border-radius: 3px; color: #6b7280; }
+    .concern-badge { font-size: 10px; font-weight: 600; padding: 1px 5px; border-radius: 3px; text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; }
+    tr.concern-structural { opacity: 0.55; }
+    tr.concern-definition { opacity: 0.7; }
+    .overrides-table { table-layout: auto; }
+
+    .file-group { margin-bottom: 8px; }
+    .file-group summary { cursor: pointer; padding: 8px 0; border-bottom: 1px solid #f3f4f6; }
+    .file-group summary:hover { color: #2563eb; }
+
+    .overrides-table th { text-align: left; }
+
+    .collapsible { background: #fff; border-radius: 12px; margin-bottom: 24px; border: 1px solid #e5e7eb; }
+    .collapsible > summary { padding: 16px 28px; cursor: pointer; font-size: 16px; font-weight: 600; list-style: none; display: flex; align-items: center; gap: 8px; }
+    .collapsible > summary::-webkit-details-marker { display: none; }
+    .collapsible > summary::before { content: "▶"; font-size: 10px; color: #9ca3af; transition: transform 0.15s; }
+    .collapsible[open] > summary::before { transform: rotate(90deg); }
+    .collapsible > summary:hover { color: #2563eb; }
+    .collapsible-body { padding: 0 28px 24px; }
+    .collapsible-body .sub-section { margin-bottom: 24px; }
+    .collapsible-body .sub-section:last-child { margin-bottom: 0; }
+    .collapsible-body h4 { margin: 0 0 12px; font-size: 14px; font-weight: 600; }
+    .collapsible-body .section { background: none; border: none; border-radius: 0; padding: 0; margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <p style="margin:0 0 12px"><a href="index.html" style="font-size:13px;color:#6b7280;text-decoration:none">&larr; All components</a></p>
+  <div class="header">
+    <h1>otp <span style="color:#6b7280;font-weight:400;font-size:16px">Style Audit</span></h1>
+    <p class="meta"><code>common/components/d-otp.scss</code> &middot; 4 selectors</p>
+  </div>
+
+  <details class="collapsible" open>
+    <summary>Analysis <span class="count">12% own</span></summary>
+    <div class="collapsible-body">
+      <div class="scorecard">
+        <div class="dual-scores">
+          <div class="score-block">
+            <div class="score-headline">
+              <span class="score-pct" style="color:#dc2626">12%</span>
+              <span class="score-label">own tokenized</span>
+            </div>
+            <span class="score-detail">4 of 33 own declarations use CSS custom properties</span>
+          </div>
+          <div class="score-block">
+            <div class="score-headline">
+              <span class="score-pct" style="color:#9ca3af">N/A</span>
+              <span class="score-label">override coverage</span>
+            </div>
+            <span class="score-detail">No themeable properties overridden externally</span>
+          </div>
+        </div>
+        <div class="stacked-bar"><div class="stacked-seg" style="width:8%;background:#16a34a" title="resolved: 4"></div><div class="stacked-seg" style="width:54%;background:#dc2626" title="hardcoded: 27"></div><div class="stacked-seg" style="width:4%;background:#2563eb" title="review: 2"></div><div class="stacked-seg" style="width:34%;background:#9ca3af" title="structural: 17"></div></div>
+        <div class="stacked-legend"><span class="legend-item"><span class="legend-dot" style="background:#16a34a"></span>resolved 4</span><span class="legend-item"><span class="legend-dot" style="background:#dc2626"></span>hardcoded 27</span><span class="legend-item"><span class="legend-dot" style="background:#2563eb"></span>review 2</span><span class="legend-item"><span class="legend-dot" style="background:#9ca3af"></span>structural 17</span></div>
+        <p class="scope-line"><strong>50</strong> declarations (50 own + 0 external)<span>&middot;</span><strong>33</strong> properties<span>&middot;</span><strong>0</strong> external files<span>&middot;</span><strong>0</strong> custom props defined</p>
+      </div>
+
+      <div class="analysis-columns">
+        <div class="analysis-col">
+          <h4>Most Overridden</h4>
+          <p class="analysis-note">No external overrides.</p>
+        </div>
+        <div class="analysis-col">
+          <h4>Missing Custom Properties</h4><p class="analysis-note" style="color:#16a34a">All overridden properties have custom prop definitions.</p>
+        </div>
+      </div>
+
+      
+    </div>
+  </details>
+
+  <details class="collapsible">
+    <summary>Own Declarations <span class="count">50</span></summary>
+    <div class="collapsible-body">
+      
+    <div class="selector-group">
+      <h4><code>.d-otp</code> <span class="count">4</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:2</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:3</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">position</td>
+    <td class="val"><code>relative</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:4</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>min-content</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:5</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.email-login .d-otp</code> <span class="count">2</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:8</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">justify-content</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:9</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-otp-group</code> <span class="count">3</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:14</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:15</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">gap</td>
+    <td class="val"><code>0.5rem</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:16</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-otp-slot</code> <span class="count">10</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0.5em 0.65em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:20</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">line-height</td>
+    <td class="val"><code>normal</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:21</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:22</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:23</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">justify-content</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:24</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">border</td>
+    <td class="val"><code>var(--d-input-border)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:25</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">border-radius</td>
+    <td class="val"><code>var(--d-border-radius)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:26</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">position</td>
+    <td class="val"><code>relative</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:27</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">transition</td>
+    <td class="val"><code>all 0.3s ease-out</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:28</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>1em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:29</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-otp-slot.--show-cursor::after</code> <span class="count">9</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">content</td>
+    <td class="val"><code>&quot;&quot;</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:38</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">position</td>
+    <td class="val"><code>absolute</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:39</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">left</td>
+    <td class="val"><code>50%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:40</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">top</td>
+    <td class="val"><code>50%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:41</td>
+  </tr>
+<tr class="concern-review">
+    <td class="prop">transform</td>
+    <td class="val"><code>translateX(-50%) translateY(-50%)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dbeafe;color:#1e40af">Review</span></td>
+    <td class="file">:42</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>1px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:43</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">height</td>
+    <td class="val"><code>50%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:44</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">background-color</td>
+    <td class="val"><code>currentcolor</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:45</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">animation</td>
+    <td class="val"><code>otp-cursor-blink 1s infinite</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:46</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-otp-slot.--placeholder</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-up-0)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:51</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-otp-input</code> <span class="count">20</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">position</td>
+    <td class="val"><code>absolute</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:62</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">inset</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:63</td>
+  </tr>
+<tr class="concern-review">
+    <td class="prop">width</td>
+    <td class="val"><code>calc(100% + 40px)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dbeafe;color:#1e40af">Review</span></td>
+    <td class="file">:64</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">height</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:65</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:66</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">text-align</td>
+    <td class="val"><code>left</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:67</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">opacity</td>
+    <td class="val"><code>1</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:68</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">color</td>
+    <td class="val"><code>transparent</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:69</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">pointer-events</td>
+    <td class="val"><code>all</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:70</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">background</td>
+    <td class="val"><code>transparent</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:71</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">caret-color</td>
+    <td class="val"><code>transparent</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:72</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">border</td>
+    <td class="val"><code>0 solid transparent</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:73</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">outline</td>
+    <td class="val"><code>transparent solid 0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:74</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">box-shadow</td>
+    <td class="val"><code>none</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:75</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">line-height</td>
+    <td class="val"><code>1</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:76</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">letter-spacing</td>
+    <td class="val"><code>-0.5em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:77</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--root-height)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:78</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">font-family</td>
+    <td class="val"><code>monospace</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:79</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">font-variant-numeric</td>
+    <td class="val"><code>tabular-nums</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:80</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">clip-path</td>
+    <td class="val"><code>inset(0 40px 0 0)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:81</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-otp-input[data-com-onepassword-filled]</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">background-clip</td>
+    <td class="val"><code>text</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:84</td>
+  </tr></tbody>
+</table>
+    </div>
+    </div>
+  </details>
+
+  <details class="collapsible">
+    <summary>External Declarations <span class="count">0 from 0 files</span></summary>
+    <div class="collapsible-body">
+      <p style='color:#9ca3af'>No external declarations found.</p>
+    </div>
+  </details>
+</body>
+</html>

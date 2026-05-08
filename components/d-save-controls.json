@@ -1,0 +1,9 @@
+{
+  "name": "save-controls",
+  "slug": "d-save-controls",
+  "primaryFiles": [],
+  "identitySelectors": [
+    ".save-or-cancel"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

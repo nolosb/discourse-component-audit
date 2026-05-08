@@ -1,0 +1,841 @@
+{
+  "component": {
+    "name": "color-picker",
+    "slug": "d-color-picker",
+    "primaryFiles": [
+      "common/components/color-input.scss"
+    ],
+    "identitySelectors": [
+      ".color-picker",
+      ".colors-container"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.039Z",
+  "summary": {
+    "totalDeclarations": 36,
+    "ownDeclarations": 20,
+    "externalDeclarations": 16,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 21,
+    "uniqueSelectors": 11,
+    "valueBreakdown": {
+      "other": 19,
+      "hardcoded": 14,
+      "css-var": 3
+    },
+    "concernBreakdown": {
+      "structural": 13,
+      "hardcoded": 20,
+      "resolved": 2,
+      "mixed": 1
+    },
+    "mostOverridden": [
+      {
+        "property": "display",
+        "count": 4,
+        "fileCount": 2
+      },
+      {
+        "property": "margin-bottom",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "flex-wrap",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "position",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "margin",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "border",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "width",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "height",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "padding",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "flex",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "color",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "opacity",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "max-width",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "margin-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "opacity",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "max-width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "margin-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "opacity",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "max-width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 2,
+    "externalFiles": [
+      "admin/customize.scss",
+      "common/base/colorpicker.scss"
+    ],
+    "ownTokenizedPct": 14,
+    "ownTokenizedCount": 2,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 14,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 9
+  },
+  "own": [
+    {
+      "selector": ".color-picker",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/color-input.scss",
+      "line": 2,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker",
+      "property": "align-items",
+      "value": "stretch",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/color-input.scss",
+      "line": 3,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/color-input.scss",
+      "line": 4,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker",
+      "property": "width",
+      "value": "12em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/color-input.scss",
+      "line": 5,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .add-on",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/color-input.scss",
+      "line": 9,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .add-on",
+      "property": "pointer-events",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/color-input.scss",
+      "line": 10,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .hex-input",
+      "property": "border-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/color-input.scss",
+      "line": 14,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .hex-input",
+      "property": "border-bottom-left-radius",
+      "value": "var(--d-input-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/color-input.scss",
+      "line": 15,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .hex-input",
+      "property": "border-top-left-radius",
+      "value": "var(--d-input-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/color-input.scss",
+      "line": 16,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .hex-input",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/color-input.scss",
+      "line": 17,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .hex-input",
+      "property": "width",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/color-input.scss",
+      "line": 18,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .add-on + .hex-input",
+      "property": "padding-left",
+      "value": "1.33em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/color-input.scss",
+      "line": 22,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .picker",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/color-input.scss",
+      "line": 26,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .picker",
+      "property": "border-left",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/color-input.scss",
+      "line": 27,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .picker",
+      "property": "border-bottom-left-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/color-input.scss",
+      "line": 28,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .picker",
+      "property": "border-top-left-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/color-input.scss",
+      "line": 29,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .picker",
+      "property": "cursor",
+      "value": "pointer",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/color-input.scss",
+      "line": 30,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .picker",
+      "property": "margin-bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/color-input.scss",
+      "line": 31,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .picker",
+      "property": "height",
+      "value": "unset",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/color-input.scss",
+      "line": 32,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-picker .picker",
+      "property": "width",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/color-input.scss",
+      "line": 33,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".admin-customize .colors td.hex .color-picker",
+      "property": "display",
+      "value": "inline-flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/customize.scss",
+      "line": 545,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-customize .colors .color-picker input",
+      "property": "margin-bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/customize.scss",
+      "line": 554,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-color-editor .colors-container",
+      "property": "display",
+      "value": "inline-flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/colorpicker.scss",
+      "line": 19,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-color-editor .colors-container",
+      "property": "flex-wrap",
+      "value": "wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/colorpicker.scss",
+      "line": 20,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-color-editor .colors-container .colorpicker",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/colorpicker.scss",
+      "line": 23,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-color-editor .colors-container .colorpicker",
+      "property": "margin",
+      "value": "0 0.125em 0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/colorpicker.scss",
+      "line": 24,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-color-editor .colors-container .colorpicker",
+      "property": "border",
+      "value": "1px solid var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/colorpicker.scss",
+      "line": 25,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-color-editor .colors-container .colorpicker",
+      "property": "width",
+      "value": "1.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/colorpicker.scss",
+      "line": 26,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-color-editor .colors-container .colorpicker",
+      "property": "height",
+      "value": "1.2em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/colorpicker.scss",
+      "line": 27,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-color-editor .colors-container .colorpicker",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/colorpicker.scss",
+      "line": 28,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-color-editor .colors-container .colorpicker",
+      "property": "flex",
+      "value": "0 0 auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/colorpicker.scss",
+      "line": 29,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-color-editor .colors-container .colorpicker",
+      "property": "color",
+      "value": "white",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/colorpicker.scss",
+      "line": 30,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-color-editor .colors-container .colorpicker svg",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/colorpicker.scss",
+      "line": 33,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-color-editor .colors-container .colorpicker.used-color svg",
+      "property": "display",
+      "value": "inline-flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/colorpicker.scss",
+      "line": 37,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-color-editor .colors-container .colorpicker.used-color svg",
+      "property": "opacity",
+      "value": "0.8",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/colorpicker.scss",
+      "line": 38,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-color-editor .colors-container .colorpicker.used-color svg",
+      "property": "max-width",
+      "value": "70%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/colorpicker.scss",
+      "line": 39,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

@@ -1,0 +1,953 @@
+{
+  "component": {
+    "name": "multi-select",
+    "slug": "d-multi-select",
+    "primaryFiles": [
+      "common/components/d-multi-select.scss"
+    ],
+    "identitySelectors": [
+      ".d-multi-select-trigger",
+      ".d-multi-select-trigger__selection",
+      ".d-multi-select-trigger__label",
+      ".d-multi-select__search-input",
+      ".d-multi-select__search-container",
+      ".d-multi-select__search-results",
+      ".d-multi-select__result",
+      ".d-multi-select-trigger__selected-item"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.109Z",
+  "summary": {
+    "totalDeclarations": 50,
+    "ownDeclarations": 48,
+    "externalDeclarations": 2,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 20,
+    "uniqueSelectors": 14,
+    "valueBreakdown": {
+      "other": 22,
+      "css-var": 12,
+      "hardcoded": 16
+    },
+    "concernBreakdown": {
+      "structural": 17,
+      "resolved": 11,
+      "hardcoded": 21,
+      "mixed": 1
+    },
+    "mostOverridden": [
+      {
+        "property": "max-width",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "width",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "max-width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "max-width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 1,
+    "externalFiles": [
+      "common/components/group-selector.scss"
+    ],
+    "ownTokenizedPct": 35,
+    "ownTokenizedCount": 11,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 31,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 2
+  },
+  "own": [
+    {
+      "selector": ".d-multi-select-trigger",
+      "property": "display",
+      "value": "inline-flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 3,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger",
+      "property": "border-radius",
+      "value": "var(--d-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-multi-select.scss",
+      "line": 4,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger",
+      "property": "cursor",
+      "value": "pointer",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 5,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 6,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger",
+      "property": "gap",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 7,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger",
+      "property": "line-height",
+      "value": "normal",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 8,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger",
+      "property": "box-sizing",
+      "value": "border-box",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 9,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger",
+      "property": "width",
+      "value": "200px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 10,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger",
+      "property": "border",
+      "value": "1px solid var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/d-multi-select.scss",
+      "line": 11,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger",
+      "property": "justify-content",
+      "value": "space-between",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 12,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__selection",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 20,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__selection",
+      "property": "flex-wrap",
+      "value": "wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 21,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__selection",
+      "property": "gap",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 22,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__selection",
+      "property": "height",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 23,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__label",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-multi-select.scss",
+      "line": 27,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__label",
+      "property": "line-height",
+      "value": "normal",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 28,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__label",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-multi-select.scss",
+      "line": 29,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__search-input",
+      "property": "border",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 38,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-multi-select__search-input",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 39,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-multi-select__search-input",
+      "property": "outline",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 40,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-multi-select__search-input",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 41,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-multi-select__search-container",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 45,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__search-container",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 46,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__search-container",
+      "property": "padding",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 47,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__search-container",
+      "property": "gap",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 48,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__search-container .d-icon-magnifying-glass",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-multi-select.scss",
+      "line": 51,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__search-container .d-icon-magnifying-glass",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-multi-select.scss",
+      "line": 52,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__search-results",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 57,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__search-results",
+      "property": "flex-direction",
+      "value": "column",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 58,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__search-results",
+      "property": "padding",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 59,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__search-results",
+      "property": "gap",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 60,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__search-results",
+      "property": "height",
+      "value": "150px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 61,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__selected-item",
+      "property": "box-sizing",
+      "value": "border-box",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 69,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__selected-item",
+      "property": "border",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 70,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__selected-item",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-multi-select.scss",
+      "line": 71,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__selected-item",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 72,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__selected-item",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 73,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__selected-item",
+      "property": "border-radius",
+      "value": "var(--d-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-multi-select.scss",
+      "line": 74,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__selected-item",
+      "property": "background-color",
+      "value": "var(--primary-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-multi-select.scss",
+      "line": 75,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__selected-item:hover",
+      "property": "background-color",
+      "value": "var(--primary-low-mid)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-multi-select.scss",
+      "line": 78,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select-trigger__selected-item .d-multi-select-trigger__selection-label",
+      "property": "max-width",
+      "value": "3.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 83,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__result",
+      "property": "padding",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 92,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__result",
+      "property": "border-radius",
+      "value": "var(--d-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-multi-select.scss",
+      "line": 93,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__result",
+      "property": "cursor",
+      "value": "pointer",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 94,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__result",
+      "property": "gap",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-multi-select.scss",
+      "line": 95,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__result",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 96,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__result",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-multi-select.scss",
+      "line": 97,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-multi-select__result.--preselected",
+      "property": "background-color",
+      "value": "var(--primary-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-multi-select.scss",
+      "line": 100,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".group-selector-wrapper .d-multi-select-trigger__selected-item > .d-multi-select-trigger__selection-label",
+      "property": "max-width",
+      "value": "10em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/group-selector.scss",
+      "line": 4,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-selector-wrapper .d-multi-select-trigger",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/group-selector.scss",
+      "line": 9,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

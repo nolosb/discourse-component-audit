@@ -508,8 +508,11 @@ function renderIndexHTML(components, summaries) {
 
     .card { background: #fff; border-radius: 12px; padding: 8px 0; border: 1px solid #e5e7eb; overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; }
-    th { text-align: left; padding: 10px 12px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #9ca3af; border-bottom: 2px solid #f3f4f6; white-space: nowrap; }
+    th { text-align: left; padding: 10px 12px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #9ca3af; border-bottom: 2px solid #f3f4f6; white-space: nowrap; cursor: pointer; user-select: none; }
+    th:hover { color: #374151; }
     th.r { text-align: right; }
+    th .sort-arrow { font-size: 9px; margin-left: 3px; opacity: 0.4; }
+    th.sorted .sort-arrow { opacity: 1; color: #2563eb; }
     td { padding: 8px 12px; border-bottom: 1px solid #f3f4f6; }
     td.num { text-align: right; font-variant-numeric: tabular-nums; color: #374151; }
     td.action { color: #dc2626; font-weight: 600; }
@@ -549,15 +552,15 @@ function renderIndexHTML(components, summaries) {
         <col style="width:8%">
       </colgroup>
       <thead><tr>
-        <th>Component</th>
-        <th class="r">Own Tok.</th>
-        <th class="r">Ovr. Cov.</th>
+        <th data-sort="text">Component<span class="sort-arrow"></span></th>
+        <th class="r" data-sort="num">Own Tok.<span class="sort-arrow"></span></th>
+        <th class="r" data-sort="num">Ovr. Cov.<span class="sort-arrow"></span></th>
         <th>Breakdown</th>
-        <th class="r">Own</th>
-        <th class="r">External</th>
-        <th class="r">Ext Files</th>
-        <th class="r">Cust. Props</th>
-        <th class="r">Missing</th>
+        <th class="r" data-sort="num">Own<span class="sort-arrow"></span></th>
+        <th class="r" data-sort="num">External<span class="sort-arrow"></span></th>
+        <th class="r" data-sort="num">Ext Files<span class="sort-arrow"></span></th>
+        <th class="r" data-sort="num">Cust. Props<span class="sort-arrow"></span></th>
+        <th class="r" data-sort="num">Missing<span class="sort-arrow"></span></th>
       </tr></thead>
       <tbody>${rows}</tbody>
     </table>
@@ -565,6 +568,43 @@ function renderIndexHTML(components, summaries) {
       ${concernOrder.map((k) => `<span class="legend-item"><span class="legend-dot" style="background:${concernColors[k]}"></span>${k}</span>`).join("")}
     </div>
   </div>
+  <script>
+    document.querySelectorAll('th[data-sort]').forEach(th => {
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const idx = [...th.parentNode.children].indexOf(th);
+        const type = th.dataset.sort;
+        const asc = th.classList.contains('sorted') && th.dataset.dir === 'asc' ? false : true;
+
+        table.querySelectorAll('th').forEach(h => { h.classList.remove('sorted'); h.dataset.dir = ''; });
+        th.classList.add('sorted');
+        th.dataset.dir = asc ? 'asc' : 'desc';
+        th.querySelector('.sort-arrow').textContent = asc ? ' ▲' : ' ▼';
+        table.querySelectorAll('th:not(.sorted) .sort-arrow').forEach(a => a.textContent = '');
+
+        const rows = [...tbody.querySelectorAll('tr')];
+        rows.sort((a, b) => {
+          const aCell = a.children[idx];
+          const bCell = b.children[idx];
+          let aVal, bVal;
+          if (type === 'num') {
+            aVal = parseFloat(aCell.textContent.replace(/[^0-9.-]/g, ''));
+            bVal = parseFloat(bCell.textContent.replace(/[^0-9.-]/g, ''));
+            if (isNaN(aVal)) aVal = -1;
+            if (isNaN(bVal)) bVal = -1;
+          } else {
+            aVal = aCell.textContent.trim().toLowerCase();
+            bVal = bCell.textContent.trim().toLowerCase();
+          }
+          if (aVal < bVal) return asc ? -1 : 1;
+          if (aVal > bVal) return asc ? 1 : -1;
+          return 0;
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
 </body>
 </html>`;
 }

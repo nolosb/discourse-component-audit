@@ -1,0 +1,1589 @@
+{
+  "component": {
+    "name": "conditional-loading-spinner",
+    "slug": "d-conditional-loading-spinner",
+    "primaryFiles": [
+      "common/base/discourse.scss"
+    ],
+    "identitySelectors": [
+      ".spinner",
+      ".loading-container"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.044Z",
+  "summary": {
+    "totalDeclarations": 69,
+    "ownDeclarations": 12,
+    "externalDeclarations": 57,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 26,
+    "uniqueSelectors": 30,
+    "valueBreakdown": {
+      "hardcoded": 30,
+      "other": 26,
+      "css-var": 9,
+      "calc": 1,
+      "scss-var": 1,
+      "hardcoded-color": 1,
+      "function": 1
+    },
+    "concernBreakdown": {
+      "hardcoded": 51,
+      "structural": 6,
+      "mixed": 2,
+      "resolved": 8,
+      "scss-var": 1,
+      "review": 1
+    },
+    "mostOverridden": [
+      {
+        "property": "width",
+        "count": 17,
+        "fileCount": 9
+      },
+      {
+        "property": "margin",
+        "count": 6,
+        "fileCount": 5
+      },
+      {
+        "property": "height",
+        "count": 5,
+        "fileCount": 4
+      },
+      {
+        "property": "margin-left",
+        "count": 3,
+        "fileCount": 2
+      },
+      {
+        "property": "border-width",
+        "count": 3,
+        "fileCount": 2
+      },
+      {
+        "property": "border-color",
+        "count": 3,
+        "fileCount": 2
+      },
+      {
+        "property": "border-right-color",
+        "count": 3,
+        "fileCount": 2
+      },
+      {
+        "property": "max-width",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "position",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "right",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "top",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "display",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "justify-content",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "grid-row-start",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "grid-row-end",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "width",
+        "fileCount": 9,
+        "distinctValues": 6,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 5,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "height",
+        "fileCount": 4,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "max-width",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-width",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "border-color",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "border-right-color",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-row-start",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-row-end",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-column-start",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-column-end",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "overflow-anchor",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-inline",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "width",
+        "fileCount": 9,
+        "distinctValues": 6,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 5,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "height",
+        "fileCount": 4,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "max-width",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-width",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "border-color",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "border-right-color",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-row-start",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-row-end",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-column-start",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-column-end",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "overflow-anchor",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-inline",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 16,
+    "externalFiles": [
+      "admin/admin_base.scss",
+      "admin/customize.scss",
+      "admin/dashboard.scss",
+      "common/base/_topic-list.scss",
+      "common/base/compose.scss",
+      "common/base/directory.scss",
+      "common/base/menu-panel.scss",
+      "common/base/onebox.scss",
+      "common/base/review.scss",
+      "common/base/search-menu.scss",
+      "common/base/topic-post.scss",
+      "common/base/user.scss",
+      "common/components/topic-map.scss",
+      "common/form-kit/_control-code.scss",
+      "common/modal/discourse-reactions-popup.scss",
+      "common/modal/modal-overrides.scss"
+    ],
+    "ownTokenizedPct": 0,
+    "ownTokenizedCount": 0,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 10,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 19
+  },
+  "own": [
+    {
+      "selector": ".spinner",
+      "property": "margin",
+      "value": "20px auto 20px auto",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/discourse.scss",
+      "line": 726,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".spinner",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/discourse.scss",
+      "line": 727,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".spinner",
+      "property": "animation",
+      "value": "rotate-forever 1s infinite linear",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/discourse.scss",
+      "line": 728,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".spinner",
+      "property": "height",
+      "value": "30px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/discourse.scss",
+      "line": 729,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".spinner",
+      "property": "width",
+      "value": "30px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/discourse.scss",
+      "line": 730,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".spinner",
+      "property": "border",
+      "value": "4px solid var(--primary-low-mid)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/discourse.scss",
+      "line": 731,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".spinner",
+      "property": "border-right-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/discourse.scss",
+      "line": 732,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".spinner",
+      "property": "border-radius",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/discourse.scss",
+      "line": 733,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".spinner.small",
+      "property": "width",
+      "value": "10px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/discourse.scss",
+      "line": 736,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".spinner.small",
+      "property": "height",
+      "value": "10px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/discourse.scss",
+      "line": 737,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".spinner.small",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/discourse.scss",
+      "line": 738,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".spinner.small",
+      "property": "display",
+      "value": "inline-block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/discourse.scss",
+      "line": 739,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".ip-lookup-content .location-box .loading-container",
+      "property": "max-width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/admin_base.scss",
+      "line": 527,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-permalinks .loading-container",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/customize.scss",
+      "line": 685,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading .spinner",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/dashboard.scss",
+      "line": 399,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading .spinner",
+      "property": "width",
+      "value": "8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/dashboard.scss",
+      "line": 400,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading .spinner",
+      "property": "height",
+      "value": "8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/dashboard.scss",
+      "line": 401,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading .spinner",
+      "property": "margin-left",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/dashboard.scss",
+      "line": 402,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .spinner",
+      "property": "margin-top",
+      "value": "40px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 171,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .saving-text .spinner",
+      "property": "margin-left",
+      "value": "8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 107,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .draft-text .spinner",
+      "property": "margin-left",
+      "value": "8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 107,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .saving-text .spinner",
+      "property": "border-color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/compose.scss",
+      "line": 108,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .draft-text .spinner",
+      "property": "border-color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/compose.scss",
+      "line": 108,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .saving-text .spinner",
+      "property": "border-right-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 109,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .draft-text .spinner",
+      "property": "border-right-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 109,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control #file-uploading .spinner",
+      "property": "margin-right",
+      "value": "0.33em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 626,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".directory .spinner",
+      "property": "clear",
+      "value": "both",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/directory.scss",
+      "line": 48,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-menu .quick-access-panel .spinner",
+      "property": "width",
+      "value": "20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/menu-panel.scss",
+      "line": 719,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-notifications-list .spinner",
+      "property": "width",
+      "value": "20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/menu-panel.scss",
+      "line": 719,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-menu .quick-access-panel .spinner",
+      "property": "height",
+      "value": "20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/menu-panel.scss",
+      "line": 720,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-notifications-list .spinner",
+      "property": "height",
+      "value": "20px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/menu-panel.scss",
+      "line": 720,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-menu .quick-access-panel .spinner",
+      "property": "border-width",
+      "value": "2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/menu-panel.scss",
+      "line": 721,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-notifications-list .spinner",
+      "property": "border-width",
+      "value": "2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/menu-panel.scss",
+      "line": 721,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-menu .quick-access-panel .spinner",
+      "property": "margin",
+      "value": "0 auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/menu-panel.scss",
+      "line": 722,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-notifications-list .spinner",
+      "property": "margin",
+      "value": "0 auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/menu-panel.scss",
+      "line": 722,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".video-placeholder-container .video-placeholder-overlay .spinner",
+      "property": "border-color",
+      "value": "#fff",
+      "valueClassification": {
+        "primary": "hardcoded-color",
+        "tags": [
+          "hardcoded-color"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/onebox.scss",
+      "line": 1094,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".video-placeholder-container .video-placeholder-overlay .spinner",
+      "property": "border-right-color",
+      "value": "rgb(0, 0, 0, 0)",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function"
+        ]
+      },
+      "concern": "review",
+      "file": "common/base/onebox.scss",
+      "line": 1095,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".video-placeholder-container .video-placeholder-overlay .spinner",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/onebox.scss",
+      "line": 1096,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".review-insight .loading-container",
+      "property": "padding-inline",
+      "value": "var(--space-4)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/review.scss",
+      "line": 438,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".review-insight .loading-container",
+      "property": "padding-bottom",
+      "value": "var(--space-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/review.scss",
+      "line": 439,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".ip-lookup-other-accounts-modal .loading-container",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/review.scss",
+      "line": 691,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".searching .spinner",
+      "property": "width",
+      "value": "var(--space-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search-menu.scss",
+      "line": 445,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".searching .spinner",
+      "property": "height",
+      "value": "var(--space-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search-menu.scss",
+      "line": 446,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".searching .spinner",
+      "property": "border-width",
+      "value": "var(--space-half)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search-menu.scss",
+      "line": 447,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".searching .spinner",
+      "property": "margin",
+      "value": "0 $hpad 0 0",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/base/search-menu.scss",
+      "line": 448,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-area > .loading-container",
+      "property": "overflow-anchor",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 2313,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-area > .loading-container",
+      "property": "width",
+      "value": "calc(\n      var(--topic-body-width) + var(--topic-avatar-width) +\n        (var(--topic-body-width-padding) * 2) + 1px\n    )",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/topic-post.scss",
+      "line": 2317,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-area > .loading-container",
+      "property": "max-width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 2321,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".user-content-wrapper .spinner",
+      "property": "grid-row-start",
+      "value": "3",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 61,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-content-wrapper .spinner",
+      "property": "grid-row-end",
+      "value": "5",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 62,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-content-wrapper .spinner",
+      "property": "grid-column-start",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 63,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-content-wrapper .spinner",
+      "property": "grid-column-end",
+      "value": "3",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 64,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__likes-content .loading-container",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 232,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__links-content .loading-container",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 232,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__users-content .loading-container",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 232,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu.topic-map__views-content .loading-container",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 232,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__likes-content .loading-container",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 232,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__links-content .loading-container",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 232,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__users-content .loading-container",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 232,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal.topic-map__views-content .loading-container",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 232,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__field-code .ace-wrapper > .loading-container",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/form-kit/_control-code.scss",
+      "line": 6,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".post-users-popup .loading-container",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/modal/discourse-reactions-popup.scss",
+      "line": 190,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".post-users-popup .loading-container",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/modal/discourse-reactions-popup.scss",
+      "line": 191,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".post-users-popup .loading-container .spinner",
+      "property": "margin",
+      "value": "var(--space-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/modal/discourse-reactions-popup.scss",
+      "line": 194,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-modal.upsert-hyperlink-modal .insert-link .inputs .spinner",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/modal/modal-overrides.scss",
+      "line": 15,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-modal.upsert-hyperlink-modal .insert-link .inputs .spinner",
+      "property": "right",
+      "value": "8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/modal/modal-overrides.scss",
+      "line": 16,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-modal.upsert-hyperlink-modal .insert-link .inputs .spinner",
+      "property": "top",
+      "value": "-15px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/modal/modal-overrides.scss",
+      "line": 17,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-modal.upsert-hyperlink-modal .insert-link .inputs .spinner",
+      "property": "width",
+      "value": "10px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/modal/modal-overrides.scss",
+      "line": 18,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-modal.upsert-hyperlink-modal .insert-link .inputs .spinner",
+      "property": "height",
+      "value": "10px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/modal/modal-overrides.scss",
+      "line": 19,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

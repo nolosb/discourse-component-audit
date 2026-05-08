@@ -1,0 +1,16 @@
+{
+  "name": "editor",
+  "slug": "d-editor",
+  "primaryFiles": [
+    "common/d-editor.scss"
+  ],
+  "identitySelectors": [
+    ".d-editor",
+    ".d-editor-container",
+    ".d-editor-textarea-wrapper",
+    ".d-editor-input",
+    ".d-editor-preview",
+    ".d-editor-button-bar"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

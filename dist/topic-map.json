@@ -1,0 +1,2795 @@
+{
+  "component": {
+    "name": "topic-map",
+    "slug": "topic-map",
+    "primaryFiles": [
+      "common/components/topic-map.scss"
+    ],
+    "identitySelectors": [
+      ".topic-map",
+      ".topic-map__contents",
+      ".topic-map__stats",
+      ".topic-map__count",
+      ".topic-map__date",
+      ".topic-map__user",
+      ".topic-map__likes",
+      ".topic-map__buttons",
+      ".topic-map__inner-content",
+      ".topic-map__wrapper"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.179Z",
+  "summary": {
+    "totalDeclarations": 142,
+    "ownDeclarations": 86,
+    "externalDeclarations": 56,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 45,
+    "uniqueSelectors": 48,
+    "valueBreakdown": {
+      "css-var": 32,
+      "other": 64,
+      "calc": 4,
+      "hardcoded": 42
+    },
+    "concernBreakdown": {
+      "mixed": 3,
+      "hardcoded": 45,
+      "resolved": 30,
+      "structural": 61,
+      "definition": 3
+    },
+    "mostOverridden": [
+      {
+        "property": "display",
+        "count": 9,
+        "fileCount": 2
+      },
+      {
+        "property": "margin-right",
+        "count": 7,
+        "fileCount": 1
+      },
+      {
+        "property": "border-radius",
+        "count": 5,
+        "fileCount": 1
+      },
+      {
+        "property": "align-items",
+        "count": 5,
+        "fileCount": 1
+      },
+      {
+        "property": "color",
+        "count": 4,
+        "fileCount": 1
+      },
+      {
+        "property": "padding-block",
+        "count": 3,
+        "fileCount": 1
+      },
+      {
+        "property": "border",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "padding-left",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "background",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "padding-top",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "margin-left",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "grid-template-areas",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "grid-template-columns",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "padding-inline",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "grid-area",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "border",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-block",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "grid-template-areas",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-template-columns",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-radius",
+        "fileCount": 1,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "padding-left",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "background",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "padding-inline",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-area",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": true
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "border",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-block",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "grid-template-areas",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-template-columns",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-radius",
+        "fileCount": 1,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "padding-left",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "background",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "padding-inline",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-area",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [
+      "--chart-line-color",
+      "--chart-point-color",
+      "--chart-prediction-color"
+    ],
+    "externalFileCount": 2,
+    "externalFiles": [
+      "common/base/personal-message.scss",
+      "common/printer-friendly.scss"
+    ],
+    "ownTokenizedPct": 34,
+    "ownTokenizedCount": 15,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 44,
+    "overrideCoveragePct": 6,
+    "overrideCoveredCount": 1,
+    "overrideTotal": 17
+  },
+  "own": [
+    {
+      "selector": ".topic-map.--op",
+      "property": "border-top",
+      "value": "1px solid var(--content-border-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/topic-map.scss",
+      "line": 5,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map.--op",
+      "property": "border-bottom",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 6,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map.--op",
+      "property": "padding-left",
+      "value": "calc(\n    var(--topic-body-width-padding) + var(--topic-avatar-width)\n  )",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 7,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map.--bottom",
+      "property": "grid-area",
+      "value": "posts",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 14,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map.--bottom",
+      "property": "grid-row",
+      "value": "2",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 15,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map.--bottom",
+      "property": "max-width",
+      "value": "calc(\n    var(--topic-avatar-width) + var(--topic-body-width) +\n      (var(--topic-body-width-padding) * 2)\n  )",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 16,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "body:not(.archetype-private_message) .topic-map",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 24,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "body:not(.archetype-private_message) .topic-map",
+      "property": "flex-direction",
+      "value": "row",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 25,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "body:not(.archetype-private_message) .topic-map",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 26,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "body:not(.archetype-private_message) .topic-map",
+      "property": "justify-content",
+      "value": "space-between",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 27,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "body:not(.archetype-private_message) .topic-map",
+      "property": "flex-wrap",
+      "value": "wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 28,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "body:not(.archetype-private_message) .topic-map",
+      "property": "column-gap",
+      "value": "0.75em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 29,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map",
+      "property": "--chart-line-color",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "definition",
+      "file": "common/components/topic-map.scss",
+      "line": 35,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map",
+      "property": "--chart-point-color",
+      "value": "var(--tertiary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "definition",
+      "file": "common/components/topic-map.scss",
+      "line": 36,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map",
+      "property": "--chart-prediction-color",
+      "value": "var(--primary-low-mid)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "definition",
+      "file": "common/components/topic-map.scss",
+      "line": 37,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map",
+      "property": "border-bottom",
+      "value": "1px solid var(--content-border-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/topic-map.scss",
+      "line": 38,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map",
+      "property": "box-sizing",
+      "value": "border-box",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 39,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map",
+      "property": "max-width",
+      "value": "calc(\n    var(--topic-avatar-width) + var(--topic-body-width) +\n      (var(--topic-body-width-padding) * 2)\n  )",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 40,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map",
+      "property": "padding-block",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 44,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map",
+      "property": "overflow-anchor",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 45,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 48,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-map.--op",
+      "property": "padding-left",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 54,
+      "column": 7,
+      "atRuleContext": [
+        "@media screen and (width <= 500px)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map.--bottom",
+      "property": "padding-left",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 54,
+      "column": 7,
+      "atRuleContext": [
+        "@media screen and (width <= 500px)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 59,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary",
+      "property": "flex-wrap",
+      "value": "wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 60,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 61,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary",
+      "property": "overflow",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 62,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary",
+      "property": "height",
+      "value": "2em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 63,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary",
+      "property": "align-self",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 64,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary",
+      "property": "flex",
+      "value": "1 2 0",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 65,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary",
+      "property": "gap",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 66,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary",
+      "property": "min-width",
+      "value": "2em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 67,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary",
+      "property": "width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 68,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary .avatar",
+      "property": "width",
+      "value": "2em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 71,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary .avatar",
+      "property": "height",
+      "value": "2em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 72,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary .avatar",
+      "property": "margin-right",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 73,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary .avatar-flair",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 78,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .--users-summary .post-count",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 78,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__stats",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 83,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__stats",
+      "property": "flex-wrap",
+      "value": "wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 84,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__stats",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 85,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__stats",
+      "property": "list-style",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 86,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map a",
+      "property": "overflow-wrap",
+      "value": "anywhere",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 90,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents",
+      "property": "flex-grow",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 94,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .number",
+      "property": "font-size",
+      "value": "var(--font-up-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 97,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .number",
+      "property": "line-height",
+      "value": "1.2",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 98,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats",
+      "property": "gap",
+      "value": "0.75em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 102,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats.--single-stat .fk-d-menu__trigger",
+      "property": "flex-direction",
+      "value": "row",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 106,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats.--single-stat .fk-d-menu__trigger",
+      "property": "gap",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 107,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats.--single-stat .fk-d-menu__trigger span",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 110,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats.--single-stat .fk-d-menu__trigger span",
+      "property": "color",
+      "value": "var(--primary-700)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 111,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats.--single-stat .fk-d-menu__trigger span",
+      "property": "min-width",
+      "value": "unset",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 112,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats.--single-stat .fk-d-menu__trigger span",
+      "property": "overflow",
+      "value": "visible",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 113,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats .fk-d-menu__trigger",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 119,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats .fk-d-menu__trigger",
+      "property": "flex-direction",
+      "value": "column",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 120,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats .fk-d-menu__trigger",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 121,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats .fk-d-menu__trigger",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 122,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats .fk-d-menu__trigger",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 123,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats .fk-d-menu__trigger",
+      "property": "background",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 124,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats .fk-d-menu__trigger",
+      "property": "min-width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 125,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats .fk-d-menu__trigger .number",
+      "property": "color",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 128,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats .fk-d-menu__trigger .number",
+      "property": "white-space",
+      "value": "nowrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 129,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats .fk-d-menu__trigger .topic-map__stat-label",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 133,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats .fk-d-menu__trigger .topic-map__stat-label",
+      "property": "min-width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 134,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats .fk-d-menu__trigger .topic-map__stat-label",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 135,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats .fk-d-menu__trigger .topic-map__stat-label",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 136,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__contents .topic-map__stats .fk-d-menu__trigger .topic-map__stat-label",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 137,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .controls",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 146,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .controls",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 147,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .controls .btn",
+      "property": "margin-right",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 150,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .controls .btn:last-child",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 153,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__buttons",
+      "property": "margin-left",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 159,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__buttons",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 160,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__buttons",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 161,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map__buttons",
+      "property": "gap",
+      "value": "0.75em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 162,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .view-explainer",
+      "property": "color",
+      "value": "var(--primary-700)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 166,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .view-explainer",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 167,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .estimated-read-time",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 171,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .estimated-read-time",
+      "property": "flex-direction",
+      "value": "column-reverse",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 172,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .estimated-read-time",
+      "property": "align-items",
+      "value": "end",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 173,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .estimated-read-time",
+      "property": "line-height",
+      "value": "1.2",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/topic-map.scss",
+      "line": 174,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .estimated-read-time",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 175,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .estimated-read-time",
+      "property": "white-space",
+      "value": "nowrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 176,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .estimated-read-time span:first-child",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 179,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .estimated-read-time span:first-child",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/topic-map.scss",
+      "line": 180,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map .estimated-read-time",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/topic-map.scss",
+      "line": 184,
+      "column": 7,
+      "atRuleContext": [
+        "@media screen and (width <= 475px)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".archetype-private_message .topic-map",
+      "property": "border",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 105,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map",
+      "property": "padding-block",
+      "value": "var(--pm-padding)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 106,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map",
+      "property": "display",
+      "value": "grid",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 107,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map",
+      "property": "grid-template-areas",
+      "value": "\"contents additional\" \"pm-map pm-map\"",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 108,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map",
+      "property": "grid-template-columns",
+      "value": "1fr auto",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 109,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map",
+      "property": "border-radius",
+      "value": "var(--d-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 110,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map",
+      "property": "padding-left",
+      "value": "calc(\n        48px - var(--pm-padding)\n      )",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/personal-message.scss",
+      "line": 113,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map section",
+      "property": "border",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 119,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map section",
+      "property": "background",
+      "value": "var(--primary-very-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 120,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map section",
+      "property": "padding-inline",
+      "value": "var(--pm-padding)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 121,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map section:first-of-type",
+      "property": "border-radius",
+      "value": "var(--d-border-radius) var(--d-border-radius) 0 0",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 124,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map section:last-of-type",
+      "property": "border-radius",
+      "value": "0 0 var(--d-border-radius) var(--d-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 128,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .map",
+      "property": "padding-top",
+      "value": "var(--pm-padding)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 133,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map__contents",
+      "property": "padding-top",
+      "value": "var(--pm-padding)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 138,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map__contents",
+      "property": "grid-area",
+      "value": "contents",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 142,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants",
+      "property": "margin-bottom",
+      "value": "1.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 155,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 156,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants",
+      "property": "flex-wrap",
+      "value": "wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 157,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 158,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants",
+      "property": "gap",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 159,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants + .controls",
+      "property": "margin-top",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 162,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants.hide-names .user .username",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 168,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants.hide-names .user .group-name",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 168,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 174,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 175,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user",
+      "property": "background",
+      "value": "var(--primary-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 176,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user",
+      "property": "border-radius",
+      "value": "var(--d-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 177,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user",
+      "property": "padding-left",
+      "value": "0.65em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 178,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .user-link",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 183,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .group-link",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 183,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .user-link",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 184,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .group-link",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 184,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .user-link",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 185,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .group-link",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 185,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .user-link:hover",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 188,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .group-link:hover",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/personal-message.scss",
+      "line": 188,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .avatar",
+      "property": "margin-left",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 194,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .d-icon-users",
+      "property": "margin-left",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 194,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .avatar",
+      "property": "margin-right",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 195,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .d-icon-users",
+      "property": "margin-right",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 195,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .username",
+      "property": "margin-right",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 200,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .group-name",
+      "property": "margin-right",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 200,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .username",
+      "property": "padding-block",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 201,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .group-name",
+      "property": "padding-block",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 201,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .username:last-child",
+      "property": "margin-right",
+      "value": "0.65em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 206,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .group-link:last-child",
+      "property": "margin-right",
+      "value": "0.65em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 206,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user:last-child",
+      "property": "margin-right",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 210,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .remove-invited",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 214,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .remove-invited",
+      "property": "flex",
+      "value": "1 0 0px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 215,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .remove-invited",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 216,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .remove-invited",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 217,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .remove-invited",
+      "property": "align-self",
+      "value": "stretch",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 218,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .remove-invited",
+      "property": "padding",
+      "value": "0 0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 219,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .remove-invited",
+      "property": "box-sizing",
+      "value": "border-box",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/personal-message.scss",
+      "line": 220,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".archetype-private_message .topic-map .participants .user .remove-invited",
+      "property": "border-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/personal-message.scss",
+      "line": 221,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-map",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/printer-friendly.scss",
+      "line": 41,
+      "column": 5,
+      "atRuleContext": [
+        "@media print"
+      ],
+      "mixinCalls": [],
+      "important": true
+    }
+  ],
+  "customPropertyDefinitions": []
+}

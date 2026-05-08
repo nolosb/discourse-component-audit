@@ -1,0 +1,13 @@
+{
+  "name": "dropdown-menu",
+  "slug": "d-dropdown-menu",
+  "primaryFiles": [
+    "common/float-kit/d-menu.scss"
+  ],
+  "identitySelectors": [
+    ".dropdown-menu",
+    ".dropdown-menu__item",
+    ".dropdown-menu__divider"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

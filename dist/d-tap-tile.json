@@ -1,0 +1,354 @@
+{
+  "component": {
+    "name": "tap-tile",
+    "slug": "d-tap-tile",
+    "primaryFiles": [
+      "common/components/tap-tile.scss"
+    ],
+    "identitySelectors": [
+      ".tap-tile",
+      ".tap-tile-title",
+      ".tap-tile-date"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.151Z",
+  "summary": {
+    "totalDeclarations": 16,
+    "ownDeclarations": 15,
+    "externalDeclarations": 1,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 13,
+    "uniqueSelectors": 8,
+    "valueBreakdown": {
+      "css-var": 7,
+      "hardcoded": 4,
+      "other": 5
+    },
+    "concernBreakdown": {
+      "resolved": 5,
+      "hardcoded": 5,
+      "structural": 4,
+      "mixed": 2
+    },
+    "mostOverridden": [
+      {
+        "property": "border",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "border",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "border",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 1,
+    "externalFiles": [
+      "common/modal/user-status.scss"
+    ],
+    "ownTokenizedPct": 45,
+    "ownTokenizedCount": 5,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 11,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 1
+  },
+  "own": [
+    {
+      "selector": ".tap-tile-grid .tap-tile",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/tap-tile.scss",
+      "line": 6,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tap-tile-grid .tap-tile",
+      "property": "padding",
+      "value": "0.75em 0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/tap-tile.scss",
+      "line": 7,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tap-tile-grid .tap-tile",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/tap-tile.scss",
+      "line": 8,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tap-tile-grid .tap-tile",
+      "property": "flex-wrap",
+      "value": "wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/tap-tile.scss",
+      "line": 9,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tap-tile-grid .tap-tile",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/tap-tile.scss",
+      "line": 10,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tap-tile-grid .tap-tile",
+      "property": "border-bottom",
+      "value": "1px solid var(--content-border-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/tap-tile.scss",
+      "line": 11,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tap-tile-grid .tap-tile",
+      "property": "cursor",
+      "value": "pointer",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/tap-tile.scss",
+      "line": 12,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tap-tile-grid .tap-tile:first-child",
+      "property": "border-top",
+      "value": "1px solid var(--content-border-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/tap-tile.scss",
+      "line": 15,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tap-tile-grid .tap-tile:hover",
+      "property": "background-color",
+      "value": "var(--d-hover)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/tap-tile.scss",
+      "line": 19,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tap-tile-grid .tap-tile.active",
+      "property": "background-color",
+      "value": "var(--d-selected)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/tap-tile.scss",
+      "line": 23,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tap-tile-grid .tap-tile .d-icon",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/tap-tile.scss",
+      "line": 27,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tap-tile-grid .tap-tile .d-icon",
+      "property": "margin",
+      "value": "0 0.5em 0 0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/tap-tile.scss",
+      "line": 28,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tap-tile-grid .tap-tile .tap-tile-title",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/tap-tile.scss",
+      "line": 32,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tap-tile-grid .tap-tile .tap-tile-title",
+      "property": "margin-right",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/tap-tile.scss",
+      "line": 33,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tap-tile-grid .tap-tile .tap-tile-date",
+      "property": "margin-left",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/tap-tile.scss",
+      "line": 37,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".user-status.modal .d-modal__body .tap-tile:last-child",
+      "property": "border",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/modal/user-status.scss",
+      "line": 24,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

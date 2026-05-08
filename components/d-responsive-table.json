@@ -1,0 +1,15 @@
+{
+  "name": "responsive-table",
+  "slug": "d-responsive-table",
+  "primaryFiles": [
+    "common/components/table-layout.scss"
+  ],
+  "identitySelectors": [
+    ".d-table",
+    ".d-table__header",
+    ".d-table__header-cell",
+    ".d-table__row",
+    ".d-table__cell"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

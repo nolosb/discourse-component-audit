@@ -1,0 +1,194 @@
+{
+  "component": {
+    "name": "text-field",
+    "slug": "d-text-field",
+    "primaryFiles": [],
+    "identitySelectors": [
+      ".ember-text-field"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.153Z",
+  "summary": {
+    "totalDeclarations": 6,
+    "ownDeclarations": 0,
+    "externalDeclarations": 6,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 3,
+    "uniqueSelectors": 5,
+    "valueBreakdown": {
+      "other": 2,
+      "hardcoded": 4
+    },
+    "concernBreakdown": {
+      "hardcoded": 3,
+      "structural": 3
+    },
+    "mostOverridden": [
+      {
+        "property": "order",
+        "count": 3,
+        "fileCount": 1
+      },
+      {
+        "property": "width",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "margin-bottom",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "width",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "width",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 3,
+    "externalFiles": [
+      "common/base/group.scss",
+      "common/base/user.scss",
+      "common/components/bookmark-modal.scss"
+    ],
+    "ownTokenizedPct": 100,
+    "ownTokenizedCount": 0,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 0,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 2
+  },
+  "own": [],
+  "external": [
+    {
+      "selector": ".group-smtp-email-settings .groups-form .ember-text-field",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/group.scss",
+      "line": 334,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".control-group[data-setting-name=\"user-user-fields\"] .user-field.text .controls .ember-text-field",
+      "property": "order",
+      "value": "2",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 1423,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".control-group[data-setting-name=\"user-user-fields\"] .user-field.textarea .controls .ember-text-field",
+      "property": "order",
+      "value": "2",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 1423,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".control-group[data-setting-name=\"user-user-fields\"] .user-field.date .controls .ember-text-field",
+      "property": "order",
+      "value": "2",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 1423,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".bookmark-reminder-modal .d-modal__body .ember-text-field.bookmark-name",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/bookmark-modal.scss",
+      "line": 11,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".bookmark-reminder-modal .d-modal__body .ember-text-field.bookmark-name",
+      "property": "margin-bottom",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/bookmark-modal.scss",
+      "line": 12,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

@@ -1,0 +1,2626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>badges — Style Audit</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; line-height: 1.5; color: #111827; background: #f5f5f7; margin: 0; padding: 40px; max-width: 1200px; margin: 0 auto; }
+    code { font-family: "SF Mono", ui-monospace, monospace; font-size: 12px; }
+    a { color: #2563eb; }
+
+    .header { background: #fff; border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; border: 1px solid #e5e7eb; }
+    .header h1 { margin: 0 0 8px; font-size: 22px; }
+    .meta { color: #6b7280; font-size: 13px; margin: 0; }
+    .scorecard { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #f3f4f6; }
+    .dual-scores { display: flex; gap: 48px; margin-bottom: 20px; }
+    .score-block { flex: 1; }
+    .score-headline { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+    .score-pct { font-size: 36px; font-weight: 800; letter-spacing: -1px; }
+    .score-label { font-size: 14px; color: #6b7280; }
+    .score-detail { font-size: 12px; color: #9ca3af; }
+    .stacked-bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; margin-bottom: 8px; gap: 1px; }
+    .stacked-seg { min-width: 3px; }
+    .stacked-legend { display: flex; flex-wrap: wrap; gap: 12px; }
+    .legend-item { font-size: 11px; color: #6b7280; display: flex; align-items: center; gap: 4px; }
+    .legend-dot { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
+
+    .scope-line { font-size: 12px; color: #6b7280; margin: 14px 0 0; }
+    .scope-line strong { color: #374151; font-weight: 600; }
+    .scope-line span { margin: 0 6px; color: #d1d5db; }
+    .analysis-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+    .analysis-col h4 { margin: 0 0 10px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: #6b7280; display: flex; align-items: center; gap: 6px; }
+    .action-count { font-size: 12px; color: #dc2626; font-weight: 600; }
+    .analysis-note { font-size: 12px; color: #9ca3af; margin: 0 0 10px; }
+
+    .section { background: #fff; border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; border: 1px solid #e5e7eb; }
+    .section h3 { margin: 0 0 16px; font-size: 16px; }
+
+    .selector-group { margin-bottom: 20px; }
+    .selector-group h4, .selector-group h5 { margin: 0 0 6px; font-size: 13px; font-weight: 600; }
+    .selector-group.nested { margin-left: 16px; }
+    .count { font-size: 11px; color: #9ca3af; font-weight: 400; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 8px; table-layout: fixed; }
+    th { text-align: left; padding: 5px 8px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #9ca3af; border-bottom: 2px solid #f3f4f6; }
+    td { padding: 5px 8px; border-bottom: 1px solid #f3f4f6; vertical-align: top; overflow: hidden; text-overflow: ellipsis; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fafafa; }
+    .prop { font-weight: 500; color: #374151; white-space: nowrap; }
+    .val code { color: #4b5563; word-break: break-all; }
+    .file { font-family: monospace; font-size: 11px; color: #6b7280; white-space: nowrap; }
+    .ctx code { font-size: 10px; background: #f3f4f6; padding: 1px 4px; border-radius: 2px; }
+    .imp { font-size: 9px; color: #dc2626; font-weight: 700; }
+    .ctx { font-size: 11px; color: #6b7280; }
+    .ctx-code { font-size: 10px; background: #f3f4f6; padding: 1px 4px; border-radius: 3px; color: #6b7280; }
+    .concern-badge { font-size: 10px; font-weight: 600; padding: 1px 5px; border-radius: 3px; text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; }
+    tr.concern-structural { opacity: 0.55; }
+    tr.concern-definition { opacity: 0.7; }
+    .overrides-table { table-layout: auto; }
+
+    .file-group { margin-bottom: 8px; }
+    .file-group summary { cursor: pointer; padding: 8px 0; border-bottom: 1px solid #f3f4f6; }
+    .file-group summary:hover { color: #2563eb; }
+
+    .overrides-table th { text-align: left; }
+
+    .collapsible { background: #fff; border-radius: 12px; margin-bottom: 24px; border: 1px solid #e5e7eb; }
+    .collapsible > summary { padding: 16px 28px; cursor: pointer; font-size: 16px; font-weight: 600; list-style: none; display: flex; align-items: center; gap: 8px; }
+    .collapsible > summary::-webkit-details-marker { display: none; }
+    .collapsible > summary::before { content: "▶"; font-size: 10px; color: #9ca3af; transition: transform 0.15s; }
+    .collapsible[open] > summary::before { transform: rotate(90deg); }
+    .collapsible > summary:hover { color: #2563eb; }
+    .collapsible-body { padding: 0 28px 24px; }
+    .collapsible-body .sub-section { margin-bottom: 24px; }
+    .collapsible-body .sub-section:last-child { margin-bottom: 0; }
+    .collapsible-body h4 { margin: 0 0 12px; font-size: 14px; font-weight: 600; }
+    .collapsible-body .section { background: none; border: none; border-radius: 0; padding: 0; margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <p style="margin:0 0 12px"><a href="index.html" style="font-size:13px;color:#6b7280;text-decoration:none">&larr; All components</a></p>
+  <div class="header">
+    <h1>badges <span style="color:#6b7280;font-weight:400;font-size:16px">Style Audit</span></h1>
+    <p class="meta"><code>common/components/badges.scss</code> &middot; 5 selectors</p>
+  </div>
+
+  <details class="collapsible" open>
+    <summary>Analysis <span class="count">55% own &middot; 14% coverage</span></summary>
+    <div class="collapsible-body">
+      <div class="scorecard">
+        <div class="dual-scores">
+          <div class="score-block">
+            <div class="score-headline">
+              <span class="score-pct" style="color:#854d0e">55%</span>
+              <span class="score-label">own tokenized</span>
+            </div>
+            <span class="score-detail">29 of 53 own declarations use CSS custom properties</span>
+          </div>
+          <div class="score-block">
+            <div class="score-headline">
+              <span class="score-pct" style="color:#dc2626">14%</span>
+              <span class="score-label">override coverage</span>
+            </div>
+            <span class="score-detail">2 of 20 overridden properties have custom prop definitions</span>
+          </div>
+        </div>
+        <div class="stacked-bar"><div class="stacked-seg" style="width:37%;background:#16a34a" title="resolved: 80"></div><div class="stacked-seg" style="width:2%;background:#d97706" title="scss-var: 1"></div><div class="stacked-seg" style="width:2%;background:#854d0e" title="mixed: 1"></div><div class="stacked-seg" style="width:40%;background:#dc2626" title="hardcoded: 86"></div><div class="stacked-seg" style="width:2%;background:#2563eb" title="review: 1"></div><div class="stacked-seg" style="width:22%;background:#9ca3af" title="structural: 48"></div></div>
+        <div class="stacked-legend"><span class="legend-item"><span class="legend-dot" style="background:#16a34a"></span>resolved 80</span><span class="legend-item"><span class="legend-dot" style="background:#d97706"></span>scss-var 1</span><span class="legend-item"><span class="legend-dot" style="background:#854d0e"></span>mixed 1</span><span class="legend-item"><span class="legend-dot" style="background:#dc2626"></span>hardcoded 86</span><span class="legend-item"><span class="legend-dot" style="background:#2563eb"></span>review 1</span><span class="legend-item"><span class="legend-dot" style="background:#9ca3af"></span>structural 48</span></div>
+        <p class="scope-line"><strong>217</strong> declarations (73 own + 144 external)<span>&middot;</span><strong>36</strong> properties<span>&middot;</span><strong>26</strong> external files<span>&middot;</span><strong>3</strong> custom props defined</p>
+      </div>
+
+      <div class="analysis-columns">
+        <div class="analysis-col">
+          <h4>Most Overridden</h4>
+          <table class="overrides-table"><thead><tr><th>Property</th><th>Count</th><th>Files</th></tr></thead><tbody><tr><td class="prop">color</td><td>21</td><td>9</td></tr><tr><td class="prop">font-size</td><td>15</td><td>10</td></tr><tr><td class="prop">max-width</td><td>12</td><td>7</td></tr><tr><td class="prop">padding</td><td>9</td><td>4</td></tr><tr><td class="prop">font-weight</td><td>8</td><td>4</td></tr><tr><td class="prop">display</td><td>8</td><td>5</td></tr><tr><td class="prop">background-color</td><td>7</td><td>4</td></tr><tr><td class="prop">width</td><td>7</td><td>4</td></tr><tr><td class="prop">top</td><td>7</td><td>5</td></tr><tr><td class="prop">vertical-align</td><td>5</td><td>5</td></tr></tbody></table>
+        </div>
+        <div class="analysis-col">
+          
+            <h4><span class="action-count">18</span> Missing Custom Properties</h4>
+            <table class="overrides-table"><thead><tr><th>Property</th><th>Files</th><th>Values</th></tr></thead><tbody><tr><td class="prop">font-size</td><td>10 files</td><td>6</td></tr>
+<tr><td class="prop">max-width</td><td>7 files</td><td>5</td></tr>
+<tr><td class="prop">top</td><td>5 files</td><td>4</td></tr>
+<tr><td class="prop">background-color</td><td>4 files</td><td>5</td></tr>
+<tr><td class="prop">font-weight</td><td>4 files</td><td>5</td></tr>
+<tr><td class="prop">width</td><td>4 files</td><td>3</td></tr>
+<tr><td class="prop">line-height</td><td>4 files</td><td>4</td></tr>
+<tr><td class="prop">padding</td><td>4 files</td><td>4</td></tr>
+<tr><td class="prop">margin-right</td><td>3 files</td><td>3</td></tr>
+<tr><td class="prop">right</td><td>3 files</td><td>4</td></tr></tbody></table>
+            <p class="analysis-note">+ 8 more</p>
+          
+        </div>
+      </div>
+
+      <div class="sub-section" style="margin-top:24px"><section class="section">
+      <h3>Custom Property Definitions <span class="count">3</span></h3>
+      
+    <div class="selector-group">
+      <h4><code>:root</code> <span class="count">3</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-definition">
+    <td class="prop">--category-badge-title-color</td>
+    <td class="val"><code>currentcolor</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f0f9ff;color:#0c4a6e">Definition</span></td>
+    <td class="file">:58</td>
+  </tr>
+<tr class="concern-definition">
+    <td class="prop">--category-badge-size</td>
+    <td class="val"><code>0.75em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f0f9ff;color:#0c4a6e">Definition</span></td>
+    <td class="file">:8</td>
+  </tr>
+<tr class="concern-definition">
+    <td class="prop">--category-badge-border-radius</td>
+    <td class="val"><code>0px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f0f9ff;color:#0c4a6e">Definition</span></td>
+    <td class="file">:9</td>
+  </tr></tbody>
+</table>
+    </div>
+    </section></div>
+    </div>
+  </details>
+
+  <details class="collapsible">
+    <summary>Own Declarations <span class="count">73</span></summary>
+    <div class="collapsible-body">
+      
+    <div class="selector-group">
+      <h4><code>.badge-category__wrapper</code> <span class="count">8</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-high)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:22</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">overflow</td>
+    <td class="val"><code>hidden</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:23</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">text-overflow</td>
+    <td class="val"><code>ellipsis</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:24</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-down-1)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:25</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">white-space</td>
+    <td class="val"><code>nowrap</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:26</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">position</td>
+    <td class="val"><code>relative</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:27</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>inline-flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:28</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>baseline</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:29</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-category__wrapper .badge-category</code> <span class="count">5</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>inline-flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:32</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>baseline</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:33</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">gap</td>
+    <td class="val"><code>0.33em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:34</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-high)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:35</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">min-width</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:36</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-category__wrapper .badge-category.--style-square::before</code> <span class="count">6</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">content</td>
+    <td class="val"><code>&quot;&quot;</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:39</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">background</td>
+    <td class="val"><code>var(--category-badge-color)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:40</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">flex</td>
+    <td class="val"><code>0 0 auto</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:41</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">width</td>
+    <td class="val"><code>var(--category-badge-size)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:42</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">height</td>
+    <td class="val"><code>var(--category-badge-size)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:43</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">border-radius</td>
+    <td class="val"><code>var(--category-badge-border-radius)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:44</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-category__wrapper .badge-category.--style-emoji</code> <span class="count">2</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:49</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:50</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-category__wrapper .badge-category.--style-icon</code> <span class="count">2</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:49</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:50</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-category__wrapper .badge-category.--style-emoji .d-icon</code> <span class="count">2</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>0.74em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:54</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">height</td>
+    <td class="val"><code>0.74em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:55</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-category__wrapper .badge-category.--style-emoji .emoji</code> <span class="count">2</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>0.74em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:54</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">height</td>
+    <td class="val"><code>0.74em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:55</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-category__wrapper .badge-category.--style-icon .d-icon</code> <span class="count">3</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>0.74em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:54</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">height</td>
+    <td class="val"><code>0.74em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:55</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--category-badge-color)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:60</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-category__wrapper .badge-category.--style-icon .emoji</code> <span class="count">2</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>0.74em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:54</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">height</td>
+    <td class="val"><code>0.74em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:55</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-category__wrapper .badge-category.--style-icon .d-icon + .d-icon</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-medium)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:64</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-category__wrapper .badge-category__name</code> <span class="count">4</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--category-badge-title-color)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:68</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">text-overflow</td>
+    <td class="val"><code>ellipsis</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:69</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">overflow</td>
+    <td class="val"><code>hidden</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:70</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">min-width</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:71</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-category__wrapper .badge-category.--has-parent::before</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background</td>
+    <td class="val"><code>linear-gradient(
+          90deg,
+          var(--parent-category-badge-color) 50%,
+          var(--category-badge-color) 50%
+        )</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:76</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.extra-info-wrapper .badge-category__wrapper .badge-category</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--header_primary-high)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:85</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-category__wrapper .d-icon</code> <span class="count">3</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>0.74em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:90</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">height</td>
+    <td class="val"><code>0.74em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:91</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-medium)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:92</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-notification</code> <span class="count">9</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">position</td>
+    <td class="val"><code>relative</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:100</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">top</td>
+    <td class="val"><code>-2px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:101</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0.21em 0.42em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:102</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">min-width</td>
+    <td class="val"><code>0.5em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:103</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--secondary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:104</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-down-2)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:105</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">line-height</td>
+    <td class="val"><code>var(--line-height-small)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:106</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">text-align</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:107</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">background-color</td>
+    <td class="val"><code>var(--primary-low-mid-or-secondary-low)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:108</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-notification[href]</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--secondary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:111</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-notification:hover</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--secondary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:115</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-notification.unread-posts</code> <span class="count">3</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background-color</td>
+    <td class="val"><code>var(--tertiary-med-or-tertiary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:120</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--secondary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:121</td>
+  </tr>
+<tr class="concern-review">
+    <td class="prop">font-weight</td>
+    <td class="val"><code>dark-light-choose(normal, bold)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dbeafe;color:#1e40af">Review</span></td>
+    <td class="file">:122</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-notification.new-topic</code> <span class="count">2</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">background-color</td>
+    <td class="val"><code>transparent</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:126</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding-left</td>
+    <td class="val"><code>0.15em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:127</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-notification.new-topic::before</code> <span class="count">6</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">content</td>
+    <td class="val"><code>&quot;&quot;</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:131</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">background</td>
+    <td class="val"><code>var(--tertiary-med-or-tertiary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:132</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>inline-block</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:133</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">height</td>
+    <td class="val"><code>8px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:134</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>8px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:135</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">border-radius</td>
+    <td class="val"><code>50%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:136</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-posts</code> <span class="count">3</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">font-weight</td>
+    <td class="val"><code>normal</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:143</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-0)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:144</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">line-height</td>
+    <td class="val"><code>var(--line-height-small)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:145</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-posts[href]</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-med-or-secondary-med)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:148</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.badge-group</code> <span class="count">5</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>2px 5px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:156</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:157</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">background-color</td>
+    <td class="val"><code>var(--primary-low)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:158</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">border-color</td>
+    <td class="val"><code>var(--primary-low)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:159</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-down-1)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:160</td>
+  </tr></tbody>
+</table>
+    </div>
+    </div>
+  </details>
+
+  <details class="collapsible">
+    <summary>External Declarations <span class="count">144 from 26 files</span></summary>
+    <div class="collapsible-body">
+      
+    <details class="file-group">
+      <summary><strong>common/base/_topic-list.scss</strong> <span class="count">37 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.category-heading__content .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-up-3)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:41</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.category-heading__content .badge-category__name</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">font-weight</td>
+    <td class="val"><code>bold</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:45</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:46</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.topic-list-item.visited a.title:not(.badge-notification)</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--title-color--read)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:87</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-weight</td>
+    <td class="val"><code>var(--topic-title-font-weight--visited)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:88</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.latest-topic-list-item.visited a.title:not(.badge-notification)</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--title-color--read)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:87</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-weight</td>
+    <td class="val"><code>var(--topic-title-font-weight--visited)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:88</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.category-topic-link.visited a.title:not(.badge-notification)</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--title-color--read)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:87</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-weight</td>
+    <td class="val"><code>var(--topic-title-font-weight--visited)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:88</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.anon .topic-list-main-link a.title:visited:not(.badge-notification)</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--title-color--read)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:121</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.topic-list-main-link a.title.visited:not(.badge-notification)</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--title-color--read)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:126</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.topic-list .num .badge-posts</code> <span class="count">4</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">font-weight</td>
+    <td class="val"><code>700</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:332</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">color</td>
+    <td class="val"><code>inherit</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:333</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>inline-block</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:334</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>15px 5px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:335</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.topic-list .badge-notification</code> <span class="count">6</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">position</td>
+    <td class="val"><code>relative</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:818</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>inline-block</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:819</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">top</td>
+    <td class="val"><code>-1px</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:820</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-0)</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:821</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">line-height</td>
+    <td class="val"><code>var(--line-height-small)</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:822</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0.15em 0.4em 0.2em 0.4em</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:823</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.topic-list .category-topic-link td.num .badge-notification</code> <span class="count">6</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">position</td>
+    <td class="val"><code>relative</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:818</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>inline-block</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:819</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">top</td>
+    <td class="val"><code>-1px</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:820</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-0)</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:821</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">line-height</td>
+    <td class="val"><code>var(--line-height-small)</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:822</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0.15em 0.4em 0.2em 0.4em</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:823</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.topic-list .badge-notification .d-icon</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--secondary)</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:826</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.topic-list .category-topic-link td.num .badge-notification .d-icon</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--secondary)</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:826</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.topic-list .badge-notification.new-topic::before</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">margin-right</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:830</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.topic-list .category-topic-link td.num .badge-notification.new-topic::before</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">margin-right</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:830</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.topic-list .badge-notification.new-topic</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:834</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.topic-list .category-topic-link td.num .badge-notification.new-topic</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:834</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.topic-list .category-topic-link td.num .badge-notification.unread-posts</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--secondary)</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:840</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.topic-list .topic-item-stats__category-tags .badge-category__wrapper</code> <span class="count">3</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">vertical-align</td>
+    <td class="val"><code>bottom</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:875</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">margin-right</td>
+    <td class="val"><code>0.5em</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:876</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">max-width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:877</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/categories-topic-list.scss</strong> <span class="count">2 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.anon .latest-topic-list-item .main-link a.title:visited:not(.badge-notification)</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-medium)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:54</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.latest-topic-list-item .main-link a.title.visited:not(.badge-notification)</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-medium)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:59</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/category-list.scss</strong> <span class="count">15 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.category-list .topics .badge-notification</code> <span class="count">5</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">background-color</td>
+    <td class="val"><code>transparent</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.from(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:35</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-med-or-secondary-high)</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.from(sm)</code></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:36</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>block</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.from(sm)</code></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:53</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">text-align</td>
+    <td class="val"><code>right</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.from(sm)</code></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:54</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding-right</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.from(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:55</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.category-list .category .badge-notification</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">background-color</td>
+    <td class="val"><code>transparent</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.from(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:35</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-med-or-secondary-high)</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.from(sm)</code></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:36</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.category-list .topics .badge-notification:first-child</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">margin-top</td>
+    <td class="val"><code>0.75em</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.from(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:58</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.category-list .subcategories .category__badges .badge-notification</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">top</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.from(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:86</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.from(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:87</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.category-list .subcategories .badge-notification.unread-posts</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>block</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.from(sm)</code></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:92</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.from(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:93</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.category-boxes .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">max-width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:314</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.category-boxes-with-topics .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">max-width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:314</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.category-boxes .subcategories .subcategory .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">overflow</td>
+    <td class="val"><code>hidden</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:448</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/discourse.scss</strong> <span class="count">1 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.unread-high-priority-notifications.badge-notification[href]</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--secondary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:661</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/faqs.scss</strong> <span class="count">1 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.about-page .body-page .about.category-moderators .badge-category__wrapper .badge-category</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:11</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/header.scss</strong> <span class="count">13 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.d-header-icons .badge-notification</code> <span class="count">6</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-mixed">
+    <td class="prop">border</td>
+    <td class="val"><code>2px solid var(--header_background)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fef9c3;color:#854d0e">Mixed</span></td>
+    <td class="file">:228</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">position</td>
+    <td class="val"><code>absolute</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:229</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">top</td>
+    <td class="val"><code>-4px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:230</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">min-width</td>
+    <td class="val"><code>0.6em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:231</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">left</td>
+    <td class="val"><code>auto</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:232</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">right</td>
+    <td class="val"><code>-3px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:233</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.d-header-icons .badge-notification.with-icon.new-pms</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background-color</td>
+    <td class="val"><code>var(--success)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:237</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.d-header-icons .badge-notification.with-icon.new-reviewables</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background-color</td>
+    <td class="val"><code>var(--danger)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:241</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.d-header-icons .badge-notification.with-icon .d-icon</code> <span class="count">3</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--secondary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:245</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-down-1)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:246</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>1em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:247</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.extra-info-wrapper .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">min-width</td>
+    <td class="val"><code>2.75em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:422</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.extra-info-wrapper .badge-category__wrapper .badge-category</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--header_primary-high)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:427</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/menu-panel.scss</strong> <span class="count">14 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.menu-panel li.category-link .badge-notification</code> <span class="count">6</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-med-or-secondary-med)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:151</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">background-color</td>
+    <td class="val"><code>transparent</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:152</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>inline</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:153</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:154</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-down-1)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:155</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">line-height</td>
+    <td class="val"><code>var(--line-height-large)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:156</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.menu-panel .badge-notification</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">vertical-align</td>
+    <td class="val"><code>text-bottom</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:244</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.user-menu.revamped .tabs-list .btn .badge-notification</code> <span class="count">7</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background-color</td>
+    <td class="val"><code>var(--tertiary-med-or-tertiary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:312</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">position</td>
+    <td class="val"><code>absolute</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:313</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">right</td>
+    <td class="val"><code>6px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:314</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">top</td>
+    <td class="val"><code>6px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:315</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-down-3)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:316</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">right</td>
+    <td class="val"><code>3px</code></td>
+    <td class="ctx"><code class="ctx-code">@media screen and (height &lt;= 400px)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:320</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">top</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"><code class="ctx-code">@media screen and (height &lt;= 400px)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:321</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/modal.scss</strong> <span class="count">1 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.reply-where-modal .btn .topic-title__bottom-line .badge-category__name</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--text-color)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:536</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/not-found.scss</strong> <span class="count">1 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.not-found-topic a:not(.badge-category__wrapper)</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">flex-basis</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:154</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/reorder-categories.scss</strong> <span class="count">2 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.reorder-categories .badge-category__wrapper .badge-category</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">max-width</td>
+    <td class="val"><code>20em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:27</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">max-width</td>
+    <td class="val"><code>30vw</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:30</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/review.scss</strong> <span class="count">1 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.review-item__meta-content .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>block</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:215</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/reviewables.scss</strong> <span class="count">3 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.reviewable-item .post-topic .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">margin-left</td>
+    <td class="val"><code>0.25em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:463</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.reviewable-scores .badge-notification</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">line-height</td>
+    <td class="val"><code>var(--line-height-medium)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:605</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">vertical-align</td>
+    <td class="val"><code>text-top</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:606</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/search-menu.scss</strong> <span class="count">4 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.search-menu .search-result-category .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-0)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:253</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.search-menu-container .search-result-category .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-0)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:253</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.search-menu .search-result-category .badge-category__wrapper .badge-category</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">gap</td>
+    <td class="val"><code>var(--space-2)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:256</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.search-menu-container .search-result-category .badge-category__wrapper .badge-category</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">gap</td>
+    <td class="val"><code>var(--space-2)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:256</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/search.scss</strong> <span class="count">7 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.search-container .search-filters .advanced-filters__toggle .badge-notification</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background</td>
+    <td class="val"><code>var(--tertiary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:206</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">top</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:207</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.search-container .search-filters .advanced-filters__toggle:hover .badge-notification</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background</td>
+    <td class="val"><code>var(--secondary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:212</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-high)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:213</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.search-category .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">margin-left</td>
+    <td class="val"><code>0.5em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:303</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.search-category .badge-category__wrapper:first-child</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">margin-left</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:306</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.fps-result .search-category .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">max-width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:370</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/sidebar-section-link.scss</strong> <span class="count">5 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.sidebar-section-link-wrapper .sidebar-section-link .sidebar-section-link-content-text .badge-category__wrapper</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">font-size</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:142</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:143</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.sidebar-section-link-wrapper .sidebar-section-link .sidebar-section-link-content-text .badge-category__wrapper .badge-category__name</code> <span class="count">3</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">white-space</td>
+    <td class="val"><code>nowrap</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:146</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">overflow</td>
+    <td class="val"><code>hidden</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:147</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">text-overflow</td>
+    <td class="val"><code>ellipsis</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:148</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/topic-post.scss</strong> <span class="count">4 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>aside.quote .title .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">align-self</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:809</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>aside.quote .quote-title__text-content .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">align-self</td>
+    <td class="val"><code>auto</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:833</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.large-image-placeholder &gt; a &gt; span.badge-notification</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">vertical-align</td>
+    <td class="val"><code>unset</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:1609</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>span.badge-posts</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">margin-right</td>
+    <td class="val"><code>5px</code></td>
+    <td class="ctx"><code class="ctx-code">@include viewport.until(sm)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:2231</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/uc-modernize-foundation-theme.scss</strong> <span class="count">4 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.uc-modernize-foundation-theme .topic-list .num .badge-posts</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">font-weight</td>
+    <td class="val"><code>500</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:230</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.uc-modernize-foundation-theme .d-header-icons .badge-notification</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">right</td>
+    <td class="val"><code>-6px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:310</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0.2em 0.4em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:311</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.uc-modernize-foundation-theme .badge-category__wrapper .badge-category</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:338</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/base/uc-simplified-category-setup-edit-categories.scss</strong> <span class="count">6 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.uc-enable-simplified-category-creation div.edit-category .form-kit__conditional-display-content:has(.badge-category__wrapper)</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">justify-content</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:56</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.uc-enable-simplified-category-creation .edit-category-title-text:has(.badge-category__wrapper) .edit-category-static-title</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">position</td>
+    <td class="val"><code>absolute</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:169</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-down-3)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:170</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.uc-enable-simplified-category-creation .edit-category-title-text .badge-category__wrapper</code> <span class="count">3</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">font-weight</td>
+    <td class="val"><code>normal</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:175</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-up-2)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:176</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">margin-top</td>
+    <td class="val"><code>var(--space-5)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:177</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/components/filter-navigation.scss</strong> <span class="count">1 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.filter-navigation__tip-item .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-0)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:39</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/components/more-topics.scss</strong> <span class="count">5 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.more-topics__container .suggested-topics-message .badge-category__wrapper .badge-category</code> <span class="count">5</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>inline</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:97</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">vertical-align</td>
+    <td class="val"><code>baseline</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:98</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">margin-right</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:99</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">line-height</td>
+    <td class="val"><code>0.8</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:100</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">max-width</td>
+    <td class="val"><code>150px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:101</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/components/post-list.scss</strong> <span class="count">1 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.post-list .post-list-item__details .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:54</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/components/sidebar/edit-navigation-menu/categories-modal.scss</strong> <span class="count">1 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.sidebar-categories-form .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-0)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:56</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/components/user-stream-item.scss</strong> <span class="count">8 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.user-stream .item .post-list-item__details .badge-category__wrapper</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>auto</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:42</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">max-width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:43</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.user-stream .item .user-stream-item__details .badge-category__wrapper</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>auto</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:42</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">max-width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:43</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.user-stream .user-stream-item .post-list-item__details .badge-category__wrapper</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>auto</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:42</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">max-width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:43</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.user-stream .user-stream-item .user-stream-item__details .badge-category__wrapper</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>auto</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:42</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">max-width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:43</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/select-kit/category-drop.scss</strong> <span class="count">3 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.select-kit.combo-box.category-drop .badge-category__wrapper</code> <span class="count">3</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-0)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:9</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">font-weight</td>
+    <td class="val"><code>normal</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:10</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">max-width</td>
+    <td class="val"><code>260px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:11</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>common/select-kit/tag-category-admin-dropdown.scss</strong> <span class="count">1 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.tag-category-admin-dropdown .badge-category__wrapper</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-0)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:3</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+
+    <details class="file-group">
+      <summary><strong>wcag.scss</strong> <span class="count">3 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>html .badge-notification</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background</td>
+    <td class="val"><code>var(--primary-medium)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:113</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>html .badge-notification.unread-posts</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background</td>
+    <td class="val"><code>var(--tertiary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:117</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>html .user-menu.revamped .tabs-list .btn .badge-notification</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-scss-var">
+    <td class="prop">background-color</td>
+    <td class="val"><code>dark-light-choose($tertiary-high, $tertiary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fef3c7;color:#92400e">SCSS var</span></td>
+    <td class="file">:245</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+    </div>
+  </details>
+</body>
+</html>

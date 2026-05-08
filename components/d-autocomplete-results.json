@@ -1,0 +1,13 @@
+{
+  "name": "autocomplete-results",
+  "slug": "d-autocomplete-results",
+  "primaryFiles": [
+    "common/components/d-autocomplete.scss",
+    "common/components/autocomplete.scss"
+  ],
+  "identitySelectors": [
+    ".d-autocomplete",
+    ".autocomplete"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

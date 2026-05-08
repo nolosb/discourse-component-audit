@@ -1,0 +1,853 @@
+{
+  "component": {
+    "name": "select",
+    "slug": "d-select",
+    "primaryFiles": [
+      "common/components/d-select.scss"
+    ],
+    "identitySelectors": [
+      ".d-select"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.142Z",
+  "summary": {
+    "totalDeclarations": 44,
+    "ownDeclarations": 42,
+    "externalDeclarations": 2,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 20,
+    "uniqueSelectors": 12,
+    "valueBreakdown": {
+      "other": 12,
+      "hardcoded": 9,
+      "css-var": 22,
+      "scss-var": 1
+    },
+    "concernBreakdown": {
+      "hardcoded": 17,
+      "resolved": 17,
+      "mixed": 5,
+      "structural": 4,
+      "scss-var": 1
+    },
+    "mostOverridden": [
+      {
+        "property": "flex",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "width",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 1,
+    "externalFiles": [
+      "admin/color_palettes.scss"
+    ],
+    "ownTokenizedPct": 44,
+    "ownTokenizedCount": 17,
+    "ownScssVarCount": 1,
+    "ownThemedTotal": 39,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 1
+  },
+  "own": [
+    {
+      "selector": ".d-select",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 2,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select",
+      "property": "height",
+      "value": "2.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 3,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select",
+      "property": "background",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 4,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select",
+      "property": "border",
+      "value": "1px solid var(--primary-400)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/d-select.scss",
+      "line": 5,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select",
+      "property": "border-radius",
+      "value": "var(--d-input-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 6,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select",
+      "property": "box-sizing",
+      "value": "border-box",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-select.scss",
+      "line": 7,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 8,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select",
+      "property": "padding",
+      "value": "0 2em 0 0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 9,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-select",
+      "property": "appearance",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-select.scss",
+      "line": 10,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select",
+      "property": "background-image",
+      "value": "svg-uri(\n    \"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$primary-medium}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m2 5 6 6 6-6'/></svg>\"\n  )",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "interpolation"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "common/components/d-select.scss",
+      "line": 11,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select",
+      "property": "background-repeat",
+      "value": "no-repeat",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 14,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select",
+      "property": "background-position",
+      "value": "right 0.5rem center",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 15,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select",
+      "property": "background-size",
+      "value": "16px 12px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 16,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select",
+      "property": "cursor",
+      "value": "pointer",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-select.scss",
+      "line": 17,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select:focus:not(:disabled)",
+      "property": "background-color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 25,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-select:focus-visible:not(:disabled)",
+      "property": "background-color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 25,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-select:focus:focus-visible:not(:disabled)",
+      "property": "background-color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 25,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-select:active:not(:disabled)",
+      "property": "background-color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 25,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-select:focus:not(:disabled)",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 26,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-select:focus-visible:not(:disabled)",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 26,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-select:focus:focus-visible:not(:disabled)",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 26,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-select:active:not(:disabled)",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 26,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-select:focus:not(:disabled)",
+      "property": "border-color",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 27,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select:focus-visible:not(:disabled)",
+      "property": "border-color",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 27,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select:focus:focus-visible:not(:disabled)",
+      "property": "border-color",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 27,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select:active:not(:disabled)",
+      "property": "border-color",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 27,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select:focus:not(:disabled)",
+      "property": "outline",
+      "value": "2px solid var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/d-select.scss",
+      "line": 28,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select:focus-visible:not(:disabled)",
+      "property": "outline",
+      "value": "2px solid var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/d-select.scss",
+      "line": 28,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select:focus:focus-visible:not(:disabled)",
+      "property": "outline",
+      "value": "2px solid var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/d-select.scss",
+      "line": 28,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select:active:not(:disabled)",
+      "property": "outline",
+      "value": "2px solid var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/d-select.scss",
+      "line": 28,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select:focus:not(:disabled)",
+      "property": "outline-offset",
+      "value": "-2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 29,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select:focus-visible:not(:disabled)",
+      "property": "outline-offset",
+      "value": "-2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 29,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select:focus:focus-visible:not(:disabled)",
+      "property": "outline-offset",
+      "value": "-2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 29,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select:active:not(:disabled)",
+      "property": "outline-offset",
+      "value": "-2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 29,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-select:focus:not(:disabled) .d-icon",
+      "property": "color",
+      "value": "inherit",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 32,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-select:focus-visible:not(:disabled) .d-icon",
+      "property": "color",
+      "value": "inherit",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 32,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-select:focus:focus-visible:not(:disabled) .d-icon",
+      "property": "color",
+      "value": "inherit",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 32,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-select:active:not(:disabled) .d-icon",
+      "property": "color",
+      "value": "inherit",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 32,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".discourse-no-touch .d-select:hover:not(:disabled)",
+      "property": "background-color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 39,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .d-select:hover:not(:disabled)",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 40,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .d-select:hover:not(:disabled)",
+      "property": "border-color",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-select.scss",
+      "line": 41,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .d-select:hover:not(:disabled) .d-icon",
+      "property": "color",
+      "value": "inherit",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-select.scss",
+      "line": 44,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".color-palette__filters .d-select",
+      "property": "flex",
+      "value": "1 1 auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/color_palettes.scss",
+      "line": 104,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-palette__filters .d-select",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/color_palettes.scss",
+      "line": 105,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

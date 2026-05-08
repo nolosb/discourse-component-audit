@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>multi-select — Style Audit</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; line-height: 1.5; color: #111827; background: #f5f5f7; margin: 0; padding: 40px; max-width: 1200px; margin: 0 auto; }
+    code { font-family: "SF Mono", ui-monospace, monospace; font-size: 12px; }
+    a { color: #2563eb; }
+
+    .header { background: #fff; border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; border: 1px solid #e5e7eb; }
+    .header h1 { margin: 0 0 8px; font-size: 22px; }
+    .meta { color: #6b7280; font-size: 13px; margin: 0; }
+    .scorecard { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #f3f4f6; }
+    .dual-scores { display: flex; gap: 48px; margin-bottom: 20px; }
+    .score-block { flex: 1; }
+    .score-headline { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+    .score-pct { font-size: 36px; font-weight: 800; letter-spacing: -1px; }
+    .score-label { font-size: 14px; color: #6b7280; }
+    .score-detail { font-size: 12px; color: #9ca3af; }
+    .stacked-bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; margin-bottom: 8px; gap: 1px; }
+    .stacked-seg { min-width: 3px; }
+    .stacked-legend { display: flex; flex-wrap: wrap; gap: 12px; }
+    .legend-item { font-size: 11px; color: #6b7280; display: flex; align-items: center; gap: 4px; }
+    .legend-dot { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
+
+    .scope-line { font-size: 12px; color: #6b7280; margin: 14px 0 0; }
+    .scope-line strong { color: #374151; font-weight: 600; }
+    .scope-line span { margin: 0 6px; color: #d1d5db; }
+    .analysis-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+    .analysis-col h4 { margin: 0 0 10px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: #6b7280; display: flex; align-items: center; gap: 6px; }
+    .action-count { font-size: 12px; color: #dc2626; font-weight: 600; }
+    .analysis-note { font-size: 12px; color: #9ca3af; margin: 0 0 10px; }
+
+    .section { background: #fff; border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; border: 1px solid #e5e7eb; }
+    .section h3 { margin: 0 0 16px; font-size: 16px; }
+
+    .selector-group { margin-bottom: 20px; }
+    .selector-group h4, .selector-group h5 { margin: 0 0 6px; font-size: 13px; font-weight: 600; }
+    .selector-group.nested { margin-left: 16px; }
+    .count { font-size: 11px; color: #9ca3af; font-weight: 400; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 8px; table-layout: fixed; }
+    th { text-align: left; padding: 5px 8px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #9ca3af; border-bottom: 2px solid #f3f4f6; }
+    td { padding: 5px 8px; border-bottom: 1px solid #f3f4f6; vertical-align: top; overflow: hidden; text-overflow: ellipsis; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fafafa; }
+    .prop { font-weight: 500; color: #374151; white-space: nowrap; }
+    .val code { color: #4b5563; word-break: break-all; }
+    .file { font-family: monospace; font-size: 11px; color: #6b7280; white-space: nowrap; }
+    .ctx code { font-size: 10px; background: #f3f4f6; padding: 1px 4px; border-radius: 2px; }
+    .imp { font-size: 9px; color: #dc2626; font-weight: 700; }
+    .ctx { font-size: 11px; color: #6b7280; }
+    .ctx-code { font-size: 10px; background: #f3f4f6; padding: 1px 4px; border-radius: 3px; color: #6b7280; }
+    .concern-badge { font-size: 10px; font-weight: 600; padding: 1px 5px; border-radius: 3px; text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; }
+    tr.concern-structural { opacity: 0.55; }
+    tr.concern-definition { opacity: 0.7; }
+    .overrides-table { table-layout: auto; }
+
+    .file-group { margin-bottom: 8px; }
+    .file-group summary { cursor: pointer; padding: 8px 0; border-bottom: 1px solid #f3f4f6; }
+    .file-group summary:hover { color: #2563eb; }
+
+    .overrides-table th { text-align: left; }
+
+    .collapsible { background: #fff; border-radius: 12px; margin-bottom: 24px; border: 1px solid #e5e7eb; }
+    .collapsible > summary { padding: 16px 28px; cursor: pointer; font-size: 16px; font-weight: 600; list-style: none; display: flex; align-items: center; gap: 8px; }
+    .collapsible > summary::-webkit-details-marker { display: none; }
+    .collapsible > summary::before { content: "▶"; font-size: 10px; color: #9ca3af; transition: transform 0.15s; }
+    .collapsible[open] > summary::before { transform: rotate(90deg); }
+    .collapsible > summary:hover { color: #2563eb; }
+    .collapsible-body { padding: 0 28px 24px; }
+    .collapsible-body .sub-section { margin-bottom: 24px; }
+    .collapsible-body .sub-section:last-child { margin-bottom: 0; }
+    .collapsible-body h4 { margin: 0 0 12px; font-size: 14px; font-weight: 600; }
+    .collapsible-body .section { background: none; border: none; border-radius: 0; padding: 0; margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <p style="margin:0 0 12px"><a href="index.html" style="font-size:13px;color:#6b7280;text-decoration:none">&larr; All components</a></p>
+  <div class="header">
+    <h1>multi-select <span style="color:#6b7280;font-weight:400;font-size:16px">Style Audit</span></h1>
+    <p class="meta"><code>common/components/d-multi-select.scss</code> &middot; 8 selectors</p>
+  </div>
+
+  <details class="collapsible" open>
+    <summary>Analysis <span class="count">35% own &middot; 0% coverage</span></summary>
+    <div class="collapsible-body">
+      <div class="scorecard">
+        <div class="dual-scores">
+          <div class="score-block">
+            <div class="score-headline">
+              <span class="score-pct" style="color:#854d0e">35%</span>
+              <span class="score-label">own tokenized</span>
+            </div>
+            <span class="score-detail">11 of 31 own declarations use CSS custom properties</span>
+          </div>
+          <div class="score-block">
+            <div class="score-headline">
+              <span class="score-pct" style="color:#dc2626">0%</span>
+              <span class="score-label">override coverage</span>
+            </div>
+            <span class="score-detail">0 of 2 overridden properties have custom prop definitions</span>
+          </div>
+        </div>
+        <div class="stacked-bar"><div class="stacked-seg" style="width:22%;background:#16a34a" title="resolved: 11"></div><div class="stacked-seg" style="width:2%;background:#854d0e" title="mixed: 1"></div><div class="stacked-seg" style="width:42%;background:#dc2626" title="hardcoded: 21"></div><div class="stacked-seg" style="width:34%;background:#9ca3af" title="structural: 17"></div></div>
+        <div class="stacked-legend"><span class="legend-item"><span class="legend-dot" style="background:#16a34a"></span>resolved 11</span><span class="legend-item"><span class="legend-dot" style="background:#854d0e"></span>mixed 1</span><span class="legend-item"><span class="legend-dot" style="background:#dc2626"></span>hardcoded 21</span><span class="legend-item"><span class="legend-dot" style="background:#9ca3af"></span>structural 17</span></div>
+        <p class="scope-line"><strong>50</strong> declarations (48 own + 2 external)<span>&middot;</span><strong>20</strong> properties<span>&middot;</span><strong>1</strong> external files<span>&middot;</span><strong>0</strong> custom props defined</p>
+      </div>
+
+      <div class="analysis-columns">
+        <div class="analysis-col">
+          <h4>Most Overridden</h4>
+          <table class="overrides-table"><thead><tr><th>Property</th><th>Count</th><th>Files</th></tr></thead><tbody><tr><td class="prop">max-width</td><td>1</td><td>1</td></tr><tr><td class="prop">width</td><td>1</td><td>1</td></tr></tbody></table>
+        </div>
+        <div class="analysis-col">
+          
+            <h4><span class="action-count">2</span> Missing Custom Properties</h4>
+            <table class="overrides-table"><thead><tr><th>Property</th><th>Files</th><th>Values</th></tr></thead><tbody><tr><td class="prop">max-width</td><td>1 files</td><td>1</td></tr>
+<tr><td class="prop">width</td><td>1 files</td><td>1</td></tr></tbody></table>
+            
+          
+        </div>
+      </div>
+
+      
+    </div>
+  </details>
+
+  <details class="collapsible">
+    <summary>Own Declarations <span class="count">48</span></summary>
+    <div class="collapsible-body">
+      
+    <div class="selector-group">
+      <h4><code>.d-multi-select-trigger</code> <span class="count">10</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>inline-flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:3</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">border-radius</td>
+    <td class="val"><code>var(--d-border-radius)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:4</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">cursor</td>
+    <td class="val"><code>pointer</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:5</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:6</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">gap</td>
+    <td class="val"><code>0.25em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:7</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">line-height</td>
+    <td class="val"><code>normal</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:8</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">box-sizing</td>
+    <td class="val"><code>border-box</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:9</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>200px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:10</td>
+  </tr>
+<tr class="concern-mixed">
+    <td class="prop">border</td>
+    <td class="val"><code>1px solid var(--primary-medium)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fef9c3;color:#854d0e">Mixed</span></td>
+    <td class="file">:11</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">justify-content</td>
+    <td class="val"><code>space-between</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:12</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-multi-select-trigger__selection</code> <span class="count">4</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:20</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">flex-wrap</td>
+    <td class="val"><code>wrap</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:21</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">gap</td>
+    <td class="val"><code>0.25em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:22</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">height</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:23</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-multi-select-trigger__label</code> <span class="count">3</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-0)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:27</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">line-height</td>
+    <td class="val"><code>normal</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:28</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-medium)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:29</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-multi-select__search-input</code> <span class="count">4</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">border <span class="imp">!important</span></td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:38</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">margin <span class="imp">!important</span></td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:39</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">outline <span class="imp">!important</span></td>
+    <td class="val"><code>none</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:40</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding <span class="imp">!important</span></td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:41</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-multi-select__search-container</code> <span class="count">4</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:45</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:46</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0.5em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:47</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">gap</td>
+    <td class="val"><code>0.5em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:48</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-multi-select__search-container .d-icon-magnifying-glass</code> <span class="count">2</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-high)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:51</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-down-1)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:52</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-multi-select__search-results</code> <span class="count">5</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:57</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">flex-direction</td>
+    <td class="val"><code>column</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:58</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0.25em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:59</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">gap</td>
+    <td class="val"><code>0.25em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:60</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">height</td>
+    <td class="val"><code>150px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:61</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-multi-select-trigger__selected-item</code> <span class="count">7</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">box-sizing</td>
+    <td class="val"><code>border-box</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:69</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">border</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:70</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-down-1)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:71</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:72</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:73</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">border-radius</td>
+    <td class="val"><code>var(--d-border-radius)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:74</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">background-color</td>
+    <td class="val"><code>var(--primary-low)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:75</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-multi-select-trigger__selected-item:hover</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background-color</td>
+    <td class="val"><code>var(--primary-low-mid)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:78</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-multi-select-trigger__selected-item .d-multi-select-trigger__selection-label</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">max-width</td>
+    <td class="val"><code>3.5em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:83</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-multi-select__result</code> <span class="count">6</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0.25em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:92</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">border-radius</td>
+    <td class="val"><code>var(--d-border-radius)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:93</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">cursor</td>
+    <td class="val"><code>pointer</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:94</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">gap</td>
+    <td class="val"><code>0.5em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:95</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:96</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:97</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-multi-select__result.--preselected</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background-color</td>
+    <td class="val"><code>var(--primary-low)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:100</td>
+  </tr></tbody>
+</table>
+    </div>
+    </div>
+  </details>
+
+  <details class="collapsible">
+    <summary>External Declarations <span class="count">2 from 1 files</span></summary>
+    <div class="collapsible-body">
+      
+    <details class="file-group">
+      <summary><strong>common/components/group-selector.scss</strong> <span class="count">2 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.group-selector-wrapper .d-multi-select-trigger__selected-item &gt; .d-multi-select-trigger__selection-label</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">max-width</td>
+    <td class="val"><code>10em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:4</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.group-selector-wrapper .d-multi-select-trigger</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:9</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+    </div>
+  </details>
+</body>
+</html>

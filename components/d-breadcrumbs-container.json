@@ -1,0 +1,11 @@
+{
+  "name": "breadcrumbs-container",
+  "slug": "d-breadcrumbs-container",
+  "primaryFiles": [
+    "common/components/d-breadcrumbs.scss"
+  ],
+  "identitySelectors": [
+    ".d-breadcrumbs"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

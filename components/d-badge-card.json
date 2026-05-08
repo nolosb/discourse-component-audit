@@ -1,0 +1,14 @@
+{
+  "name": "badge-card",
+  "slug": "d-badge-card",
+  "primaryFiles": [
+    "common/base/user-badges.scss"
+  ],
+  "identitySelectors": [
+    ".badge-card",
+    ".badge-card__content"
+  ],
+  "cssCustomPropertyPrefixes": [
+    "--d-badge-card-"
+  ]
+}

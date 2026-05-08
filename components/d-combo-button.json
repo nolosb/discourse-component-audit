@@ -1,0 +1,11 @@
+{
+  "name": "combo-button",
+  "slug": "d-combo-button",
+  "primaryFiles": [
+    "common/components/d-combo-button.scss"
+  ],
+  "identitySelectors": [
+    ".d-combo-button"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

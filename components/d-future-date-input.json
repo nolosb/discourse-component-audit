@@ -1,0 +1,12 @@
+{
+  "name": "future-date-input",
+  "slug": "d-future-date-input",
+  "primaryFiles": [
+    "common/select-kit/future-date-input-selector.scss"
+  ],
+  "identitySelectors": [
+    ".future-date-input",
+    ".future-date-input-selector"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

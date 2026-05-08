@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>d-icon-grid-picker — Style Audit</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; line-height: 1.5; color: #111827; background: #f5f5f7; margin: 0; padding: 40px; max-width: 1200px; margin: 0 auto; }
+    code { font-family: "SF Mono", ui-monospace, monospace; font-size: 12px; }
+    a { color: #2563eb; }
+
+    .header { background: #fff; border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; border: 1px solid #e5e7eb; }
+    .header h1 { margin: 0 0 8px; font-size: 22px; }
+    .meta { color: #6b7280; font-size: 13px; margin: 0; }
+    .scorecard { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #f3f4f6; }
+    .dual-scores { display: flex; gap: 48px; margin-bottom: 20px; }
+    .score-block { flex: 1; }
+    .score-headline { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+    .score-pct { font-size: 36px; font-weight: 800; letter-spacing: -1px; }
+    .score-label { font-size: 14px; color: #6b7280; }
+    .score-detail { font-size: 12px; color: #9ca3af; }
+    .stacked-bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; margin-bottom: 8px; gap: 1px; }
+    .stacked-seg { min-width: 3px; }
+    .stacked-legend { display: flex; flex-wrap: wrap; gap: 12px; }
+    .legend-item { font-size: 11px; color: #6b7280; display: flex; align-items: center; gap: 4px; }
+    .legend-dot { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
+
+    .scope-line { font-size: 12px; color: #6b7280; margin: 14px 0 0; }
+    .scope-line strong { color: #374151; font-weight: 600; }
+    .scope-line span { margin: 0 6px; color: #d1d5db; }
+    .analysis-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+    .analysis-col h4 { margin: 0 0 10px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: #6b7280; display: flex; align-items: center; gap: 6px; }
+    .action-count { font-size: 12px; color: #dc2626; font-weight: 600; }
+    .analysis-note { font-size: 12px; color: #9ca3af; margin: 0 0 10px; }
+
+    .section { background: #fff; border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; border: 1px solid #e5e7eb; }
+    .section h3 { margin: 0 0 16px; font-size: 16px; }
+
+    .selector-group { margin-bottom: 20px; }
+    .selector-group h4, .selector-group h5 { margin: 0 0 6px; font-size: 13px; font-weight: 600; }
+    .selector-group.nested { margin-left: 16px; }
+    .count { font-size: 11px; color: #9ca3af; font-weight: 400; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 8px; table-layout: fixed; }
+    th { text-align: left; padding: 5px 8px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #9ca3af; border-bottom: 2px solid #f3f4f6; }
+    td { padding: 5px 8px; border-bottom: 1px solid #f3f4f6; vertical-align: top; overflow: hidden; text-overflow: ellipsis; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fafafa; }
+    .prop { font-weight: 500; color: #374151; white-space: nowrap; }
+    .val code { color: #4b5563; word-break: break-all; }
+    .file { font-family: monospace; font-size: 11px; color: #6b7280; white-space: nowrap; }
+    .ctx code { font-size: 10px; background: #f3f4f6; padding: 1px 4px; border-radius: 2px; }
+    .imp { font-size: 9px; color: #dc2626; font-weight: 700; }
+    .ctx { font-size: 11px; color: #6b7280; }
+    .ctx-code { font-size: 10px; background: #f3f4f6; padding: 1px 4px; border-radius: 3px; color: #6b7280; }
+    .concern-badge { font-size: 10px; font-weight: 600; padding: 1px 5px; border-radius: 3px; text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; }
+    tr.concern-structural { opacity: 0.55; }
+    tr.concern-definition { opacity: 0.7; }
+    .overrides-table { table-layout: auto; }
+
+    .file-group { margin-bottom: 8px; }
+    .file-group summary { cursor: pointer; padding: 8px 0; border-bottom: 1px solid #f3f4f6; }
+    .file-group summary:hover { color: #2563eb; }
+
+    .overrides-table th { text-align: left; }
+
+    .collapsible { background: #fff; border-radius: 12px; margin-bottom: 24px; border: 1px solid #e5e7eb; }
+    .collapsible > summary { padding: 16px 28px; cursor: pointer; font-size: 16px; font-weight: 600; list-style: none; display: flex; align-items: center; gap: 8px; }
+    .collapsible > summary::-webkit-details-marker { display: none; }
+    .collapsible > summary::before { content: "▶"; font-size: 10px; color: #9ca3af; transition: transform 0.15s; }
+    .collapsible[open] > summary::before { transform: rotate(90deg); }
+    .collapsible > summary:hover { color: #2563eb; }
+    .collapsible-body { padding: 0 28px 24px; }
+    .collapsible-body .sub-section { margin-bottom: 24px; }
+    .collapsible-body .sub-section:last-child { margin-bottom: 0; }
+    .collapsible-body h4 { margin: 0 0 12px; font-size: 14px; font-weight: 600; }
+    .collapsible-body .section { background: none; border: none; border-radius: 0; padding: 0; margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <p style="margin:0 0 12px"><a href="index.html" style="font-size:13px;color:#6b7280;text-decoration:none">&larr; All components</a></p>
+  <div class="header">
+    <h1>d-icon-grid-picker <span style="color:#6b7280;font-weight:400;font-size:16px">Style Audit</span></h1>
+    <p class="meta"><code>common/components/d-icon-grid-picker.scss</code> &middot; 13 selectors</p>
+  </div>
+
+  <details class="collapsible" open>
+    <summary>Analysis <span class="count">36% own &middot; 0% coverage</span></summary>
+    <div class="collapsible-body">
+      <div class="scorecard">
+        <div class="dual-scores">
+          <div class="score-block">
+            <div class="score-headline">
+              <span class="score-pct" style="color:#854d0e">36%</span>
+              <span class="score-label">own tokenized</span>
+            </div>
+            <span class="score-detail">24 of 67 own declarations use CSS custom properties</span>
+          </div>
+          <div class="score-block">
+            <div class="score-headline">
+              <span class="score-pct" style="color:#dc2626">0%</span>
+              <span class="score-label">override coverage</span>
+            </div>
+            <span class="score-detail">0 of 3 overridden properties have custom prop definitions</span>
+          </div>
+        </div>
+        <div class="stacked-bar"><div class="stacked-seg" style="width:26%;background:#16a34a" title="resolved: 26"></div><div class="stacked-seg" style="width:3%;background:#854d0e" title="mixed: 3"></div><div class="stacked-seg" style="width:37%;background:#dc2626" title="hardcoded: 37"></div><div class="stacked-seg" style="width:4%;background:#2563eb" title="review: 4"></div><div class="stacked-seg" style="width:31%;background:#9ca3af" title="structural: 31"></div></div>
+        <div class="stacked-legend"><span class="legend-item"><span class="legend-dot" style="background:#16a34a"></span>resolved 26</span><span class="legend-item"><span class="legend-dot" style="background:#854d0e"></span>mixed 3</span><span class="legend-item"><span class="legend-dot" style="background:#dc2626"></span>hardcoded 37</span><span class="legend-item"><span class="legend-dot" style="background:#2563eb"></span>review 4</span><span class="legend-item"><span class="legend-dot" style="background:#9ca3af"></span>structural 31</span></div>
+        <p class="scope-line"><strong>101</strong> declarations (98 own + 3 external)<span>&middot;</span><strong>42</strong> properties<span>&middot;</span><strong>1</strong> external files<span>&middot;</span><strong>0</strong> custom props defined</p>
+      </div>
+
+      <div class="analysis-columns">
+        <div class="analysis-col">
+          <h4>Most Overridden</h4>
+          <table class="overrides-table"><thead><tr><th>Property</th><th>Count</th><th>Files</th></tr></thead><tbody><tr><td class="prop">width</td><td>1</td><td>1</td></tr><tr><td class="prop">min-width</td><td>1</td><td>1</td></tr><tr><td class="prop">color</td><td>1</td><td>1</td></tr></tbody></table>
+        </div>
+        <div class="analysis-col">
+          
+            <h4><span class="action-count">3</span> Missing Custom Properties</h4>
+            <table class="overrides-table"><thead><tr><th>Property</th><th>Files</th><th>Values</th></tr></thead><tbody><tr><td class="prop">width</td><td>1 files</td><td>1</td></tr>
+<tr><td class="prop">min-width</td><td>1 files</td><td>1</td></tr>
+<tr><td class="prop">color</td><td>1 files</td><td>1</td></tr></tbody></table>
+            
+          
+        </div>
+      </div>
+
+      
+    </div>
+  </details>
+
+  <details class="collapsible">
+    <summary>Own Declarations <span class="count">98</span></summary>
+    <div class="collapsible-body">
+      
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker .fk-d-menu__trigger &gt; .d-icon</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--icon-color, currentColor)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:17</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker.--has-clear</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>inline-flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:22</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker.--has-clear .fk-d-menu__trigger</code> <span class="count">3</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">border-top-right-radius</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:25</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">border-bottom-right-radius</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:26</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">border-right-color</td>
+    <td class="val"><code>transparent</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:27</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker.--has-clear .d-icon-grid-picker__clear</code> <span class="count">6</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">border-top-left-radius</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:31</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">border-bottom-left-radius</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:32</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">border-left-color</td>
+    <td class="val"><code>transparent</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:33</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">margin-left</td>
+    <td class="val"><code>0.1em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:34</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0.25em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:35</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">min-width</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:36</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker.--has-clear .d-icon-grid-picker__clear .d-icon</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-down-2)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:39</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__caret</code> <span class="count">2</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">margin-left</td>
+    <td class="val"><code>1em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:45</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-down-2)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:46</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__content</code> <span class="count">4</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:50</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">flex-direction</td>
+    <td class="val"><code>column</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:51</td>
+  </tr>
+<tr class="concern-mixed">
+    <td class="prop">width</td>
+    <td class="val"><code>calc(
+      var(--icon-grid-columns) * var(--icon-grid-cell) +
+        (var(--icon-grid-columns) - 1) * var(--icon-grid-gap) +
+        var(--icon-grid-h-padding) * 2 + 8px
+    )</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fef9c3;color:#854d0e">Mixed</span></td>
+    <td class="file">:52</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">max-height</td>
+    <td class="val"><code>380px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:57</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__filter-container</code> <span class="count">3</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background</td>
+    <td class="val"><code>var(--primary-very-low)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:62</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:63</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">height</td>
+    <td class="val"><code>50px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:64</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__filter</code> <span class="count">4</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:69</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">margin</td>
+    <td class="val"><code>0.5rem</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:70</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">border-radius</td>
+    <td class="val"><code>var(--d-border-radius)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:71</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">box-sizing</td>
+    <td class="val"><code>border-box</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:72</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__filter input</code> <span class="count">2</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">background-color <span class="imp">!important</span></td>
+    <td class="val"><code>transparent</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:75</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:76</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__filter .d-icon</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-medium)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:80</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__filter.filter-input-container</code> <span class="count">2</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">border-color</td>
+    <td class="val"><code>transparent</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:84</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">background</td>
+    <td class="val"><code>var(--secondary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:85</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__grid-wrapper</code> <span class="count">9</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>grid</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:91</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">grid-template-columns</td>
+    <td class="val"><code>repeat(
+      var(--icon-grid-columns),
+      var(--icon-grid-cell)
+    )</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:92</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">gap</td>
+    <td class="val"><code>var(--icon-grid-gap)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:96</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">padding</td>
+    <td class="val"><code>var(--icon-grid-h-padding)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:97</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">overflow-x</td>
+    <td class="val"><code>hidden</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:98</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">overflow-y</td>
+    <td class="val"><code>auto</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:99</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">max-height</td>
+    <td class="val"><code>300px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:100</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">scrollbar-width</td>
+    <td class="val"><code>thin</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:101</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">box-sizing</td>
+    <td class="val"><code>border-box</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:102</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__favorites</code> <span class="count">4</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>grid</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:107</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">grid-template-columns</td>
+    <td class="val"><code>subgrid</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:108</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">grid-column</td>
+    <td class="val"><code>1 / -1</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:109</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding-bottom</td>
+    <td class="val"><code>0.25rem</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:110</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__selected-name</code> <span class="count">4</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-down-1)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:114</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">white-space</td>
+    <td class="val"><code>nowrap</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:115</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding-left</td>
+    <td class="val"><code>0.3em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:116</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding-right</td>
+    <td class="val"><code>0.5em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:117</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__grid</code> <span class="count">3</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>grid</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:122</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">grid-template-columns</td>
+    <td class="val"><code>subgrid</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:123</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">grid-column</td>
+    <td class="val"><code>1 / -1</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:124</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__icon</code> <span class="count">12</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:128</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:129</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">justify-content</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:130</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">width</td>
+    <td class="val"><code>var(--icon-grid-cell)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:131</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">height</td>
+    <td class="val"><code>var(--icon-grid-cell)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:132</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">cursor</td>
+    <td class="val"><code>pointer</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:133</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--icon-color, var(--primary-high))</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:134</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">border</td>
+    <td class="val"><code>none</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:135</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">background</td>
+    <td class="val"><code>none</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:136</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:137</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">font</td>
+    <td class="val"><code>inherit</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:138</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">transition</td>
+    <td class="val"><code>transform 0.15s ease</code></td>
+    <td class="ctx"><code class="ctx-code">@media (prefers-reduced-motion: no-preference)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:141</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__icon:hover</code> <span class="count">3</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background</td>
+    <td class="val"><code>var(--primary-very-low)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:146</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">border-radius</td>
+    <td class="val"><code>var(--d-border-radius)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:147</td>
+  </tr>
+<tr class="concern-review">
+    <td class="prop">transform</td>
+    <td class="val"><code>scale(1.25)</code></td>
+    <td class="ctx"><code class="ctx-code">@media (prefers-reduced-motion: no-preference)</code></td>
+    <td><span class="concern-badge" style="background:#dbeafe;color:#1e40af">Review</span></td>
+    <td class="file">:150</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__icon:focus</code> <span class="count">3</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background</td>
+    <td class="val"><code>var(--primary-very-low)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:146</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">border-radius</td>
+    <td class="val"><code>var(--d-border-radius)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:147</td>
+  </tr>
+<tr class="concern-review">
+    <td class="prop">transform</td>
+    <td class="val"><code>scale(1.25)</code></td>
+    <td class="ctx"><code class="ctx-code">@media (prefers-reduced-motion: no-preference)</code></td>
+    <td><span class="concern-badge" style="background:#dbeafe;color:#1e40af">Review</span></td>
+    <td class="file">:150</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__icon.--selected</code> <span class="count">3</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">background</td>
+    <td class="val"><code>var(--tertiary-low)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:155</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--tertiary)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:156</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">border-radius</td>
+    <td class="val"><code>var(--d-border-radius)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:157</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip</code> <span class="count">5</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>grid</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:162</td>
+  </tr>
+<tr class="concern-mixed">
+    <td class="prop">grid-template-columns</td>
+    <td class="val"><code>var(--icon-grid-cell) 1fr</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fef9c3;color:#854d0e">Mixed</span></td>
+    <td class="file">:163</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:164</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">text-align</td>
+    <td class="val"><code>left</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:165</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>0</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:166</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip:hover</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">transform</td>
+    <td class="val"><code>none</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:173</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip:focus</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">transform</td>
+    <td class="val"><code>none</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:173</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip:hover .d-icon</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-review">
+    <td class="prop">transform</td>
+    <td class="val"><code>scale(1.25)</code></td>
+    <td class="ctx"><code class="ctx-code">@media (prefers-reduced-motion: no-preference)</code></td>
+    <td><span class="concern-badge" style="background:#dbeafe;color:#1e40af">Review</span></td>
+    <td class="file">:177</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip:focus .d-icon</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-review">
+    <td class="prop">transform</td>
+    <td class="val"><code>scale(1.25)</code></td>
+    <td class="ctx"><code class="ctx-code">@media (prefers-reduced-motion: no-preference)</code></td>
+    <td><span class="concern-badge" style="background:#dbeafe;color:#1e40af">Review</span></td>
+    <td class="file">:177</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__icon.d-icon-grid-picker__selected-chip .d-icon</code> <span class="count">2</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">justify-self</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:183</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">transition</td>
+    <td class="val"><code>transform 0.15s ease</code></td>
+    <td class="ctx"><code class="ctx-code">@media (prefers-reduced-motion: no-preference)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:186</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__icon .d-icon</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">font-size</td>
+    <td class="val"><code>var(--font-up-2)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:192</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__loading</code> <span class="count">5</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-structural">
+    <td class="prop">display</td>
+    <td class="val"><code>flex</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:197</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">align-items</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:198</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">justify-content</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:199</td>
+  </tr>
+<tr class="concern-hardcoded">
+    <td class="prop">min-height</td>
+    <td class="val"><code>150px</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:200</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">grid-column</td>
+    <td class="val"><code>1 / -1</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:201</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.d-icon-grid-picker__empty</code> <span class="count">4</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">padding</td>
+    <td class="val"><code>1em</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:205</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">text-align</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:206</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-medium)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:207</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">grid-column</td>
+    <td class="val"><code>1 / -1</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:208</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.fk-d-menu-modal.d-icon-grid-picker-content .d-icon-grid-picker__content</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"><code class="ctx-code">@media screen and (width &lt;= 767px)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:221</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.fk-d-menu-modal.d-icon-grid-picker-content .d-icon-grid-picker__filter-container</code> <span class="count">1</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"><code class="ctx-code">@media screen and (width &lt;= 767px)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:225</td>
+  </tr></tbody>
+</table>
+    </div>
+
+    <div class="selector-group">
+      <h4><code>.fk-d-menu-modal.d-icon-grid-picker-content .d-icon-grid-picker__grid-wrapper</code> <span class="count">4</span></h4>
+      <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"><code class="ctx-code">@media screen and (width &lt;= 767px)</code></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:229</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">grid-template-columns</td>
+    <td class="val"><code>repeat(auto-fill, var(--icon-grid-cell))</code></td>
+    <td class="ctx"><code class="ctx-code">@media screen and (width &lt;= 767px)</code></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:230</td>
+  </tr>
+<tr class="concern-structural">
+    <td class="prop">justify-content</td>
+    <td class="val"><code>center</code></td>
+    <td class="ctx"><code class="ctx-code">@media screen and (width &lt;= 767px)</code></td>
+    <td><span class="concern-badge" style="background:#f3f4f6;color:#6b7280">Structural</span></td>
+    <td class="file">:231</td>
+  </tr>
+<tr class="concern-mixed">
+    <td class="prop">max-height</td>
+    <td class="val"><code>calc(
+          var(--composer-vh, 1dvh) * 100 - 50px - env(safe-area-inset-bottom)
+        )</code></td>
+    <td class="ctx"><code class="ctx-code">@media screen and (width &lt;= 767px)</code></td>
+    <td><span class="concern-badge" style="background:#fef9c3;color:#854d0e">Mixed</span></td>
+    <td class="file">:232</td>
+  </tr></tbody>
+</table>
+    </div>
+    </div>
+  </details>
+
+  <details class="collapsible">
+    <summary>External Declarations <span class="count">3 from 1 files</span></summary>
+    <div class="collapsible-body">
+      
+    <details class="file-group">
+      <summary><strong>common/form-kit/_control-icon.scss</strong> <span class="count">3 declarations</span></summary>
+      
+        <div class="selector-group nested">
+          <h5><code>.form-kit__control-icon .d-icon-grid-picker</code> <span class="count">2</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-hardcoded">
+    <td class="prop">width</td>
+    <td class="val"><code>100%</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#fee2e2;color:#991b1b">Hardcoded</span></td>
+    <td class="file">:3</td>
+  </tr>
+<tr class="concern-resolved">
+    <td class="prop">min-width</td>
+    <td class="val"><code>var(--form-kit-small-input)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:4</td>
+  </tr></tbody>
+</table>
+        </div>
+
+        <div class="selector-group nested">
+          <h5><code>.form-kit__control-icon .d-icon-grid-picker__caret</code> <span class="count">1</span></h5>
+          <table>
+  <colgroup><col style="width:18%"><col style="width:36%"><col style="width:18%"><col style="width:10%"><col style="width:18%"></colgroup>
+  <thead><tr><th>Property</th><th>Value</th><th>Context</th><th>Status</th><th>Line</th></tr></thead>
+  <tbody><tr class="concern-resolved">
+    <td class="prop">color</td>
+    <td class="val"><code>var(--primary-medium)</code></td>
+    <td class="ctx"></td>
+    <td><span class="concern-badge" style="background:#dcfce7;color:#166534">Resolved</span></td>
+    <td class="file">:8</td>
+  </tr></tbody>
+</table>
+        </div>
+    </details>
+    </div>
+  </details>
+</body>
+</html>

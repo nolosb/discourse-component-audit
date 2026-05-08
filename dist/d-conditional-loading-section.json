@@ -1,0 +1,631 @@
+{
+  "component": {
+    "name": "conditional-loading-section",
+    "slug": "d-conditional-loading-section",
+    "primaryFiles": [
+      "common/components/conditional-loading-section.scss"
+    ],
+    "identitySelectors": [
+      ".conditional-loading-section"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.042Z",
+  "summary": {
+    "totalDeclarations": 24,
+    "ownDeclarations": 11,
+    "externalDeclarations": 13,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 16,
+    "uniqueSelectors": 8,
+    "valueBreakdown": {
+      "hardcoded": 12,
+      "other": 8,
+      "css-var": 4
+    },
+    "concernBreakdown": {
+      "hardcoded": 12,
+      "structural": 8,
+      "resolved": 3,
+      "mixed": 1
+    },
+    "mostOverridden": [
+      {
+        "property": "margin",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "border-bottom",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "display",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "flex-direction",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "padding",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "align-items",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "justify-content",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "border",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "font-size",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "width",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "height",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "margin-left",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "margin",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "margin",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 2,
+    "externalFiles": [
+      "admin/admin_report.scss",
+      "admin/dashboard.scss"
+    ],
+    "ownTokenizedPct": 29,
+    "ownTokenizedCount": 2,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 7,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 8
+  },
+  "own": [
+    {
+      "selector": ".conditional-loading-section.is-loading",
+      "property": "padding",
+      "value": "2em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/conditional-loading-section.scss",
+      "line": 3,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".conditional-loading-section.is-loading",
+      "property": "margin",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/conditional-loading-section.scss",
+      "line": 4,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".conditional-loading-section.is-loading",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/conditional-loading-section.scss",
+      "line": 5,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".conditional-loading-section.is-loading",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/conditional-loading-section.scss",
+      "line": 6,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".conditional-loading-section.is-loading",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/conditional-loading-section.scss",
+      "line": 7,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".conditional-loading-section.is-loading",
+      "property": "background",
+      "value": "var(--primary-very-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/conditional-loading-section.scss",
+      "line": 8,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".conditional-loading-section.is-loading",
+      "property": "flex-direction",
+      "value": "column",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/conditional-loading-section.scss",
+      "line": 9,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".conditional-loading-section.is-loading .title",
+      "property": "font-size",
+      "value": "var(--font-up-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/conditional-loading-section.scss",
+      "line": 12,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".conditional-loading-section.is-loading .title",
+      "property": "font-weight",
+      "value": "700",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/conditional-loading-section.scss",
+      "line": 13,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".conditional-loading-section:not(.is-loading)",
+      "property": "animation",
+      "value": "fadein 0.5s",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/conditional-loading-section.scss",
+      "line": 18,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".conditional-loading-section:not(.is-loading)",
+      "property": "animation-duration",
+      "value": "0s",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/conditional-loading-section.scss",
+      "line": 21,
+      "column": 7,
+      "atRuleContext": [
+        "@media (prefers-reduced-motion)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".admin-report .conditional-loading-section.is-loading",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/admin_report.scss",
+      "line": 17,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report:not(:last-child) .conditional-loading-section.is-loading",
+      "property": "border-bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/dashboard.scss",
+      "line": 382,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/dashboard.scss",
+      "line": 387,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading",
+      "property": "flex-direction",
+      "value": "row",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/dashboard.scss",
+      "line": 388,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading",
+      "property": "padding",
+      "value": "0.5em 0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/dashboard.scss",
+      "line": 389,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading",
+      "property": "align-items",
+      "value": "flex-start",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/dashboard.scss",
+      "line": 390,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading",
+      "property": "justify-content",
+      "value": "flex-start",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/dashboard.scss",
+      "line": 391,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading",
+      "property": "border",
+      "value": "1px solid var(--content-border-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "admin/dashboard.scss",
+      "line": 392,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading .title",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "admin/dashboard.scss",
+      "line": 395,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading .spinner",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/dashboard.scss",
+      "line": 399,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading .spinner",
+      "property": "width",
+      "value": "8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/dashboard.scss",
+      "line": 400,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading .spinner",
+      "property": "height",
+      "value": "8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/dashboard.scss",
+      "line": 401,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".counters-list .admin-report .conditional-loading-section.is-loading .spinner",
+      "property": "margin-left",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/dashboard.scss",
+      "line": 402,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

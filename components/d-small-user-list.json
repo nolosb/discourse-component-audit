@@ -1,0 +1,9 @@
+{
+  "name": "small-user-list",
+  "slug": "d-small-user-list",
+  "primaryFiles": [],
+  "identitySelectors": [
+    ".small-user-list"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

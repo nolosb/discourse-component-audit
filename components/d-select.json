@@ -1,0 +1,11 @@
+{
+  "name": "select",
+  "slug": "d-select",
+  "primaryFiles": [
+    "common/components/d-select.scss"
+  ],
+  "identitySelectors": [
+    ".d-select"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

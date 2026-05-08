@@ -1,0 +1,219 @@
+{
+  "component": {
+    "name": "load-more",
+    "slug": "d-load-more",
+    "primaryFiles": [
+      "common/components/load-more.scss"
+    ],
+    "identitySelectors": [
+      ".load-more-sentinel"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.090Z",
+  "summary": {
+    "totalDeclarations": 9,
+    "ownDeclarations": 8,
+    "externalDeclarations": 1,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 9,
+    "uniqueSelectors": 2,
+    "valueBreakdown": {
+      "hardcoded": 3,
+      "other": 6
+    },
+    "concernBreakdown": {
+      "hardcoded": 5,
+      "structural": 4
+    },
+    "mostOverridden": [
+      {
+        "property": "overflow-anchor",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "overflow-anchor",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "overflow-anchor",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 1,
+    "externalFiles": [
+      "common/base/topic-post.scss"
+    ],
+    "ownTokenizedPct": 0,
+    "ownTokenizedCount": 0,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 4,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 1
+  },
+  "own": [
+    {
+      "selector": ".load-more-sentinel",
+      "property": "height",
+      "value": "1px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/load-more.scss",
+      "line": 2,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".load-more-sentinel",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/load-more.scss",
+      "line": 3,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".load-more-sentinel",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/load-more.scss",
+      "line": 4,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".load-more-sentinel",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/load-more.scss",
+      "line": 5,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".load-more-sentinel",
+      "property": "pointer-events",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/load-more.scss",
+      "line": 6,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".load-more-sentinel",
+      "property": "user-select",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/load-more.scss",
+      "line": 7,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".load-more-sentinel",
+      "property": "visibility",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/load-more.scss",
+      "line": 8,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".load-more-sentinel",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/load-more.scss",
+      "line": 9,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".post-stream .load-more-sentinel",
+      "property": "overflow-anchor",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 985,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

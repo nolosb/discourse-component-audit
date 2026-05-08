@@ -1,0 +1,307 @@
+{
+  "component": {
+    "name": "date-time-input-range",
+    "slug": "d-date-time-input-range",
+    "primaryFiles": [
+      "common/components/date-time-input-range.scss"
+    ],
+    "identitySelectors": [
+      ".d-date-time-input-range"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.053Z",
+  "summary": {
+    "totalDeclarations": 11,
+    "ownDeclarations": 1,
+    "externalDeclarations": 10,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 5,
+    "uniqueSelectors": 7,
+    "valueBreakdown": {
+      "hardcoded": 5,
+      "other": 4,
+      "css-var": 2
+    },
+    "concernBreakdown": {
+      "hardcoded": 5,
+      "structural": 4,
+      "resolved": 2
+    },
+    "mostOverridden": [
+      {
+        "property": "display",
+        "count": 3,
+        "fileCount": 3
+      },
+      {
+        "property": "gap",
+        "count": 3,
+        "fileCount": 3
+      },
+      {
+        "property": "margin",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "margin-bottom",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "flex-wrap",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "gap",
+        "fileCount": 3,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "gap",
+        "fileCount": 3,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 3,
+    "externalFiles": [
+      "admin/admin_report_chart.scss",
+      "admin/staff_logs.scss",
+      "common/base/reviewables.scss"
+    ],
+    "ownTokenizedPct": 0,
+    "ownTokenizedCount": 0,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 1,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 3
+  },
+  "own": [
+    {
+      "selector": ".d-date-time-input-range .from",
+      "property": "margin-bottom",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-time-input-range.scss",
+      "line": 3,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": "body.uc-reporting-improvements .admin-contents:not(.dashboard) .chart__dates .d-date-time-input-range",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/admin_report_chart.scss",
+      "line": 122,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "body.uc-reporting-improvements .admin-contents:not(.dashboard) .chart__dates .d-date-time-input-range",
+      "property": "gap",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "admin/admin_report_chart.scss",
+      "line": 123,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "body.uc-reporting-improvements .admin-contents:not(.dashboard) .chart__dates .d-date-time-input-range > *",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/admin_report_chart.scss",
+      "line": 126,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".staff-action-logs-controls .staff-action-logs-controls__left .date-filter-container .d-date-time-input-range",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/staff_logs.scss",
+      "line": 159,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".staff-action-logs-controls .staff-action-logs-controls__left .date-filter-container .d-date-time-input-range",
+      "property": "gap",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/staff_logs.scss",
+      "line": 160,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".staff-action-logs-controls .staff-action-logs-controls__left .date-filter-container .d-date-time-input-range .from",
+      "property": "margin-bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/staff_logs.scss",
+      "line": 163,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".reviewable .reviewable-container .d-date-time-input-range",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/reviewables.scss",
+      "line": 142,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".reviewable .reviewable-container .d-date-time-input-range",
+      "property": "flex-wrap",
+      "value": "wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/reviewables.scss",
+      "line": 143,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".reviewable .reviewable-container .d-date-time-input-range",
+      "property": "gap",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/reviewables.scss",
+      "line": 144,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".reviewable .reviewable-container .d-date-time-input-range .from",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/reviewables.scss",
+      "line": 147,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

@@ -1,0 +1,1048 @@
+{
+  "component": {
+    "name": "d-segmented-control",
+    "slug": "d-segmented-control",
+    "primaryFiles": [
+      "common/components/d-segmented-control.scss"
+    ],
+    "identitySelectors": [
+      ".d-segmented-control",
+      ".d-segmented-control__slider",
+      ".d-segmented-control__label",
+      ".d-segmented-control__input",
+      ".d-segmented-control__legend"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.141Z",
+  "summary": {
+    "totalDeclarations": 56,
+    "ownDeclarations": 55,
+    "externalDeclarations": 1,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 28,
+    "uniqueSelectors": 11,
+    "valueBreakdown": {
+      "other": 22,
+      "css-var": 19,
+      "hardcoded": 13,
+      "function": 2
+    },
+    "concernBreakdown": {
+      "structural": 18,
+      "resolved": 18,
+      "hardcoded": 17,
+      "review": 2,
+      "mixed": 1
+    },
+    "mostOverridden": [
+      {
+        "property": "font-weight",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "font-weight",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "font-weight",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 1,
+    "externalFiles": [
+      "common/base/discourse.scss"
+    ],
+    "ownTokenizedPct": 49,
+    "ownTokenizedCount": 18,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 37,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 1
+  },
+  "own": [
+    {
+      "selector": ".d-segmented-control",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 2,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control",
+      "property": "display",
+      "value": "inline-flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 3,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 4,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control",
+      "property": "background",
+      "value": "var(--primary-very-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 5,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control",
+      "property": "gap",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 6,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control",
+      "property": "border-radius",
+      "value": "var(--d-border-radius-large)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 7,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control",
+      "property": "padding",
+      "value": "var(--space-1) var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 8,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__legend",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 11,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__legend",
+      "property": "width",
+      "value": "1px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 12,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__legend",
+      "property": "height",
+      "value": "1px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 13,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__legend",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 14,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__legend",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 15,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__legend",
+      "property": "overflow",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 16,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__legend",
+      "property": "clip-path",
+      "value": "inset(50%)",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 17,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__legend",
+      "property": "white-space",
+      "value": "nowrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 18,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__slider",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 22,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__slider",
+      "property": "top",
+      "value": "var(--space-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 23,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__slider",
+      "property": "left",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 24,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__slider",
+      "property": "width",
+      "value": "var(--slider-width, 0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 25,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__slider",
+      "property": "height",
+      "value": "var(--space-9)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 26,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__slider",
+      "property": "transform",
+      "value": "translateX(var(--slider-x, 0))",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "function"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 27,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__slider",
+      "property": "background",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 28,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__slider",
+      "property": "border-radius",
+      "value": "var(--d-border-radius-large)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 29,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__slider",
+      "property": "box-shadow",
+      "value": "0 1px 6px rgb(0, 0, 0, 0.1)",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function",
+          "hardcoded"
+        ]
+      },
+      "concern": "review",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 30,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__slider",
+      "property": "pointer-events",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 31,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__slider.is-animated",
+      "property": "transition",
+      "value": "transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),\n        width 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function",
+          "hardcoded"
+        ]
+      },
+      "concern": "review",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 34,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__slider.is-animated",
+      "property": "transition-duration",
+      "value": "0ms",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 39,
+      "column": 9,
+      "atRuleContext": [
+        "@media (prefers-reduced-motion: reduce)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__input[type=\"radio\"]",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 45,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__input[type=\"radio\"]",
+      "property": "width",
+      "value": "1px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 46,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__input[type=\"radio\"]",
+      "property": "height",
+      "value": "1px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 47,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__input[type=\"radio\"]",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 48,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__input[type=\"radio\"]",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 49,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__input[type=\"radio\"]",
+      "property": "overflow",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 50,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__input[type=\"radio\"]",
+      "property": "clip-path",
+      "value": "inset(50%)",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 51,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label",
+      "property": "z-index",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 55,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 56,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 57,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 58,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label",
+      "property": "font-weight",
+      "value": "normal",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 59,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label",
+      "property": "padding",
+      "value": "var(--space-1) var(--space-4)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 60,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 61,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label",
+      "property": "border-radius",
+      "value": "var(--d-border-radius-large)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 62,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 63,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label",
+      "property": "height",
+      "value": "var(--space-7)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 64,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label",
+      "property": "cursor",
+      "value": "pointer",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 65,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label",
+      "property": "user-select",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 66,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label",
+      "property": "white-space",
+      "value": "nowrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 67,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label:hover",
+      "property": "background",
+      "value": "var(--primary-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 70,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label:hover",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 71,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label:has(:focus-visible)",
+      "property": "outline",
+      "value": "2px solid var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 75,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label:has(:focus-visible)",
+      "property": "outline-offset",
+      "value": "-2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 76,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label:has(:checked)",
+      "property": "background",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 81,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label:has(:checked):hover",
+      "property": "background",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 81,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label:has(:checked)",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 82,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-segmented-control__label:has(:checked):hover",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-segmented-control.scss",
+      "line": 82,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": "label:not(.checkbox-label, .d-segmented-control__label)",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/discourse.scss",
+      "line": 328,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

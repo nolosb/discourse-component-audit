@@ -1,0 +1,9 @@
+{
+  "name": "user-avatar",
+  "slug": "d-user-avatar",
+  "primaryFiles": [],
+  "identitySelectors": [
+    ".avatar"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

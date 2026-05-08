@@ -1,0 +1,12 @@
+{
+  "name": "color-picker-choice",
+  "slug": "d-color-picker-choice",
+  "primaryFiles": [
+    "common/base/colorpicker.scss"
+  ],
+  "identitySelectors": [
+    ".colorpicker",
+    ".colors-container"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

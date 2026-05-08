@@ -1,0 +1,11 @@
+{
+  "name": "time-input",
+  "slug": "d-time-input",
+  "primaryFiles": [
+    "common/components/time-input.scss"
+  ],
+  "identitySelectors": [
+    ".d-time-input"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

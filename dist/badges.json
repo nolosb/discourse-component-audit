@@ -1,0 +1,4357 @@
+{
+  "component": {
+    "name": "badges",
+    "slug": "badges",
+    "primaryFiles": [
+      "common/components/badges.scss"
+    ],
+    "identitySelectors": [
+      ".badge-category__wrapper",
+      ".badge-category__name",
+      ".badge-notification",
+      ".badge-posts",
+      ".badge-group"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:45.994Z",
+  "summary": {
+    "totalDeclarations": 217,
+    "ownDeclarations": 73,
+    "externalDeclarations": 144,
+    "customPropertyDefinitions": 3,
+    "uniqueProperties": 36,
+    "uniqueSelectors": 101,
+    "valueBreakdown": {
+      "css-var": 81,
+      "other": 74,
+      "hardcoded": 60,
+      "function": 1,
+      "scss-var": 1
+    },
+    "concernBreakdown": {
+      "resolved": 80,
+      "structural": 48,
+      "hardcoded": 86,
+      "review": 1,
+      "scss-var": 1,
+      "mixed": 1
+    },
+    "mostOverridden": [
+      {
+        "property": "color",
+        "count": 21,
+        "fileCount": 9
+      },
+      {
+        "property": "font-size",
+        "count": 15,
+        "fileCount": 10
+      },
+      {
+        "property": "max-width",
+        "count": 12,
+        "fileCount": 7
+      },
+      {
+        "property": "padding",
+        "count": 9,
+        "fileCount": 4
+      },
+      {
+        "property": "font-weight",
+        "count": 8,
+        "fileCount": 4
+      },
+      {
+        "property": "display",
+        "count": 8,
+        "fileCount": 5
+      },
+      {
+        "property": "background-color",
+        "count": 7,
+        "fileCount": 4
+      },
+      {
+        "property": "width",
+        "count": 7,
+        "fileCount": 4
+      },
+      {
+        "property": "top",
+        "count": 7,
+        "fileCount": 5
+      },
+      {
+        "property": "vertical-align",
+        "count": 5,
+        "fileCount": 5
+      },
+      {
+        "property": "margin-right",
+        "count": 5,
+        "fileCount": 3
+      },
+      {
+        "property": "line-height",
+        "count": 5,
+        "fileCount": 4
+      },
+      {
+        "property": "position",
+        "count": 5,
+        "fileCount": 4
+      },
+      {
+        "property": "background",
+        "count": 4,
+        "fileCount": 2
+      },
+      {
+        "property": "right",
+        "count": 4,
+        "fileCount": 3
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "font-size",
+        "fileCount": 10,
+        "distinctValues": 6,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 9,
+        "distinctValues": 10,
+        "hasDef": true
+      },
+      {
+        "property": "max-width",
+        "fileCount": 7,
+        "distinctValues": 5,
+        "hasDef": false
+      },
+      {
+        "property": "top",
+        "fileCount": 5,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "background-color",
+        "fileCount": 4,
+        "distinctValues": 5,
+        "hasDef": false
+      },
+      {
+        "property": "font-weight",
+        "fileCount": 4,
+        "distinctValues": 5,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 4,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "line-height",
+        "fileCount": 4,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 4,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 3,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "right",
+        "fileCount": 3,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "background",
+        "fileCount": 2,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "margin-top",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 2,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "text-overflow",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": true
+      },
+      {
+        "property": "min-width",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "font-size",
+        "fileCount": 10,
+        "distinctValues": 6,
+        "hasDef": false
+      },
+      {
+        "property": "max-width",
+        "fileCount": 7,
+        "distinctValues": 5,
+        "hasDef": false
+      },
+      {
+        "property": "top",
+        "fileCount": 5,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "background-color",
+        "fileCount": 4,
+        "distinctValues": 5,
+        "hasDef": false
+      },
+      {
+        "property": "font-weight",
+        "fileCount": 4,
+        "distinctValues": 5,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 4,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "line-height",
+        "fileCount": 4,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 4,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 3,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "right",
+        "fileCount": 3,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "background",
+        "fileCount": 2,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "margin-top",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 2,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "text-overflow",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "min-width",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [
+      "--category-badge-border-radius",
+      "--category-badge-size",
+      "--category-badge-title-color"
+    ],
+    "externalFileCount": 26,
+    "externalFiles": [
+      "common/base/_topic-list.scss",
+      "common/base/categories-topic-list.scss",
+      "common/base/category-list.scss",
+      "common/base/discourse.scss",
+      "common/base/faqs.scss",
+      "common/base/header.scss",
+      "common/base/menu-panel.scss",
+      "common/base/modal.scss",
+      "common/base/not-found.scss",
+      "common/base/reorder-categories.scss",
+      "common/base/review.scss",
+      "common/base/reviewables.scss",
+      "common/base/search-menu.scss",
+      "common/base/search.scss",
+      "common/base/sidebar-section-link.scss",
+      "common/base/topic-post.scss",
+      "common/base/uc-modernize-foundation-theme.scss",
+      "common/base/uc-simplified-category-setup-edit-categories.scss",
+      "common/components/filter-navigation.scss",
+      "common/components/more-topics.scss",
+      "common/components/post-list.scss",
+      "common/components/sidebar/edit-navigation-menu/categories-modal.scss",
+      "common/components/user-stream-item.scss",
+      "common/select-kit/category-drop.scss",
+      "common/select-kit/tag-category-admin-dropdown.scss",
+      "wcag.scss"
+    ],
+    "ownTokenizedPct": 55,
+    "ownTokenizedCount": 29,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 53,
+    "overrideCoveragePct": 14,
+    "overrideCoveredCount": 2,
+    "overrideTotal": 20
+  },
+  "own": [
+    {
+      "selector": ".badge-category__wrapper",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 22,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper",
+      "property": "overflow",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 23,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper",
+      "property": "text-overflow",
+      "value": "ellipsis",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 24,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 25,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper",
+      "property": "white-space",
+      "value": "nowrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 26,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 27,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper",
+      "property": "display",
+      "value": "inline-flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 28,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper",
+      "property": "align-items",
+      "value": "baseline",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 29,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category",
+      "property": "display",
+      "value": "inline-flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 32,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category",
+      "property": "align-items",
+      "value": "baseline",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 33,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category",
+      "property": "gap",
+      "value": "0.33em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 34,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 35,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category",
+      "property": "min-width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 36,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-square::before",
+      "property": "content",
+      "value": "\"\"",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 39,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-square::before",
+      "property": "background",
+      "value": "var(--category-badge-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 40,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-square::before",
+      "property": "flex",
+      "value": "0 0 auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 41,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-square::before",
+      "property": "width",
+      "value": "var(--category-badge-size)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 42,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-square::before",
+      "property": "height",
+      "value": "var(--category-badge-size)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 43,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-square::before",
+      "property": "border-radius",
+      "value": "var(--category-badge-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 44,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-emoji",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 49,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-icon",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 49,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-emoji",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 50,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-icon",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 50,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-emoji .d-icon",
+      "property": "width",
+      "value": "0.74em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 54,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-emoji .emoji",
+      "property": "width",
+      "value": "0.74em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 54,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-icon .d-icon",
+      "property": "width",
+      "value": "0.74em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 54,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-icon .emoji",
+      "property": "width",
+      "value": "0.74em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 54,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-emoji .d-icon",
+      "property": "height",
+      "value": "0.74em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 55,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-emoji .emoji",
+      "property": "height",
+      "value": "0.74em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 55,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-icon .d-icon",
+      "property": "height",
+      "value": "0.74em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 55,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-icon .emoji",
+      "property": "height",
+      "value": "0.74em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 55,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-icon .d-icon",
+      "property": "color",
+      "value": "var(--category-badge-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 60,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--style-icon .d-icon + .d-icon",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 64,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category__name",
+      "property": "color",
+      "value": "var(--category-badge-title-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 68,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category__name",
+      "property": "text-overflow",
+      "value": "ellipsis",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 69,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category__name",
+      "property": "overflow",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 70,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category__name",
+      "property": "min-width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 71,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .badge-category.--has-parent::before",
+      "property": "background",
+      "value": "linear-gradient(\n          90deg,\n          var(--parent-category-badge-color) 50%,\n          var(--category-badge-color) 50%\n        )",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "function"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 76,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".extra-info-wrapper .badge-category__wrapper .badge-category",
+      "property": "color",
+      "value": "var(--header_primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 85,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .d-icon",
+      "property": "width",
+      "value": "0.74em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 90,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .d-icon",
+      "property": "height",
+      "value": "0.74em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 91,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-category__wrapper .d-icon",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 92,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 100,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification",
+      "property": "top",
+      "value": "-2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 101,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification",
+      "property": "padding",
+      "value": "0.21em 0.42em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 102,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification",
+      "property": "min-width",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 103,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification",
+      "property": "color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 104,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification",
+      "property": "font-size",
+      "value": "var(--font-down-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 105,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification",
+      "property": "line-height",
+      "value": "var(--line-height-small)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 106,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification",
+      "property": "text-align",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 107,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification",
+      "property": "background-color",
+      "value": "var(--primary-low-mid-or-secondary-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 108,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification[href]",
+      "property": "color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 111,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification:hover",
+      "property": "color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 115,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification.unread-posts",
+      "property": "background-color",
+      "value": "var(--tertiary-med-or-tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 120,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification.unread-posts",
+      "property": "color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 121,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification.unread-posts",
+      "property": "font-weight",
+      "value": "dark-light-choose(normal, bold)",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function"
+        ]
+      },
+      "concern": "review",
+      "file": "common/components/badges.scss",
+      "line": 122,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification.new-topic",
+      "property": "background-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 126,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification.new-topic",
+      "property": "padding-left",
+      "value": "0.15em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 127,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification.new-topic::before",
+      "property": "content",
+      "value": "\"\"",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 131,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification.new-topic::before",
+      "property": "background",
+      "value": "var(--tertiary-med-or-tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 132,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification.new-topic::before",
+      "property": "display",
+      "value": "inline-block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/badges.scss",
+      "line": 133,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification.new-topic::before",
+      "property": "height",
+      "value": "8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 134,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification.new-topic::before",
+      "property": "width",
+      "value": "8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 135,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-notification.new-topic::before",
+      "property": "border-radius",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 136,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-posts",
+      "property": "font-weight",
+      "value": "normal",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 143,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-posts",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 144,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-posts",
+      "property": "line-height",
+      "value": "var(--line-height-small)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 145,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-posts[href]",
+      "property": "color",
+      "value": "var(--primary-med-or-secondary-med)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 148,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-group",
+      "property": "padding",
+      "value": "2px 5px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/badges.scss",
+      "line": 156,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-group",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 157,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-group",
+      "property": "background-color",
+      "value": "var(--primary-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 158,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-group",
+      "property": "border-color",
+      "value": "var(--primary-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 159,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".badge-group",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/badges.scss",
+      "line": 160,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".category-heading__content .badge-category__wrapper",
+      "property": "font-size",
+      "value": "var(--font-up-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 41,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-heading__content .badge-category__name",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 45,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-heading__content .badge-category__name",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 46,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-list-item.visited a.title:not(.badge-notification)",
+      "property": "color",
+      "value": "var(--title-color--read)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 87,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item.visited a.title:not(.badge-notification)",
+      "property": "color",
+      "value": "var(--title-color--read)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 87,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-topic-link.visited a.title:not(.badge-notification)",
+      "property": "color",
+      "value": "var(--title-color--read)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 87,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-list-item.visited a.title:not(.badge-notification)",
+      "property": "font-weight",
+      "value": "var(--topic-title-font-weight--visited)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 88,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item.visited a.title:not(.badge-notification)",
+      "property": "font-weight",
+      "value": "var(--topic-title-font-weight--visited)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 88,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-topic-link.visited a.title:not(.badge-notification)",
+      "property": "font-weight",
+      "value": "var(--topic-title-font-weight--visited)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 88,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".anon .topic-list-main-link a.title:visited:not(.badge-notification)",
+      "property": "color",
+      "value": "var(--title-color--read)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 121,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-list-main-link a.title.visited:not(.badge-notification)",
+      "property": "color",
+      "value": "var(--title-color--read)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 126,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .num .badge-posts",
+      "property": "font-weight",
+      "value": "700",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 332,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .num .badge-posts",
+      "property": "color",
+      "value": "inherit",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 333,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .num .badge-posts",
+      "property": "display",
+      "value": "inline-block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/_topic-list.scss",
+      "line": 334,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .num .badge-posts",
+      "property": "padding",
+      "value": "15px 5px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 335,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .badge-notification",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/_topic-list.scss",
+      "line": 818,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .category-topic-link td.num .badge-notification",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/_topic-list.scss",
+      "line": 818,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .badge-notification",
+      "property": "display",
+      "value": "inline-block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/_topic-list.scss",
+      "line": 819,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .category-topic-link td.num .badge-notification",
+      "property": "display",
+      "value": "inline-block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/_topic-list.scss",
+      "line": 819,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .badge-notification",
+      "property": "top",
+      "value": "-1px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 820,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .category-topic-link td.num .badge-notification",
+      "property": "top",
+      "value": "-1px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 820,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .badge-notification",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 821,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .category-topic-link td.num .badge-notification",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 821,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .badge-notification",
+      "property": "line-height",
+      "value": "var(--line-height-small)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 822,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .category-topic-link td.num .badge-notification",
+      "property": "line-height",
+      "value": "var(--line-height-small)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 822,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .badge-notification",
+      "property": "padding",
+      "value": "0.15em 0.4em 0.2em 0.4em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 823,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .category-topic-link td.num .badge-notification",
+      "property": "padding",
+      "value": "0.15em 0.4em 0.2em 0.4em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 823,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .badge-notification .d-icon",
+      "property": "color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 826,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .category-topic-link td.num .badge-notification .d-icon",
+      "property": "color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 826,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .badge-notification.new-topic::before",
+      "property": "margin-right",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 830,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .category-topic-link td.num .badge-notification.new-topic::before",
+      "property": "margin-right",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 830,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .badge-notification.new-topic",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 834,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .category-topic-link td.num .badge-notification.new-topic",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 834,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .category-topic-link td.num .badge-notification.unread-posts",
+      "property": "color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/_topic-list.scss",
+      "line": 840,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .topic-item-stats__category-tags .badge-category__wrapper",
+      "property": "vertical-align",
+      "value": "bottom",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/_topic-list.scss",
+      "line": 875,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .topic-item-stats__category-tags .badge-category__wrapper",
+      "property": "margin-right",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 876,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .topic-item-stats__category-tags .badge-category__wrapper",
+      "property": "max-width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/_topic-list.scss",
+      "line": 877,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".anon .latest-topic-list-item .main-link a.title:visited:not(.badge-notification)",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/categories-topic-list.scss",
+      "line": 54,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".latest-topic-list-item .main-link a.title.visited:not(.badge-notification)",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/categories-topic-list.scss",
+      "line": 59,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-list .topics .badge-notification",
+      "property": "background-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/category-list.scss",
+      "line": 35,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".category-list .category .badge-notification",
+      "property": "background-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/category-list.scss",
+      "line": 35,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".category-list .topics .badge-notification",
+      "property": "color",
+      "value": "var(--primary-med-or-secondary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/category-list.scss",
+      "line": 36,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".category-list .category .badge-notification",
+      "property": "color",
+      "value": "var(--primary-med-or-secondary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/category-list.scss",
+      "line": 36,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".category-list .topics .badge-notification",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/category-list.scss",
+      "line": 53,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".category-list .topics .badge-notification",
+      "property": "text-align",
+      "value": "right",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/category-list.scss",
+      "line": 54,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".category-list .topics .badge-notification",
+      "property": "padding-right",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/category-list.scss",
+      "line": 55,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".category-list .topics .badge-notification:first-child",
+      "property": "margin-top",
+      "value": "0.75em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/category-list.scss",
+      "line": 58,
+      "column": 11,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".category-list .subcategories .category__badges .badge-notification",
+      "property": "top",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/category-list.scss",
+      "line": 86,
+      "column": 11,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".category-list .subcategories .category__badges .badge-notification",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/category-list.scss",
+      "line": 87,
+      "column": 11,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".category-list .subcategories .badge-notification.unread-posts",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/category-list.scss",
+      "line": 92,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".category-list .subcategories .badge-notification.unread-posts",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/category-list.scss",
+      "line": 93,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".category-boxes .badge-category__wrapper",
+      "property": "max-width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/category-list.scss",
+      "line": 314,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-boxes-with-topics .badge-category__wrapper",
+      "property": "max-width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/category-list.scss",
+      "line": 314,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".category-boxes .subcategories .subcategory .badge-category__wrapper",
+      "property": "overflow",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/category-list.scss",
+      "line": 448,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".unread-high-priority-notifications.badge-notification[href]",
+      "property": "color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/discourse.scss",
+      "line": 661,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".about-page .body-page .about.category-moderators .badge-category__wrapper .badge-category",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/faqs.scss",
+      "line": 11,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-header-icons .badge-notification",
+      "property": "border",
+      "value": "2px solid var(--header_background)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/header.scss",
+      "line": 228,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-header-icons .badge-notification",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/header.scss",
+      "line": 229,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-header-icons .badge-notification",
+      "property": "top",
+      "value": "-4px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/header.scss",
+      "line": 230,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-header-icons .badge-notification",
+      "property": "min-width",
+      "value": "0.6em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/header.scss",
+      "line": 231,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-header-icons .badge-notification",
+      "property": "left",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/header.scss",
+      "line": 232,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-header-icons .badge-notification",
+      "property": "right",
+      "value": "-3px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/header.scss",
+      "line": 233,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-header-icons .badge-notification.with-icon.new-pms",
+      "property": "background-color",
+      "value": "var(--success)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/header.scss",
+      "line": 237,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-header-icons .badge-notification.with-icon.new-reviewables",
+      "property": "background-color",
+      "value": "var(--danger)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/header.scss",
+      "line": 241,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-header-icons .badge-notification.with-icon .d-icon",
+      "property": "color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/header.scss",
+      "line": 245,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-header-icons .badge-notification.with-icon .d-icon",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/header.scss",
+      "line": 246,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-header-icons .badge-notification.with-icon .d-icon",
+      "property": "width",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/header.scss",
+      "line": 247,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".extra-info-wrapper .badge-category__wrapper",
+      "property": "min-width",
+      "value": "2.75em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/header.scss",
+      "line": 422,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".extra-info-wrapper .badge-category__wrapper .badge-category",
+      "property": "color",
+      "value": "var(--header_primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/header.scss",
+      "line": 427,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".menu-panel li.category-link .badge-notification",
+      "property": "color",
+      "value": "var(--primary-med-or-secondary-med)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/menu-panel.scss",
+      "line": 151,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".menu-panel li.category-link .badge-notification",
+      "property": "background-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/menu-panel.scss",
+      "line": 152,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".menu-panel li.category-link .badge-notification",
+      "property": "display",
+      "value": "inline",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/menu-panel.scss",
+      "line": 153,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".menu-panel li.category-link .badge-notification",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/menu-panel.scss",
+      "line": 154,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".menu-panel li.category-link .badge-notification",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/menu-panel.scss",
+      "line": 155,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".menu-panel li.category-link .badge-notification",
+      "property": "line-height",
+      "value": "var(--line-height-large)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/menu-panel.scss",
+      "line": 156,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".menu-panel .badge-notification",
+      "property": "vertical-align",
+      "value": "text-bottom",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/menu-panel.scss",
+      "line": 244,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-menu.revamped .tabs-list .btn .badge-notification",
+      "property": "background-color",
+      "value": "var(--tertiary-med-or-tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/menu-panel.scss",
+      "line": 312,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-menu.revamped .tabs-list .btn .badge-notification",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/menu-panel.scss",
+      "line": 313,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-menu.revamped .tabs-list .btn .badge-notification",
+      "property": "right",
+      "value": "6px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/menu-panel.scss",
+      "line": 314,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-menu.revamped .tabs-list .btn .badge-notification",
+      "property": "top",
+      "value": "6px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/menu-panel.scss",
+      "line": 315,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-menu.revamped .tabs-list .btn .badge-notification",
+      "property": "font-size",
+      "value": "var(--font-down-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/menu-panel.scss",
+      "line": 316,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-menu.revamped .tabs-list .btn .badge-notification",
+      "property": "right",
+      "value": "3px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/menu-panel.scss",
+      "line": 320,
+      "column": 11,
+      "atRuleContext": [
+        "@media screen and (height <= 400px)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-menu.revamped .tabs-list .btn .badge-notification",
+      "property": "top",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/menu-panel.scss",
+      "line": 321,
+      "column": 11,
+      "atRuleContext": [
+        "@media screen and (height <= 400px)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".reply-where-modal .btn .topic-title__bottom-line .badge-category__name",
+      "property": "color",
+      "value": "var(--text-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/modal.scss",
+      "line": 536,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".not-found-topic a:not(.badge-category__wrapper)",
+      "property": "flex-basis",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/not-found.scss",
+      "line": 154,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".reorder-categories .badge-category__wrapper .badge-category",
+      "property": "max-width",
+      "value": "20em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/reorder-categories.scss",
+      "line": 27,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".reorder-categories .badge-category__wrapper .badge-category",
+      "property": "max-width",
+      "value": "30vw",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/reorder-categories.scss",
+      "line": 30,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".review-item__meta-content .badge-category__wrapper",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/review.scss",
+      "line": 215,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".reviewable-item .post-topic .badge-category__wrapper",
+      "property": "margin-left",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/reviewables.scss",
+      "line": 463,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".reviewable-scores .badge-notification",
+      "property": "line-height",
+      "value": "var(--line-height-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/reviewables.scss",
+      "line": 605,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".reviewable-scores .badge-notification",
+      "property": "vertical-align",
+      "value": "text-top",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/reviewables.scss",
+      "line": 606,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu .search-result-category .badge-category__wrapper",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search-menu.scss",
+      "line": 253,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu-container .search-result-category .badge-category__wrapper",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search-menu.scss",
+      "line": 253,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu .search-result-category .badge-category__wrapper .badge-category",
+      "property": "gap",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search-menu.scss",
+      "line": 256,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-menu-container .search-result-category .badge-category__wrapper .badge-category",
+      "property": "gap",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search-menu.scss",
+      "line": 256,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-container .search-filters .advanced-filters__toggle .badge-notification",
+      "property": "background",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search.scss",
+      "line": 206,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-container .search-filters .advanced-filters__toggle .badge-notification",
+      "property": "top",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search.scss",
+      "line": 207,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-container .search-filters .advanced-filters__toggle:hover .badge-notification",
+      "property": "background",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search.scss",
+      "line": 212,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-container .search-filters .advanced-filters__toggle:hover .badge-notification",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/search.scss",
+      "line": 213,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-category .badge-category__wrapper",
+      "property": "margin-left",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search.scss",
+      "line": 303,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".search-category .badge-category__wrapper:first-child",
+      "property": "margin-left",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search.scss",
+      "line": 306,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fps-result .search-category .badge-category__wrapper",
+      "property": "max-width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/search.scss",
+      "line": 370,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".sidebar-section-link-wrapper .sidebar-section-link .sidebar-section-link-content-text .badge-category__wrapper",
+      "property": "font-size",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/sidebar-section-link.scss",
+      "line": 142,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".sidebar-section-link-wrapper .sidebar-section-link .sidebar-section-link-content-text .badge-category__wrapper",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/sidebar-section-link.scss",
+      "line": 143,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".sidebar-section-link-wrapper .sidebar-section-link .sidebar-section-link-content-text .badge-category__wrapper .badge-category__name",
+      "property": "white-space",
+      "value": "nowrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/sidebar-section-link.scss",
+      "line": 146,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".sidebar-section-link-wrapper .sidebar-section-link .sidebar-section-link-content-text .badge-category__wrapper .badge-category__name",
+      "property": "overflow",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/sidebar-section-link.scss",
+      "line": 147,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".sidebar-section-link-wrapper .sidebar-section-link .sidebar-section-link-content-text .badge-category__wrapper .badge-category__name",
+      "property": "text-overflow",
+      "value": "ellipsis",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/sidebar-section-link.scss",
+      "line": 148,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "aside.quote .title .badge-category__wrapper",
+      "property": "align-self",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 809,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "aside.quote .quote-title__text-content .badge-category__wrapper",
+      "property": "align-self",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 833,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".large-image-placeholder > a > span.badge-notification",
+      "property": "vertical-align",
+      "value": "unset",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1609,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "span.badge-posts",
+      "property": "margin-right",
+      "value": "5px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 2231,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".uc-modernize-foundation-theme .topic-list .num .badge-posts",
+      "property": "font-weight",
+      "value": "500",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/uc-modernize-foundation-theme.scss",
+      "line": 230,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".uc-modernize-foundation-theme .d-header-icons .badge-notification",
+      "property": "right",
+      "value": "-6px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/uc-modernize-foundation-theme.scss",
+      "line": 310,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".uc-modernize-foundation-theme .d-header-icons .badge-notification",
+      "property": "padding",
+      "value": "0.2em 0.4em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/uc-modernize-foundation-theme.scss",
+      "line": 311,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".uc-modernize-foundation-theme .badge-category__wrapper .badge-category",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/uc-modernize-foundation-theme.scss",
+      "line": 338,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".uc-enable-simplified-category-creation div.edit-category .form-kit__conditional-display-content:has(.badge-category__wrapper)",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/uc-simplified-category-setup-edit-categories.scss",
+      "line": 56,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".uc-enable-simplified-category-creation .edit-category-title-text:has(.badge-category__wrapper) .edit-category-static-title",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/uc-simplified-category-setup-edit-categories.scss",
+      "line": 169,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".uc-enable-simplified-category-creation .edit-category-title-text:has(.badge-category__wrapper) .edit-category-static-title",
+      "property": "font-size",
+      "value": "var(--font-down-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/uc-simplified-category-setup-edit-categories.scss",
+      "line": 170,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".uc-enable-simplified-category-creation .edit-category-title-text .badge-category__wrapper",
+      "property": "font-weight",
+      "value": "normal",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/uc-simplified-category-setup-edit-categories.scss",
+      "line": 175,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".uc-enable-simplified-category-creation .edit-category-title-text .badge-category__wrapper",
+      "property": "font-size",
+      "value": "var(--font-up-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/uc-simplified-category-setup-edit-categories.scss",
+      "line": 176,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".uc-enable-simplified-category-creation .edit-category-title-text .badge-category__wrapper",
+      "property": "margin-top",
+      "value": "var(--space-5)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/uc-simplified-category-setup-edit-categories.scss",
+      "line": 177,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-navigation__tip-item .badge-category__wrapper",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/filter-navigation.scss",
+      "line": 39,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".more-topics__container .suggested-topics-message .badge-category__wrapper .badge-category",
+      "property": "display",
+      "value": "inline",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/more-topics.scss",
+      "line": 97,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".more-topics__container .suggested-topics-message .badge-category__wrapper .badge-category",
+      "property": "vertical-align",
+      "value": "baseline",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/more-topics.scss",
+      "line": 98,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".more-topics__container .suggested-topics-message .badge-category__wrapper .badge-category",
+      "property": "margin-right",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/more-topics.scss",
+      "line": 99,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".more-topics__container .suggested-topics-message .badge-category__wrapper .badge-category",
+      "property": "line-height",
+      "value": "0.8",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/more-topics.scss",
+      "line": 100,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".more-topics__container .suggested-topics-message .badge-category__wrapper .badge-category",
+      "property": "max-width",
+      "value": "150px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/more-topics.scss",
+      "line": 101,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".post-list .post-list-item__details .badge-category__wrapper",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/post-list.scss",
+      "line": 54,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".sidebar-categories-form .badge-category__wrapper",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/sidebar/edit-navigation-menu/categories-modal.scss",
+      "line": 56,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .item .post-list-item__details .badge-category__wrapper",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-stream-item.scss",
+      "line": 42,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .item .user-stream-item__details .badge-category__wrapper",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-stream-item.scss",
+      "line": 42,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .user-stream-item .post-list-item__details .badge-category__wrapper",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-stream-item.scss",
+      "line": 42,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .user-stream-item .user-stream-item__details .badge-category__wrapper",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-stream-item.scss",
+      "line": 42,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .item .post-list-item__details .badge-category__wrapper",
+      "property": "max-width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-stream-item.scss",
+      "line": 43,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .item .user-stream-item__details .badge-category__wrapper",
+      "property": "max-width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-stream-item.scss",
+      "line": 43,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .user-stream-item .post-list-item__details .badge-category__wrapper",
+      "property": "max-width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-stream-item.scss",
+      "line": 43,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .user-stream-item .user-stream-item__details .badge-category__wrapper",
+      "property": "max-width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-stream-item.scss",
+      "line": 43,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combo-box.category-drop .badge-category__wrapper",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/select-kit/category-drop.scss",
+      "line": 9,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combo-box.category-drop .badge-category__wrapper",
+      "property": "font-weight",
+      "value": "normal",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/category-drop.scss",
+      "line": 10,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combo-box.category-drop .badge-category__wrapper",
+      "property": "max-width",
+      "value": "260px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/category-drop.scss",
+      "line": 11,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".tag-category-admin-dropdown .badge-category__wrapper",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/select-kit/tag-category-admin-dropdown.scss",
+      "line": 3,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "html .badge-notification",
+      "property": "background",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "wcag.scss",
+      "line": 113,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "html .badge-notification.unread-posts",
+      "property": "background",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "wcag.scss",
+      "line": 117,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "html .user-menu.revamped .tabs-list .btn .badge-notification",
+      "property": "background-color",
+      "value": "dark-light-choose($tertiary-high, $tertiary)",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "function"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "wcag.scss",
+      "line": 245,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": [
+    {
+      "selector": ":root",
+      "property": "--category-badge-title-color",
+      "value": "currentcolor",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "definition",
+      "file": "common/base/discourse.scss",
+      "line": 58,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--category-badge-size",
+      "value": "0.75em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "definition",
+      "file": "common/components/badges.scss",
+      "line": 8,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--category-badge-border-radius",
+      "value": "0px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "definition",
+      "file": "common/components/badges.scss",
+      "line": 9,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ]
+}

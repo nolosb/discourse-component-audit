@@ -1,0 +1,208 @@
+{
+  "component": {
+    "name": "relative-time-picker",
+    "slug": "d-relative-time-picker",
+    "primaryFiles": [
+      "common/components/relative-time-picker.scss"
+    ],
+    "identitySelectors": [
+      ".relative-time-picker",
+      ".relative-time-duration"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.131Z",
+  "summary": {
+    "totalDeclarations": 9,
+    "ownDeclarations": 8,
+    "externalDeclarations": 1,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 7,
+    "uniqueSelectors": 6,
+    "valueBreakdown": {
+      "other": 5,
+      "hardcoded": 4
+    },
+    "concernBreakdown": {
+      "structural": 5,
+      "hardcoded": 4
+    },
+    "mostOverridden": [
+      {
+        "property": "display",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [],
+    "actionItems": [],
+    "existingDefs": [],
+    "externalFileCount": 1,
+    "externalFiles": [
+      "common/components/time-shortcut-picker.scss"
+    ],
+    "ownTokenizedPct": 0,
+    "ownTokenizedCount": 0,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 4,
+    "overrideCoveragePct": null,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 0
+  },
+  "own": [
+    {
+      "selector": ".relative-time-picker",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/relative-time-picker.scss",
+      "line": 2,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".relative-time-picker",
+      "property": "flex-wrap",
+      "value": "wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/relative-time-picker.scss",
+      "line": 3,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".relative-time-picker input[type=\"text\"]",
+      "property": "flex",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/components/relative-time-picker.scss",
+      "line": 6,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".relative-time-picker .relative-time-duration",
+      "property": "margin-bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/relative-time-picker.scss",
+      "line": 10,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".relative-time-picker .select-kit",
+      "property": "flex",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/components/relative-time-picker.scss",
+      "line": 14,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".relative-time-picker .select-kit",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/relative-time-picker.scss",
+      "line": 15,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".relative-time-picker .select-kit",
+      "property": "margin-left",
+      "value": "5px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/relative-time-picker.scss",
+      "line": 16,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".relative-time-picker:last-child",
+      "property": "margin-right",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/relative-time-picker.scss",
+      "line": 20,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".custom-date-time-wrap.custom-relative-wrap .relative-time-picker",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/time-shortcut-picker.scss",
+      "line": 41,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

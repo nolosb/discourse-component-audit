@@ -1,0 +1,142 @@
+{
+  "component": {
+    "name": "page-action-button",
+    "slug": "d-page-action-button",
+    "primaryFiles": [
+      "common/components/d-page-header.scss"
+    ],
+    "identitySelectors": [
+      ".d-page-action-list-item",
+      ".d-page-action-button"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.119Z",
+  "summary": {
+    "totalDeclarations": 3,
+    "ownDeclarations": 1,
+    "externalDeclarations": 2,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 3,
+    "uniqueSelectors": 2,
+    "valueBreakdown": {
+      "css-var": 1,
+      "hardcoded": 1,
+      "other": 1
+    },
+    "concernBreakdown": {
+      "resolved": 1,
+      "hardcoded": 2
+    },
+    "mostOverridden": [
+      {
+        "property": "margin-top",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "max-width",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "margin-top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "max-width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "margin-top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "max-width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 1,
+    "externalFiles": [
+      "admin/badges.scss"
+    ],
+    "ownTokenizedPct": 100,
+    "ownTokenizedCount": 1,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 1,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 2
+  },
+  "own": [
+    {
+      "selector": ".d-page-action-list-item .btn-primary",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-page-header.scss",
+      "line": 102,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".award-badge.d-page-action-button",
+      "property": "margin-top",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/badges.scss",
+      "line": 141,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".award-badge.d-page-action-button",
+      "property": "max-width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/badges.scss",
+      "line": 144,
+      "column": 7,
+      "atRuleContext": [
+        "@media (max-width: $mobile-breakpoint)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

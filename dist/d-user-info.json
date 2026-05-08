@@ -1,0 +1,1161 @@
+{
+  "component": {
+    "name": "user-info",
+    "slug": "d-user-info",
+    "primaryFiles": [
+      "common/components/user-info.scss"
+    ],
+    "identitySelectors": [
+      ".user-info"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.166Z",
+  "summary": {
+    "totalDeclarations": 53,
+    "ownDeclarations": 33,
+    "externalDeclarations": 20,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 20,
+    "uniqueSelectors": 34,
+    "valueBreakdown": {
+      "other": 24,
+      "hardcoded": 21,
+      "css-var": 8
+    },
+    "concernBreakdown": {
+      "structural": 16,
+      "hardcoded": 29,
+      "resolved": 8
+    },
+    "mostOverridden": [
+      {
+        "property": "width",
+        "count": 5,
+        "fileCount": 3
+      },
+      {
+        "property": "display",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "margin",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "font-size",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "margin-right",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "align-items",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "gap",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "overflow-wrap",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "flex-wrap",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "padding-right",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "margin-bottom",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "min-width",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "padding",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "width",
+        "fileCount": 3,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "overflow-wrap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "min-width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "width",
+        "fileCount": 3,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "overflow-wrap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "min-width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 5,
+    "externalFiles": [
+      "common/base/directory.scss",
+      "common/base/group.scss",
+      "common/base/user.scss",
+      "common/login/invite-signup.scss",
+      "desktop/components/user-info.scss"
+    ],
+    "ownTokenizedPct": 27,
+    "ownTokenizedCount": 6,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 22,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 10
+  },
+  "own": [
+    {
+      "selector": ".user-info",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-info.scss",
+      "line": 5,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info",
+      "property": "gap",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 6,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info",
+      "property": "margin-bottom",
+      "value": "0.75rem",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 7,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-image-inner",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-info.scss",
+      "line": 10,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-image-inner",
+      "property": "display",
+      "value": "inline-block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-info.scss",
+      "line": 11,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail",
+      "property": "min-width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 15,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-info.scss",
+      "line": 18,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .name-line",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-info.scss",
+      "line": 22,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .name-line",
+      "property": "flex-wrap",
+      "value": "wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-info.scss",
+      "line": 23,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .name-line",
+      "property": "gap",
+      "value": "0 0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 24,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .name-line a",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-info.scss",
+      "line": 27,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .name-line .username-wrapper",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-info.scss",
+      "line": 31,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .name-line .username-wrapper",
+      "property": "align-items",
+      "value": "baseline",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-info.scss",
+      "line": 32,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .name-line .username-wrapper",
+      "property": "gap",
+      "value": "0.35em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 33,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .name-line .username-wrapper .username",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 36,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .name-line .name-wrapper",
+      "property": "min-width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 43,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .name-line--name-first:not(.user-info .user-detail .name-line--show-status) .username-wrapper",
+      "property": "order",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/components/user-info.scss",
+      "line": 53,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .name-line--name-first:not(.user-info .user-detail .name-line--show-status) .name-wrapper .name",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 57,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .name-line--name-first:not(.user-info .user-detail .name-line--show-status) .username-wrapper .username",
+      "property": "font-weight",
+      "value": "normal",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 61,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .name-line--show-status .username-wrapper",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 68,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .name-line--show-status .name-wrapper",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 72,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .details",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-info.scss",
+      "line": 78,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .details .d-icon-reply",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-info.scss",
+      "line": 81,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info .user-detail .title",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-info.scss",
+      "line": 86,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info.medium",
+      "property": "min-height",
+      "value": "60px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 93,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info.medium .username",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-info.scss",
+      "line": 97,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info.medium .name",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-info.scss",
+      "line": 97,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info.medium .margin a",
+      "property": "margin-left",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 101,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info.medium.badge-info",
+      "property": "min-height",
+      "value": "80px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 105,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info.medium.badge-info",
+      "property": "min-width",
+      "value": "250px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 106,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info.medium.badge-info .granted-on",
+      "property": "color",
+      "value": "var(--primary-med-or-secondary-med)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-info.scss",
+      "line": 109,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info.medium.badge-info .post-link",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-info.scss",
+      "line": 113,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info.medium.badge-info .post-link",
+      "property": "margin-top",
+      "value": "0.2em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-info.scss",
+      "line": 114,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".directory .user-info",
+      "property": "margin-bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/directory.scss",
+      "line": 44,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".directory-table .user-info",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/directory.scss",
+      "line": 236,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".directory-table .user-info",
+      "property": "min-width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/directory.scss",
+      "line": 237,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".directory-table .user-info",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/directory.scss",
+      "line": 238,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".directory-table .user-info .user-detail",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/directory.scss",
+      "line": 241,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".directory-table .user-info .user-detail",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/directory.scss",
+      "line": 242,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".directory-table .user-info .user-detail",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/directory.scss",
+      "line": 246,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".directory-table .user-info .user-detail",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/directory.scss",
+      "line": 250,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".directory-table .user-info .title",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/directory.scss",
+      "line": 255,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".group-members--can-manage .user-info",
+      "property": "padding-right",
+      "value": "3.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/group.scss",
+      "line": 184,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".top-sub-section .user-info .user-detail",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 699,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".top-sub-section .user-info .user-detail .name-line span",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 703,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".top-sub-section .user-info .user-detail .name-line .username",
+      "property": "overflow-wrap",
+      "value": "anywhere",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 707,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".top-sub-section .user-info .user-detail .name-line > a",
+      "property": "flex-wrap",
+      "value": "nowrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 711,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".invites-show .user-info",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/login/invite-signup.scss",
+      "line": 29,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".invites-show .user-info",
+      "property": "gap",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/login/invite-signup.scss",
+      "line": 30,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".invites-show .user-info",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/login/invite-signup.scss",
+      "line": 31,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info.medium",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "desktop/components/user-info.scss",
+      "line": 3,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info.medium .user-image",
+      "property": "width",
+      "value": "55px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "desktop/components/user-info.scss",
+      "line": 6,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-info.medium .user-image",
+      "property": "margin-right",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "desktop/components/user-info.scss",
+      "line": 7,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

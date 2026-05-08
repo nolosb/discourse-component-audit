@@ -1,0 +1,13 @@
+{
+  "name": "time-shortcut-picker",
+  "slug": "d-time-shortcut-picker",
+  "primaryFiles": [
+    "common/components/time-shortcut-picker.scss"
+  ],
+  "identitySelectors": [
+    ".custom-date-time-wrap",
+    ".tap-tile-date-input",
+    ".tap-tile-time-input"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

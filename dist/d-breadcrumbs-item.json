@@ -1,0 +1,115 @@
+{
+  "component": {
+    "name": "breadcrumbs-item",
+    "slug": "d-breadcrumbs-item",
+    "primaryFiles": [
+      "common/components/d-breadcrumbs.scss"
+    ],
+    "identitySelectors": [
+      ".d-breadcrumbs__item",
+      ".d-breadcrumbs__link"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.016Z",
+  "summary": {
+    "totalDeclarations": 4,
+    "ownDeclarations": 4,
+    "externalDeclarations": 0,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 3,
+    "uniqueSelectors": 3,
+    "valueBreakdown": {
+      "other": 2,
+      "css-var": 2
+    },
+    "concernBreakdown": {
+      "structural": 2,
+      "resolved": 2
+    },
+    "mostOverridden": [],
+    "missingCustomProps": [],
+    "actionItems": [],
+    "existingDefs": [],
+    "externalFileCount": 0,
+    "externalFiles": [],
+    "ownTokenizedPct": 100,
+    "ownTokenizedCount": 2,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 2,
+    "overrideCoveragePct": null,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 0
+  },
+  "own": [
+    {
+      "selector": ".d-breadcrumbs__item",
+      "property": "list-style-type",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-breadcrumbs.scss",
+      "line": 7,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-breadcrumbs__item",
+      "property": "white-space",
+      "value": "nowrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-breadcrumbs.scss",
+      "line": 8,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-breadcrumbs__link",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-breadcrumbs.scss",
+      "line": 13,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-breadcrumbs__link:visited",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-breadcrumbs.scss",
+      "line": 13,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [],
+  "customPropertyDefinitions": []
+}

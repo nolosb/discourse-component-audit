@@ -1,0 +1,11 @@
+{
+  "name": "tap-tile-grid",
+  "slug": "d-tap-tile-grid",
+  "primaryFiles": [
+    "common/components/tap-tile.scss"
+  ],
+  "identitySelectors": [
+    ".tap-tile-grid"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

@@ -1,0 +1,18 @@
+{
+  "name": "multi-select",
+  "slug": "d-multi-select",
+  "primaryFiles": [
+    "common/components/d-multi-select.scss"
+  ],
+  "identitySelectors": [
+    ".d-multi-select-trigger",
+    ".d-multi-select-trigger__selection",
+    ".d-multi-select-trigger__label",
+    ".d-multi-select__search-input",
+    ".d-multi-select__search-container",
+    ".d-multi-select__search-results",
+    ".d-multi-select__result",
+    ".d-multi-select-trigger__selected-item"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

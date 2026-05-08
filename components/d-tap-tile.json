@@ -1,0 +1,13 @@
+{
+  "name": "tap-tile",
+  "slug": "d-tap-tile",
+  "primaryFiles": [
+    "common/components/tap-tile.scss"
+  ],
+  "identitySelectors": [
+    ".tap-tile",
+    ".tap-tile-title",
+    ".tap-tile-date"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

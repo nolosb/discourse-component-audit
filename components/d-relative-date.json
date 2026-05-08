@@ -1,0 +1,9 @@
+{
+  "name": "relative-date",
+  "slug": "d-relative-date",
+  "primaryFiles": [],
+  "identitySelectors": [
+    ".relative-date"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

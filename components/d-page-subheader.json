@@ -1,0 +1,13 @@
+{
+  "name": "page-subheader",
+  "slug": "d-page-subheader",
+  "primaryFiles": [
+    "common/components/d-page-header.scss"
+  ],
+  "identitySelectors": [
+    ".d-page-subheader",
+    ".d-page-subheader__title-row",
+    ".d-page-subheader__actions"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

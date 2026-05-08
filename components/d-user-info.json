@@ -1,0 +1,11 @@
+{
+  "name": "user-info",
+  "slug": "d-user-info",
+  "primaryFiles": [
+    "common/components/user-info.scss"
+  ],
+  "identitySelectors": [
+    ".user-info"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

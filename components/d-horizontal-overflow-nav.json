@@ -1,0 +1,13 @@
+{
+  "name": "horizontal-overflow-nav",
+  "slug": "d-horizontal-overflow-nav",
+  "primaryFiles": [
+    "common/components/horizontal-overflow-nav.scss"
+  ],
+  "identitySelectors": [
+    ".horizontal-overflow-nav",
+    ".horizontal-overflow-nav__scroll-right",
+    ".horizontal-overflow-nav__scroll-left"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

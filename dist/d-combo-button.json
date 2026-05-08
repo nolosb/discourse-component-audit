@@ -1,0 +1,204 @@
+{
+  "component": {
+    "name": "combo-button",
+    "slug": "d-combo-button",
+    "primaryFiles": [
+      "common/components/d-combo-button.scss"
+    ],
+    "identitySelectors": [
+      ".d-combo-button"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.040Z",
+  "summary": {
+    "totalDeclarations": 9,
+    "ownDeclarations": 9,
+    "externalDeclarations": 0,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 9,
+    "uniqueSelectors": 4,
+    "valueBreakdown": {
+      "other": 3,
+      "hardcoded": 5,
+      "css-var": 1
+    },
+    "concernBreakdown": {
+      "structural": 1,
+      "hardcoded": 7,
+      "resolved": 1
+    },
+    "mostOverridden": [],
+    "missingCustomProps": [],
+    "actionItems": [],
+    "existingDefs": [],
+    "externalFileCount": 0,
+    "externalFiles": [],
+    "ownTokenizedPct": 13,
+    "ownTokenizedCount": 1,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 8,
+    "overrideCoveragePct": null,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 0
+  },
+  "own": [
+    {
+      "selector": ".d-combo-button.--has-menu",
+      "property": "display",
+      "value": "inline-flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-combo-button.scss",
+      "line": 2,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-combo-button.--has-menu .d-combo-button-button",
+      "property": "border-top-right-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-combo-button.scss",
+      "line": 5,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-combo-button.--has-menu .d-combo-button-button",
+      "property": "border-bottom-right-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-combo-button.scss",
+      "line": 6,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-combo-button.--has-menu .d-combo-button-button",
+      "property": "border-right-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-combo-button.scss",
+      "line": 7,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-combo-button.--has-menu .d-combo-button-menu",
+      "property": "border-top-left-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-combo-button.scss",
+      "line": 11,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-combo-button.--has-menu .d-combo-button-menu",
+      "property": "border-bottom-left-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-combo-button.scss",
+      "line": 12,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-combo-button.--has-menu .d-combo-button-menu",
+      "property": "border-left-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-combo-button.scss",
+      "line": 13,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-combo-button.--has-menu .d-combo-button-menu",
+      "property": "margin-left",
+      "value": "0.1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-combo-button.scss",
+      "line": 14,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-combo-button.--has-menu .d-combo-button-menu.fk-d-menu__trigger .d-icon",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-combo-button.scss",
+      "line": 17,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [],
+  "customPropertyDefinitions": []
+}

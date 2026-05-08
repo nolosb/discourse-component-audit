@@ -1,0 +1,14 @@
+{
+  "name": "stat-tiles",
+  "slug": "d-stat-tiles",
+  "primaryFiles": [
+    "common/components/d-stat-tiles.scss"
+  ],
+  "identitySelectors": [
+    ".d-stat-tiles",
+    ".d-stat-tile",
+    ".d-stat-tile__label",
+    ".d-stat-tile__value"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

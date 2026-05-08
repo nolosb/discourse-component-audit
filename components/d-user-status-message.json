@@ -1,0 +1,12 @@
+{
+  "name": "user-status-message",
+  "slug": "d-user-status-message",
+  "primaryFiles": [
+    "common/components/user-status-message.scss"
+  ],
+  "identitySelectors": [
+    ".user-status-message",
+    ".user-status-message-description"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

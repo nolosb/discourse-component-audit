@@ -1,0 +1,533 @@
+{
+  "component": {
+    "name": "second-factor-input",
+    "slug": "d-second-factor-input",
+    "primaryFiles": [],
+    "identitySelectors": [
+      ".second-factor",
+      ".second-factor-token-input"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.138Z",
+  "summary": {
+    "totalDeclarations": 18,
+    "ownDeclarations": 0,
+    "externalDeclarations": 18,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 12,
+    "uniqueSelectors": 10,
+    "valueBreakdown": {
+      "hardcoded": 8,
+      "other": 7,
+      "css-var": 3
+    },
+    "concernBreakdown": {
+      "hardcoded": 10,
+      "structural": 5,
+      "mixed": 1,
+      "resolved": 2
+    },
+    "mostOverridden": [
+      {
+        "property": "margin-top",
+        "count": 4,
+        "fileCount": 1
+      },
+      {
+        "property": "display",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "align-items",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "color",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "margin-right",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "width",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "gap",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "justify-content",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "border-top",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "margin",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "padding",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "background",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "background",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "background",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 2,
+    "externalFiles": [
+      "common/base/login-signup-page.scss",
+      "common/base/user.scss"
+    ],
+    "ownTokenizedPct": 100,
+    "ownTokenizedCount": 0,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 0,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 9
+  },
+  "own": [],
+  "external": [
+    {
+      "selector": ".login-fullpage .second-factor .login-page-cta",
+      "property": "margin-top",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/login-signup-page.scss",
+      "line": 164,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".signup-fullpage .second-factor .login-page-cta",
+      "property": "margin-top",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/login-signup-page.scss",
+      "line": 164,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".invites-show .second-factor .login-page-cta",
+      "property": "margin-top",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/login-signup-page.scss",
+      "line": 164,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".password-reset-page .second-factor .login-page-cta",
+      "property": "margin-top",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/login-signup-page.scss",
+      "line": 164,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-preferences.second-factor-backup-preferences .second-factor-token-input",
+      "property": "margin-right",
+      "value": "10px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 857,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".second-factor .second-factor-item",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 1098,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".second-factor .second-factor-item",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 1099,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".second-factor .second-factor-item",
+      "property": "gap",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 1100,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".second-factor .second-factor-item",
+      "property": "justify-content",
+      "value": "space-between",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 1101,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".second-factor .second-factor-item",
+      "property": "border-top",
+      "value": "1px solid var(--content-border-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/user.scss",
+      "line": 1102,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".second-factor .second-factor-item",
+      "property": "margin",
+      "value": "0.25em 0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 1103,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".second-factor .second-factor-item",
+      "property": "padding",
+      "value": "0.25em 0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 1104,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".second-factor .second-factor-item",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 1105,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".second-factor .second-factor-item .select-kit .select-kit-header",
+      "property": "background",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 1109,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".second-factor .second-factor-item .select-kit .select-kit-header:hover .d-icon",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1112,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".second-factor .second-factor-item .select-kit.is-expanded .select-kit-header .d-icon",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1118,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".second-factor .-actions",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 1125,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".second-factor .-actions",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 1126,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

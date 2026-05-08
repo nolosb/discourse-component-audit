@@ -1,0 +1,294 @@
+{
+  "component": {
+    "name": "input-tip",
+    "slug": "d-input-tip",
+    "primaryFiles": [
+      "common/input_tip.scss"
+    ],
+    "identitySelectors": [
+      ".popup-tip"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.087Z",
+  "summary": {
+    "totalDeclarations": 14,
+    "ownDeclarations": 14,
+    "externalDeclarations": 0,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 11,
+    "uniqueSelectors": 6,
+    "valueBreakdown": {
+      "other": 5,
+      "hardcoded": 4,
+      "function": 1,
+      "css-var": 4
+    },
+    "concernBreakdown": {
+      "structural": 4,
+      "hardcoded": 5,
+      "review": 1,
+      "resolved": 4
+    },
+    "mostOverridden": [],
+    "missingCustomProps": [],
+    "actionItems": [],
+    "existingDefs": [],
+    "externalFileCount": 0,
+    "externalFiles": [],
+    "ownTokenizedPct": 40,
+    "ownTokenizedCount": 4,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 10,
+    "overrideCoveragePct": null,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 0
+  },
+  "own": [
+    {
+      "selector": ".popup-tip",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/input_tip.scss",
+      "line": 17,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".popup-tip",
+      "property": "left",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/input_tip.scss",
+      "line": 18,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".popup-tip",
+      "property": "z-index",
+      "value": "z(\"composer\", \"dropdown\") + 1",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function"
+        ]
+      },
+      "concern": "review",
+      "file": "common/input_tip.scss",
+      "line": 19,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".popup-tip",
+      "property": "cursor",
+      "value": "pointer",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/input_tip.scss",
+      "line": 20,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".popup-tip",
+      "property": "animation",
+      "value": "0.15s slidein 3",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/input_tip.scss",
+      "line": 23,
+      "column": 5,
+      "atRuleContext": [
+        "@media (prefers-reduced-motion: no-preference)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".popup-tip.bad",
+      "property": "background",
+      "value": "var(--danger-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/input_tip.scss",
+      "line": 27,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".popup-tip.bad",
+      "property": "color",
+      "value": "white",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/input_tip.scss",
+      "line": 28,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".popup-tip.bad",
+      "property": "box-shadow",
+      "value": "var(--shadow-dropdown)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/input_tip.scss",
+      "line": 29,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".popup-tip.hide",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/input_tip.scss",
+      "line": 34,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".popup-tip.good",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/input_tip.scss",
+      "line": 34,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".popup-tip .d-icon",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/input_tip.scss",
+      "line": 38,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".popup-tip .d-icon",
+      "property": "opacity",
+      "value": "0.5",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/input_tip.scss",
+      "line": 39,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".popup-tip .d-icon",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/input_tip.scss",
+      "line": 40,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".popup-tip .d-icon:hover",
+      "property": "opacity",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/input_tip.scss",
+      "line": 43,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [],
+  "customPropertyDefinitions": []
+}

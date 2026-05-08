@@ -1,0 +1,384 @@
+{
+  "component": {
+    "name": "user-status-message",
+    "slug": "d-user-status-message",
+    "primaryFiles": [
+      "common/components/user-status-message.scss"
+    ],
+    "identitySelectors": [
+      ".user-status-message",
+      ".user-status-message-description"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.169Z",
+  "summary": {
+    "totalDeclarations": 14,
+    "ownDeclarations": 3,
+    "externalDeclarations": 11,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 9,
+    "uniqueSelectors": 9,
+    "valueBreakdown": {
+      "other": 7,
+      "hardcoded": 4,
+      "css-var": 3
+    },
+    "concernBreakdown": {
+      "structural": 8,
+      "hardcoded": 3,
+      "resolved": 3
+    },
+    "mostOverridden": [
+      {
+        "property": "display",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "vertical-align",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "user-select",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "align-items",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "gap",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "font-size",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "color",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "margin",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 4,
+    "externalFiles": [
+      "common/base/sidebar-section-link.scss",
+      "common/base/topic-post.scss",
+      "common/base/user.scss",
+      "common/components/autocomplete.scss"
+    ],
+    "ownTokenizedPct": 50,
+    "ownTokenizedCount": 1,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 2,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 4
+  },
+  "own": [
+    {
+      "selector": ".user-status-message .fk-d-tooltip__trigger-container",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-status-message.scss",
+      "line": 3,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-status-message .user-status-message-description",
+      "property": "margin-left",
+      "value": "0.35em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-status-message.scss",
+      "line": 7,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "[data-content][data-identifier=\"user-status-message-tooltip\"] .user-status-message-description",
+      "property": "color",
+      "value": "var(--primary-800)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-status-message.scss",
+      "line": 22,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".sidebar-section-link-wrapper .sidebar-section-link .sidebar-section-link-content-text .user-status-message",
+      "property": "vertical-align",
+      "value": "-0.125em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/base/sidebar-section-link.scss",
+      "line": 132,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "a.mention .user-status-message",
+      "property": "user-select",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1553,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "a.mention-group .user-status-message",
+      "property": "user-select",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 1553,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-names__primary .user-status-message",
+      "property": "display",
+      "value": "inline-flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 1209,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-profile-names__primary .user-status-message",
+      "property": "vertical-align",
+      "value": "baseline",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 1210,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".autocomplete ul li a .user-status-message",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/autocomplete.scss",
+      "line": 60,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".autocomplete ul li a .user-status-message",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/autocomplete.scss",
+      "line": 61,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".autocomplete ul li a .user-status-message",
+      "property": "gap",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/autocomplete.scss",
+      "line": 62,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".autocomplete ul li a .user-status-message .user-status-message-description",
+      "property": "font-size",
+      "value": "var(--font-down-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/autocomplete.scss",
+      "line": 66,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".autocomplete ul li a .user-status-message .user-status-message-description",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/autocomplete.scss",
+      "line": 67,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".autocomplete ul li a .user-status-message .user-status-message-description",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/autocomplete.scss",
+      "line": 68,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

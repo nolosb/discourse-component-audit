@@ -1,0 +1,681 @@
+{
+  "component": {
+    "name": "save-controls",
+    "slug": "d-save-controls",
+    "primaryFiles": [],
+    "identitySelectors": [
+      ".save-or-cancel"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.136Z",
+  "summary": {
+    "totalDeclarations": 24,
+    "ownDeclarations": 0,
+    "externalDeclarations": 24,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 14,
+    "uniqueSelectors": 8,
+    "valueBreakdown": {
+      "other": 12,
+      "css-var": 6,
+      "hardcoded": 6
+    },
+    "concernBreakdown": {
+      "structural": 7,
+      "resolved": 6,
+      "hardcoded": 11
+    },
+    "mostOverridden": [
+      {
+        "property": "color",
+        "count": 4,
+        "fileCount": 1
+      },
+      {
+        "property": "flex",
+        "count": 3,
+        "fileCount": 1
+      },
+      {
+        "property": "align-items",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "display",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "margin-left",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "padding",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "outline",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "gap",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "margin-right",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "line-height",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "transition",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "background-color",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "background-image",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "font-size",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "line-height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "transition",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "outline",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "background-color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "background-image",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "line-height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "transition",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "outline",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "background-color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "background-image",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 1,
+    "externalFiles": [
+      "common/base/compose.scss"
+    ],
+    "ownTokenizedPct": 100,
+    "ownTokenizedCount": 0,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 0,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 11
+  },
+  "own": [],
+  "external": [
+    {
+      "selector": "#reply-control .save-or-cancel",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/compose.scss",
+      "line": 541,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/compose.scss",
+      "line": 542,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel",
+      "property": "flex",
+      "value": "0 1 auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/compose.scss",
+      "line": 543,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel",
+      "property": "gap",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/compose.scss",
+      "line": 544,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel",
+      "property": "margin-right",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 547,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel",
+      "property": "flex",
+      "value": "1 1 auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/compose.scss",
+      "line": 548,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .btn-primary",
+      "property": "flex",
+      "value": "0 0 auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/compose.scss",
+      "line": 552,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/compose.scss",
+      "line": 556,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/compose.scss",
+      "line": 557,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel",
+      "property": "margin-left",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 558,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel",
+      "property": "line-height",
+      "value": "normal",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 559,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel",
+      "property": "color",
+      "value": "var(--accent-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/compose.scss",
+      "line": 560,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel",
+      "property": "transition",
+      "value": "color 250ms",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 561,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 562,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel:hover",
+      "property": "outline",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 566,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel:focus",
+      "property": "outline",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 566,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel:hover",
+      "property": "color",
+      "value": "var(--danger)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/compose.scss",
+      "line": 567,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel:focus",
+      "property": "color",
+      "value": "var(--danger)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/compose.scss",
+      "line": 567,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel:active",
+      "property": "background-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 571,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel:active",
+      "property": "background-image",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 572,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel .d-icon",
+      "property": "font-size",
+      "value": "var(--font-up-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/compose.scss",
+      "line": 577,
+      "column": 11,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel .d-icon",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/compose.scss",
+      "line": 578,
+      "column": 11,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .cancel .d-icon",
+      "property": "padding",
+      "value": "0.35em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 579,
+      "column": 11,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": "#reply-control .save-or-cancel .preview-template",
+      "property": "margin-left",
+      "value": "0.5rem",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/compose.scss",
+      "line": 585,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

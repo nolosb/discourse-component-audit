@@ -1,0 +1,632 @@
+{
+  "component": {
+    "name": "relative-date",
+    "slug": "d-relative-date",
+    "primaryFiles": [],
+    "identitySelectors": [
+      ".relative-date"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.129Z",
+  "summary": {
+    "totalDeclarations": 25,
+    "ownDeclarations": 0,
+    "externalDeclarations": 25,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 12,
+    "uniqueSelectors": 10,
+    "valueBreakdown": {
+      "css-var": 12,
+      "other": 8,
+      "hardcoded": 5
+    },
+    "concernBreakdown": {
+      "resolved": 12,
+      "hardcoded": 7,
+      "structural": 6
+    },
+    "mostOverridden": [
+      {
+        "property": "font-size",
+        "count": 5,
+        "fileCount": 5
+      },
+      {
+        "property": "color",
+        "count": 4,
+        "fileCount": 4
+      },
+      {
+        "property": "padding-top",
+        "count": 4,
+        "fileCount": 3
+      },
+      {
+        "property": "margin-left",
+        "count": 3,
+        "fileCount": 3
+      },
+      {
+        "property": "line-height",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "margin-right",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "float",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "flex",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "text-align",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "white-space",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "pointer-events",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "vertical-align",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "font-size",
+        "fileCount": 5,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 4,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-top",
+        "fileCount": 3,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 3,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "line-height",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "font-size",
+        "fileCount": 5,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 4,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-top",
+        "fileCount": 3,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 3,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "line-height",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 8,
+    "externalFiles": [
+      "common/base/_topic-list.scss",
+      "common/base/discourse.scss",
+      "common/base/menu-panel.scss",
+      "common/base/topic-post.scss",
+      "common/components/autocomplete.scss",
+      "common/components/post-list.scss",
+      "common/components/user-card.scss",
+      "common/components/user-stream-item.scss"
+    ],
+    "ownTokenizedPct": 100,
+    "ownTokenizedCount": 0,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 0,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 6
+  },
+  "own": [],
+  "external": [
+    {
+      "selector": ".topic-list .num.activity a span.relative-date",
+      "property": "pointer-events",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/_topic-list.scss",
+      "line": 344,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-list .topic-item-stats span.relative-date",
+      "property": "vertical-align",
+      "value": "text-top",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/_topic-list.scss",
+      "line": 852,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": "span.relative-date",
+      "property": "white-space",
+      "value": "nowrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/discourse.scss",
+      "line": 312,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-menu.revamped #quick-access-profile .profile-tab-btn .relative-date",
+      "property": "font-size",
+      "value": "var(--font-down-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/menu-panel.scss",
+      "line": 419,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-menu.revamped #quick-access-profile .profile-tab-btn .relative-date",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/menu-panel.scss",
+      "line": 420,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".post-action .relative-date",
+      "property": "margin-left",
+      "value": "var(--space-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/topic-post.scss",
+      "line": 930,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.from(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.from(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".autocomplete ul li a .relative-date",
+      "property": "font-size",
+      "value": "var(--font-down-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/autocomplete.scss",
+      "line": 73,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".post-list .post-list-item .relative-date",
+      "property": "line-height",
+      "value": "var(--line-height-small)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/post-list.scss",
+      "line": 70,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".post-list .post-list-item .relative-date",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/post-list.scss",
+      "line": 71,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".post-list .post-list-item .relative-date",
+      "property": "font-size",
+      "value": "var(--font-down-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/post-list.scss",
+      "line": 72,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".post-list .post-list-item .relative-date",
+      "property": "padding-top",
+      "value": "5px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/post-list.scss",
+      "line": 73,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card .user-status .relative-date",
+      "property": "flex",
+      "value": "1 0 auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-card.scss",
+      "line": 486,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card .user-status .relative-date",
+      "property": "text-align",
+      "value": "left",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-card.scss",
+      "line": 487,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card .user-status .relative-date",
+      "property": "font-size",
+      "value": "var(--font-down-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-card.scss",
+      "line": 488,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card .user-status .relative-date",
+      "property": "padding-top",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-card.scss",
+      "line": 489,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card .user-status .relative-date",
+      "property": "margin-left",
+      "value": "0.6em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-card.scss",
+      "line": 490,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-card .user-status .relative-date",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-card.scss",
+      "line": 491,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .relative-date",
+      "property": "line-height",
+      "value": "var(--line-height-small)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-stream-item.scss",
+      "line": 104,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .relative-date",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-stream-item.scss",
+      "line": 105,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .relative-date",
+      "property": "font-size",
+      "value": "var(--font-down-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/user-stream-item.scss",
+      "line": 106,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .relative-date",
+      "property": "padding-top",
+      "value": "unset",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-stream-item.scss",
+      "line": 107,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".user-stream .relative-date",
+      "property": "margin-right",
+      "value": "0.5rem",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-stream-item.scss",
+      "line": 108,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .user-notifications-list li.notification .relative-date",
+      "property": "margin-left",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-stream-item.scss",
+      "line": 143,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .user-notifications-list li.notification .relative-date",
+      "property": "padding-top",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/user-stream-item.scss",
+      "line": 144,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-stream .user-notifications-list li.notification .relative-date",
+      "property": "float",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/user-stream-item.scss",
+      "line": 145,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

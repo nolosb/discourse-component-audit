@@ -1,0 +1,153 @@
+{
+  "component": {
+    "name": "char-counter",
+    "slug": "d-char-counter",
+    "primaryFiles": [
+      "common/components/char-counter.scss"
+    ],
+    "identitySelectors": [
+      ".char-counter",
+      ".char-counter__ratio"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.035Z",
+  "summary": {
+    "totalDeclarations": 6,
+    "ownDeclarations": 6,
+    "externalDeclarations": 0,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 6,
+    "uniqueSelectors": 3,
+    "valueBreakdown": {
+      "other": 2,
+      "hardcoded": 1,
+      "css-var": 3
+    },
+    "concernBreakdown": {
+      "structural": 2,
+      "hardcoded": 1,
+      "resolved": 3
+    },
+    "mostOverridden": [],
+    "missingCustomProps": [],
+    "actionItems": [],
+    "existingDefs": [],
+    "externalFileCount": 0,
+    "externalFiles": [],
+    "ownTokenizedPct": 75,
+    "ownTokenizedCount": 3,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 4,
+    "overrideCoveragePct": null,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 0
+  },
+  "own": [
+    {
+      "selector": ".char-counter__ratio",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/char-counter.scss",
+      "line": 3,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".char-counter__ratio",
+      "property": "text-align",
+      "value": "right",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/char-counter.scss",
+      "line": 4,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".char-counter__ratio",
+      "property": "margin-top",
+      "value": "0.5rem",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/char-counter.scss",
+      "line": 5,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".char-counter.exceeded > textarea",
+      "property": "border-color",
+      "value": "var(--danger)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/char-counter.scss",
+      "line": 10,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".char-counter.exceeded > textarea",
+      "property": "outline-color",
+      "value": "var(--danger)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/char-counter.scss",
+      "line": 11,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".char-counter.exceeded__ratio",
+      "property": "color",
+      "value": "var(--danger)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/char-counter.scss",
+      "line": 15,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [],
+  "customPropertyDefinitions": []
+}

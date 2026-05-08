@@ -1,0 +1,14 @@
+{
+  "name": "page-header",
+  "slug": "d-page-header",
+  "primaryFiles": [
+    "common/components/d-page-header.scss"
+  ],
+  "identitySelectors": [
+    ".d-page-header",
+    ".d-page-header__title-row",
+    ".d-page-header__actions",
+    ".d-page-header__drawer"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

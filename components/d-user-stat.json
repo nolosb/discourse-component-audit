@@ -1,0 +1,9 @@
+{
+  "name": "user-stat",
+  "slug": "d-user-stat",
+  "primaryFiles": [],
+  "identitySelectors": [
+    ".user-stat"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

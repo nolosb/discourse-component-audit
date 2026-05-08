@@ -1,0 +1,12 @@
+{
+  "name": "filter-input",
+  "slug": "d-filter-input",
+  "primaryFiles": [
+    "common/components/filter-input.scss"
+  ],
+  "identitySelectors": [
+    ".filter-input-container",
+    ".filter-input"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

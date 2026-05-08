@@ -1,0 +1,11 @@
+{
+  "name": "load-more",
+  "slug": "d-load-more",
+  "primaryFiles": [
+    "common/components/load-more.scss"
+  ],
+  "identitySelectors": [
+    ".load-more-sentinel"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

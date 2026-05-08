@@ -1,0 +1,11 @@
+{
+  "name": "radio-button",
+  "slug": "d-radio-button",
+  "primaryFiles": [
+    "common/base/discourse.scss"
+  ],
+  "identitySelectors": [
+    ".radio-button"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

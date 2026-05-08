@@ -1,0 +1,2455 @@
+{
+  "component": {
+    "name": "responsive-table",
+    "slug": "d-responsive-table",
+    "primaryFiles": [
+      "common/components/table-layout.scss"
+    ],
+    "identitySelectors": [
+      ".d-table",
+      ".d-table__header",
+      ".d-table__header-cell",
+      ".d-table__row",
+      ".d-table__cell"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.134Z",
+  "summary": {
+    "totalDeclarations": 119,
+    "ownDeclarations": 78,
+    "externalDeclarations": 41,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 37,
+    "uniqueSelectors": 59,
+    "valueBreakdown": {
+      "other": 50,
+      "css-var": 58,
+      "hardcoded": 11
+    },
+    "concernBreakdown": {
+      "hardcoded": 33,
+      "structural": 27,
+      "resolved": 54,
+      "definition": 2,
+      "mixed": 3
+    },
+    "mostOverridden": [
+      {
+        "property": "width",
+        "count": 9,
+        "fileCount": 2
+      },
+      {
+        "property": "margin-top",
+        "count": 4,
+        "fileCount": 1
+      },
+      {
+        "property": "color",
+        "count": 4,
+        "fileCount": 1
+      },
+      {
+        "property": "display",
+        "count": 3,
+        "fileCount": 2
+      },
+      {
+        "property": "text-align",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "max-width",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "word-break",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "white-space",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "font-size",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "vertical-align",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "padding",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "height",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "background-color",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "text-wrap",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "margin-right",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "width",
+        "fileCount": 2,
+        "distinctValues": 5,
+        "hasDef": false
+      },
+      {
+        "property": "max-width",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "background-color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "text-wrap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "word-break",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "margin-top",
+        "fileCount": 1,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "row-gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "width",
+        "fileCount": 2,
+        "distinctValues": 5,
+        "hasDef": false
+      },
+      {
+        "property": "max-width",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "background-color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "text-wrap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "word-break",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "margin-top",
+        "fileCount": 1,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "row-gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [
+      "--d-border-radius",
+      "--status-icon-diameter"
+    ],
+    "externalFileCount": 5,
+    "externalFiles": [
+      "admin/api.scss",
+      "admin/backups.scss",
+      "admin/plugins.scss",
+      "admin/upcoming-changes.scss",
+      "common/base/user.scss"
+    ],
+    "ownTokenizedPct": 64,
+    "ownTokenizedCount": 39,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 61,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 14
+  },
+  "own": [
+    {
+      "selector": ".d-table",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 4,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table",
+      "property": "border-collapse",
+      "value": "collapse",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 7,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table",
+      "property": "margin-bottom",
+      "value": "var(--space-12)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 8,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table th",
+      "property": "padding",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 13,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table td",
+      "property": "padding",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 13,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label",
+      "property": "--d-border-radius",
+      "value": "var(--space-4)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "definition",
+      "file": "common/components/table-layout.scss",
+      "line": 19,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label",
+      "property": "--status-icon-diameter",
+      "value": "8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "definition",
+      "file": "common/components/table-layout.scss",
+      "line": 20,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 21,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label",
+      "property": "flex-wrap",
+      "value": "nowrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 22,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label",
+      "property": "width",
+      "value": "fit-content",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 23,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label",
+      "property": "background-color",
+      "value": "var(--primary-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 24,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label",
+      "property": "padding",
+      "value": "var(--space-half) var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 25,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label",
+      "property": "border-radius",
+      "value": "var(--d-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 26,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label .status-label-indicator",
+      "property": "display",
+      "value": "inline-block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 29,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label .status-label-indicator",
+      "property": "width",
+      "value": "var(--status-icon-diameter)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 30,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label .status-label-indicator",
+      "property": "height",
+      "value": "var(--status-icon-diameter)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 31,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label .status-label-indicator",
+      "property": "border-radius",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 32,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label .status-label-indicator",
+      "property": "background-color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 33,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label .status-label-indicator",
+      "property": "flex-shrink",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 34,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label .status-label-indicator",
+      "property": "margin-right",
+      "value": "var(--space-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 35,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label .status-label-indicator",
+      "property": "margin-top",
+      "value": "0.35rem",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 36,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label .status-label-text",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 40,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label .status-label-text",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 41,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label.--success",
+      "property": "background-color",
+      "value": "var(--success-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 47,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label.--success .status-label-indicator",
+      "property": "background-color",
+      "value": "var(--success)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 50,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label.--success .status-label-text",
+      "property": "color",
+      "value": "var(--success-hover)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 54,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label.--critical",
+      "property": "background-color",
+      "value": "var(--danger-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 60,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label.--critical .status-label-indicator",
+      "property": "background-color",
+      "value": "var(--danger)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 63,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label.--critical .status-label-text",
+      "property": "color",
+      "value": "var(--danger-hover)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 67,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label.--inactive",
+      "property": "background-color",
+      "value": "var(--primary-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 73,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label.--inactive .status-label-indicator",
+      "property": "background-color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 76,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table .status-label.--inactive .status-label-text",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 80,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__header",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 87,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__header-cell",
+      "property": "text-align",
+      "value": "left",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 92,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__header-cell",
+      "property": "font-weight",
+      "value": "normal",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 93,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__header-cell",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 94,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__row",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 98,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__row",
+      "property": "padding",
+      "value": "var(--space-1) 0",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 99,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__row",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 102,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__row",
+      "property": "margin-bottom",
+      "value": "var(--space-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 103,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__row",
+      "property": "border",
+      "value": "1px solid var(--content-border-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/table-layout.scss",
+      "line": 104,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__row.has-update",
+      "property": "background-color",
+      "value": "var(--tertiary-very-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 108,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__row.has-update",
+      "property": "border-left",
+      "value": "solid 3px var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/table-layout.scss",
+      "line": 109,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell",
+      "property": "vertical-align",
+      "value": "middle",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 114,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 117,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell",
+      "property": "border-top",
+      "value": "1px solid var(--content-border-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/table-layout.scss",
+      "line": 118,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell:first-child",
+      "property": "border-top",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 123,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 130,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview",
+      "property": "border-top",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 131,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-name",
+      "property": "font-weight",
+      "value": "700",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 135,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-name",
+      "property": "max-width",
+      "value": "80%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 136,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-name",
+      "property": "margin-bottom",
+      "value": "var(--space-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 137,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-name",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 138,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-link",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 142,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-link .d-table__overview-name:hover",
+      "property": "color",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 147,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-link .d-table__overview-name:focus",
+      "property": "color",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 147,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview a.d-table__overview-name:visited",
+      "property": "color",
+      "value": "currentcolor",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 154,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview a.d-table__overview-name:hover",
+      "property": "color",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 159,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview a.d-table__overview-name:focus",
+      "property": "color",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 159,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-author",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 164,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-author",
+      "property": "margin-bottom",
+      "value": "var(--space-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 165,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-about",
+      "property": "padding-right",
+      "value": "var(--space-4)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 169,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-about",
+      "property": "padding-top",
+      "value": "var(--space-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 172,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-about .d-icon",
+      "property": "font-size",
+      "value": "var(--font-down-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 176,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-about .d-icon",
+      "property": "margin-bottom",
+      "value": "0.1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 177,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-flags",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 182,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-flags",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/table-layout.scss",
+      "line": 183,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-flags",
+      "property": "text-transform",
+      "value": "lowercase",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 184,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--overview .d-table__overview-flags::first-letter",
+      "property": "text-transform",
+      "value": "uppercase",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 187,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--detail",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 194,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--detail",
+      "property": "justify-content",
+      "value": "space-between",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 195,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--controls",
+      "property": "text-align",
+      "value": "right",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 209,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--controls",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 210,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--controls",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/table-layout.scss",
+      "line": 213,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--controls",
+      "property": "top",
+      "value": "-3px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 214,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--controls",
+      "property": "right",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 215,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--controls",
+      "property": "border-top",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 216,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".d-table__cell.--controls",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/table-layout.scss",
+      "line": 217,
+      "column": 5,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".d-table.admin-web_hooks__items .d-table__cell.key-url",
+      "property": "word-break",
+      "value": "break-all",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/api.scss",
+      "line": 7,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table.admin-web_hooks__items .d-table__cell.key-url",
+      "property": "white-space",
+      "value": "normal",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/api.scss",
+      "line": 8,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table.admin-web_hooks__items .d-table__cell.key-description",
+      "property": "white-space",
+      "value": "pre-wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/api.scss",
+      "line": 12,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table.admin-web_hooks__items .d-table__cell.key-description",
+      "property": "word-break",
+      "value": "break-word",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/api.scss",
+      "line": 13,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-table.admin-api_keys__items .d-table__cell.key",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/api.scss",
+      "line": 21,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-backups .d-table .d-table__cell.--overview",
+      "property": "max-width",
+      "value": "65%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/backups.scss",
+      "line": 11,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-backups .d-table .d-table__cell.--overview",
+      "property": "text-wrap",
+      "value": "balance",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/backups.scss",
+      "line": 12,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-backups .d-table .backup-size",
+      "property": "text-align",
+      "value": "right",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/backups.scss",
+      "line": 16,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-contents.admin-plugins .d-table.admin-plugins-list .admin-plugins-list__version",
+      "property": "width",
+      "value": "14%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/plugins.scss",
+      "line": 13,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-contents.admin-plugins .d-table.admin-plugins-list .admin-plugins-list__version",
+      "property": "text-align",
+      "value": "right",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/plugins.scss",
+      "line": 16,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".admin-contents.admin-plugins .d-table.admin-plugins-list .admin-plugins-list__version",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/plugins.scss",
+      "line": 17,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".admin-contents.admin-plugins .d-table.admin-plugins-list .d-table__cell.--controls",
+      "property": "width",
+      "value": "10%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/plugins.scss",
+      "line": 22,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-contents.admin-plugins .d-table.admin-plugins-list .d-table__cell.--controls",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/plugins.scss",
+      "line": 25,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".admin-contents.admin-plugins .d-table.admin-plugins-list .admin-plugins-list__row-admin-search-filtered",
+      "property": "background-color",
+      "value": "var(--primary-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "admin/plugins.scss",
+      "line": 30,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".upcoming-changes-table td.d-table__cell",
+      "property": "vertical-align",
+      "value": "middle",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/upcoming-changes.scss",
+      "line": 6,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".upcoming-changes-table td.d-table__cell",
+      "property": "padding",
+      "value": "var(--space-4) var(--space-3)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "admin/upcoming-changes.scss",
+      "line": 7,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".upcoming-changes-table td.d-table__cell.--detail.upcoming-change__metadata",
+      "property": "height",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/upcoming-changes.scss",
+      "line": 11,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list",
+      "property": "margin-top",
+      "value": "var(--space-4)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1297,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell.--overview .d-icon",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1302,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell.--overview .d-icon",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1303,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell.--overview .d-icon",
+      "property": "margin-right",
+      "value": "var(--space-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1304,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell.--controls",
+      "property": "width",
+      "value": "10%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 1309,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell.invite-updated-at",
+      "property": "width",
+      "value": "18%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 1313,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell.invite-updated-at",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 1316,
+      "column": 11,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell.invite-expires-at",
+      "property": "width",
+      "value": "20%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 1321,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell.invite-expires-at",
+      "property": "width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 1324,
+      "column": 11,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-shortkey",
+      "property": "max-width",
+      "value": "70%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 1330,
+      "column": 11,
+      "atRuleContext": [
+        "@include viewport.until(md)"
+      ],
+      "mixinCalls": [
+        "viewport.until(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-description",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1335,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-description",
+      "property": "margin-top",
+      "value": "var(--space-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1336,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-details",
+      "property": "margin-left",
+      "value": "var(--space-5)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1340,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-groups",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 1344,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-groups",
+      "property": "flex-wrap",
+      "value": "wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 1345,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-groups",
+      "property": "gap",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1346,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-groups",
+      "property": "row-gap",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/user.scss",
+      "line": 1347,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-groups",
+      "property": "margin-top",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1348,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-topic",
+      "property": "margin-top",
+      "value": "var(--space-2)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1352,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-extra",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1356,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-extra a",
+      "property": "color",
+      "value": "var(--primary-very-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1359,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-extra-item-link",
+      "property": "display",
+      "value": "inline-flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 1364,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-extra-item-link",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/user.scss",
+      "line": 1365,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-invites-page .d-table.user-invite-list .d-table__cell .invite-extra-item-link",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/user.scss",
+      "line": 1366,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

@@ -1,0 +1,1146 @@
+{
+  "component": {
+    "name": "d-toggle-switch",
+    "slug": "d-toggle-switch",
+    "primaryFiles": [
+      "common/components/d-toggle-switch.scss"
+    ],
+    "identitySelectors": [
+      ".d-toggle-switch",
+      ".d-toggle-switch__checkbox",
+      ".d-toggle-switch__checkbox-slider",
+      ".d-toggle-switch__label"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.161Z",
+  "summary": {
+    "totalDeclarations": 60,
+    "ownDeclarations": 57,
+    "externalDeclarations": 3,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 28,
+    "uniqueSelectors": 18,
+    "valueBreakdown": {
+      "hardcoded": 14,
+      "other": 26,
+      "css-var": 11,
+      "calc": 8,
+      "function": 1
+    },
+    "concernBreakdown": {
+      "definition": 2,
+      "structural": 22,
+      "hardcoded": 16,
+      "mixed": 3,
+      "resolved": 16,
+      "review": 1
+    },
+    "mostOverridden": [
+      {
+        "property": "margin-right",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "margin-left",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "align-items",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [
+      "--toggle-switch-height",
+      "--toggle-switch-width"
+    ],
+    "externalFileCount": 2,
+    "externalFiles": [
+      "admin/dashboard.scss",
+      "admin/flags.scss"
+    ],
+    "ownTokenizedPct": 47,
+    "ownTokenizedCount": 16,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 34,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 2
+  },
+  "own": [
+    {
+      "selector": ".d-toggle-switch",
+      "property": "--toggle-switch-width",
+      "value": "45px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "definition",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 2,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch",
+      "property": "--toggle-switch-height",
+      "value": "24px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "definition",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 3,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 4,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 5,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch",
+      "property": "gap",
+      "value": "0.5rem",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 6,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch:focus .d-toggle-switch__checkbox-slider",
+      "property": "outline",
+      "value": "2px solid var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 10,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch:focus .d-toggle-switch__checkbox-slider",
+      "property": "outline-offset",
+      "value": "2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 11,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch:hover .d-toggle-switch__checkbox-slider",
+      "property": "background-color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 17,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch:hover .d-toggle-switch__checkbox[aria-checked=\"true\"]:not([disabled])\n      + .d-toggle-switch__checkbox-slider",
+      "property": "background-color",
+      "value": "var(--tertiary-hover)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 22,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__label",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 27,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__label",
+      "property": "display",
+      "value": "inline-block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 28,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__label",
+      "property": "cursor",
+      "value": "pointer",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 29,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__label",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 30,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 34,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox",
+      "property": "border",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 35,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 36,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox",
+      "property": "background",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 37,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox:focus + .d-toggle-switch__checkbox-slider",
+      "property": "outline",
+      "value": "2px solid var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 41,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox:focus + .d-toggle-switch__checkbox-slider",
+      "property": "outline-offset",
+      "value": "2px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 42,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox:focus:not(:focus-visible) + .d-toggle-switch__checkbox-slider",
+      "property": "outline",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 48,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox[aria-checked=\"true\"] + .d-toggle-switch__checkbox-slider",
+      "property": "background-color",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 55,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox[aria-checked=\"true\"] + .d-toggle-switch__checkbox-slider::before",
+      "property": "left",
+      "value": "calc(var(--toggle-switch-width) - 22px)",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 59,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox[disabled] + .d-toggle-switch__checkbox-slider",
+      "property": "opacity",
+      "value": "0.5",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 63,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox[disabled] + .d-toggle-switch__checkbox-slider",
+      "property": "cursor",
+      "value": "not-allowed",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 64,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox[disabled] + .d-toggle-switch__checkbox-slider::before",
+      "property": "cursor",
+      "value": "not-allowed",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 67,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider",
+      "property": "display",
+      "value": "inline-block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 72,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider",
+      "property": "cursor",
+      "value": "pointer",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 73,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider",
+      "property": "background",
+      "value": "var(--primary-low-mid)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 74,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider",
+      "property": "border-radius",
+      "value": "var(--toggle-switch-height)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 75,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider",
+      "property": "width",
+      "value": "var(--toggle-switch-width)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 76,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider",
+      "property": "height",
+      "value": "var(--toggle-switch-height)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 77,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 78,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider",
+      "property": "vertical-align",
+      "value": "middle",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 79,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider",
+      "property": "transition",
+      "value": "background 0.25s",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 80,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider .d-icon",
+      "property": "width",
+      "value": "calc(var(--toggle-switch-height) * 0.54)",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 83,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider .d-icon",
+      "property": "height",
+      "value": "calc(var(--toggle-switch-height) * 0.54)",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 84,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider .d-icon",
+      "property": "color",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 85,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider .d-icon",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 86,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider .d-icon",
+      "property": "top",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 87,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider .d-icon",
+      "property": "left",
+      "value": "calc(var(--toggle-switch-height) * 0.291)",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 88,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider .d-icon",
+      "property": "transform",
+      "value": "translateY(-50%)",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function"
+        ]
+      },
+      "concern": "review",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 89,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::before",
+      "property": "content",
+      "value": "\"\"",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 95,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::after",
+      "property": "content",
+      "value": "\"\"",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 95,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::before",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 96,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::after",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 96,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::before",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 97,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::after",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 97,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::before",
+      "property": "cursor",
+      "value": "pointer",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 98,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::after",
+      "property": "cursor",
+      "value": "pointer",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 98,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::before",
+      "property": "background",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 102,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::before",
+      "property": "border-radius",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 103,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::before",
+      "property": "width",
+      "value": "calc(var(--toggle-switch-height) * 0.75)",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 104,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::before",
+      "property": "height",
+      "value": "calc(var(--toggle-switch-height) * 0.75)",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 105,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::before",
+      "property": "top",
+      "value": "calc(var(--toggle-switch-height) * 0.125)",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 106,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::before",
+      "property": "left",
+      "value": "calc(var(--toggle-switch-height) * 0.125)",
+      "valueClassification": {
+        "primary": "calc",
+        "tags": [
+          "css-var",
+          "calc"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 107,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::before",
+      "property": "transition",
+      "value": "left 0.25s",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 108,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-toggle-switch__checkbox-slider::before",
+      "property": "transition-duration",
+      "value": "0ms",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-toggle-switch.scss",
+      "line": 111,
+      "column": 7,
+      "atRuleContext": [
+        "@media (prefers-reduced-motion: reduce)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".admin-new-feature-item__body .d-toggle-switch",
+      "property": "margin-left",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/dashboard.scss",
+      "line": 763,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".admin-new-feature-item__body .d-toggle-switch",
+      "property": "align-items",
+      "value": "flex-start",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/dashboard.scss",
+      "line": 764,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".mobile-view .admin-contents table.grid tr.admin-flag-item .d-toggle-switch",
+      "property": "margin-right",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/flags.scss",
+      "line": 22,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

@@ -1,0 +1,12 @@
+{
+  "name": "relative-time-picker",
+  "slug": "d-relative-time-picker",
+  "primaryFiles": [
+    "common/components/relative-time-picker.scss"
+  ],
+  "identitySelectors": [
+    ".relative-time-picker",
+    ".relative-time-duration"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

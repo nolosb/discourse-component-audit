@@ -1,0 +1,14 @@
+{
+  "name": "empty-state",
+  "slug": "d-empty-state",
+  "primaryFiles": [
+    "common/components/empty-states.scss"
+  ],
+  "identitySelectors": [
+    ".empty-state__container",
+    ".empty-state__image",
+    ".empty-state__cta",
+    ".empty-state__tip"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

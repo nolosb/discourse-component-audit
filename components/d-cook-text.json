@@ -1,0 +1,9 @@
+{
+  "name": "cook-text",
+  "slug": "d-cook-text",
+  "primaryFiles": [],
+  "identitySelectors": [
+    ".cooked"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

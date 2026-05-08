@@ -1,0 +1,11 @@
+{
+  "name": "calendar-date-time-input",
+  "slug": "d-calendar-date-time-input",
+  "primaryFiles": [
+    "common/components/calendar-date-time-input.scss"
+  ],
+  "identitySelectors": [
+    ".calendar-date-time-input"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

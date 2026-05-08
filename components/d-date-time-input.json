@@ -1,0 +1,11 @@
+{
+  "name": "date-time-input",
+  "slug": "d-date-time-input",
+  "primaryFiles": [
+    "common/components/date-time-input.scss"
+  ],
+  "identitySelectors": [
+    ".d-date-time-input"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

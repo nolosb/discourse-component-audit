@@ -1,0 +1,345 @@
+{
+  "component": {
+    "name": "small-user-list",
+    "slug": "d-small-user-list",
+    "primaryFiles": [],
+    "identitySelectors": [
+      ".small-user-list"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.144Z",
+  "summary": {
+    "totalDeclarations": 11,
+    "ownDeclarations": 0,
+    "externalDeclarations": 11,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 10,
+    "uniqueSelectors": 2,
+    "valueBreakdown": {
+      "other": 7,
+      "css-var": 1,
+      "hardcoded": 3
+    },
+    "concernBreakdown": {
+      "structural": 6,
+      "resolved": 1,
+      "hardcoded": 4
+    },
+    "mostOverridden": [
+      {
+        "property": "display",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "flex-wrap",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "align-items",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "justify-content",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "background-color",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "width",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "height",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "border-radius",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "vertical-align",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "margin-right",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "background-color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-radius",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "background-color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-radius",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 1,
+    "externalFiles": [
+      "common/base/topic-post.scss"
+    ],
+    "ownTokenizedPct": 100,
+    "ownTokenizedCount": 0,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 0,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 5
+  },
+  "own": [],
+  "external": [
+    {
+      "selector": ".small-user-list .small-user-list-content",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 946,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".small-user-list .small-user-list-content",
+      "property": "flex-wrap",
+      "value": "wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 947,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".small-user-list .small-user-list-content",
+      "property": "align-items",
+      "value": "flex-start",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 948,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".small-user-list .small-user-list-content",
+      "property": "justify-content",
+      "value": "flex-end",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 949,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".small-user-list .unknown",
+      "property": "display",
+      "value": "inline-block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 953,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".small-user-list .unknown",
+      "property": "background-color",
+      "value": "var(--primary-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/topic-post.scss",
+      "line": 954,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".small-user-list .unknown",
+      "property": "width",
+      "value": "25px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 955,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".small-user-list .unknown",
+      "property": "height",
+      "value": "25px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 956,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".small-user-list .unknown",
+      "property": "border-radius",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 957,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".small-user-list .unknown",
+      "property": "vertical-align",
+      "value": "middle",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/topic-post.scss",
+      "line": 958,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".small-user-list .unknown",
+      "property": "margin-right",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/topic-post.scss",
+      "line": 959,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

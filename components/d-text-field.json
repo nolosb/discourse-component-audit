@@ -1,0 +1,9 @@
+{
+  "name": "text-field",
+  "slug": "d-text-field",
+  "primaryFiles": [],
+  "identitySelectors": [
+    ".ember-text-field"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

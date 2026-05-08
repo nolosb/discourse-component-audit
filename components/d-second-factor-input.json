@@ -1,0 +1,10 @@
+{
+  "name": "second-factor-input",
+  "slug": "d-second-factor-input",
+  "primaryFiles": [],
+  "identitySelectors": [
+    ".second-factor",
+    ".second-factor-token-input"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

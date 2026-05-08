@@ -1,0 +1,1591 @@
+{
+  "component": {
+    "name": "date-picker",
+    "slug": "d-date-picker",
+    "primaryFiles": [
+      "common/components/date-picker.scss"
+    ],
+    "identitySelectors": [
+      ".date-picker-wrapper",
+      ".pika-single",
+      ".pika-table"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.052Z",
+  "summary": {
+    "totalDeclarations": 71,
+    "ownDeclarations": 9,
+    "externalDeclarations": 62,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 31,
+    "uniqueSelectors": 25,
+    "valueBreakdown": {
+      "hardcoded": 22,
+      "other": 42,
+      "scss-var": 7
+    },
+    "concernBreakdown": {
+      "hardcoded": 36,
+      "structural": 28,
+      "scss-var": 5,
+      "mixed": 2
+    },
+    "mostOverridden": [
+      {
+        "property": "display",
+        "count": 6,
+        "fileCount": 3
+      },
+      {
+        "property": "position",
+        "count": 6,
+        "fileCount": 5
+      },
+      {
+        "property": "width",
+        "count": 5,
+        "fileCount": 2
+      },
+      {
+        "property": "border",
+        "count": 4,
+        "fileCount": 3
+      },
+      {
+        "property": "box-shadow",
+        "count": 3,
+        "fileCount": 3
+      },
+      {
+        "property": "padding",
+        "count": 3,
+        "fileCount": 2
+      },
+      {
+        "property": "margin-top",
+        "count": 3,
+        "fileCount": 3
+      },
+      {
+        "property": "border-radius",
+        "count": 3,
+        "fileCount": 2
+      },
+      {
+        "property": "color",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "background",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "content",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "text-align",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "border-bottom",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "flex",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "box-sizing",
+        "count": 2,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "border",
+        "fileCount": 3,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "box-shadow",
+        "fileCount": 3,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "margin-top",
+        "fileCount": 3,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "background",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-bottom",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-radius",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "z-index",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "border-bottom-color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-family",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-collapse",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-spacing",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "line-height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-weight",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "min-width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "border",
+        "fileCount": 3,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "box-shadow",
+        "fileCount": 3,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "margin-top",
+        "fileCount": 3,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "background",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-bottom",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-radius",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "z-index",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "border-bottom-color",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-family",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-collapse",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-spacing",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "line-height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-weight",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "min-width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 8,
+    "externalFiles": [
+      "common/base/edit-topic-timer-modal.scss",
+      "common/base/modal.scss",
+      "common/components/calendar-date-time-input.scss",
+      "common/components/date-input.scss",
+      "common/components/time-shortcut-picker.scss",
+      "common/form-kit/_control-calendar.scss",
+      "common/modal/modal-overrides.scss",
+      "vendor/pikaday.scss"
+    ],
+    "ownTokenizedPct": 0,
+    "ownTokenizedCount": 0,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 6,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 21
+  },
+  "own": [
+    {
+      "selector": ".pika-table th",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-picker.scss",
+      "line": 4,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".pika-table td",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-picker.scss",
+      "line": 4,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".pika-table th",
+      "property": "border-top",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-picker.scss",
+      "line": 5,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".pika-table td",
+      "property": "border-top",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-picker.scss",
+      "line": 5,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".pika-table th",
+      "property": "border-bottom",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-picker.scss",
+      "line": 6,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".pika-table td",
+      "property": "border-bottom",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-picker.scss",
+      "line": 6,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".date-picker-wrapper",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/date-picker.scss",
+      "line": 11,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".date-picker-wrapper",
+      "property": "display",
+      "value": "inline-block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/date-picker.scss",
+      "line": 12,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/date-picker.scss",
+      "line": 21,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    }
+  ],
+  "external": [
+    {
+      "selector": ".edit-topic-timer-modal .pika-single",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/edit-topic-timer-modal.scss",
+      "line": 29,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".change-timestamp #date-container .pika-single",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/modal.scss",
+      "line": 627,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".change-timestamp #date-container .pika-single",
+      "property": "display",
+      "value": "inline-block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/modal.scss",
+      "line": 628,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".change-timestamp #date-container .pika-single",
+      "property": "margin-top",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/modal.scss",
+      "line": 629,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".change-timestamp .date-picker-wrapper",
+      "property": "min-width",
+      "value": "130px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/modal.scss",
+      "line": 634,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".change-timestamp .date-picker-wrapper",
+      "property": "margin-right",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/modal.scss",
+      "line": 635,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".calendar-date-time-input .date-picker .pika-single",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/calendar-date-time-input.scss",
+      "line": 21,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".calendar-date-time-input .date-picker .pika-single",
+      "property": "flex",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/components/calendar-date-time-input.scss",
+      "line": 22,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".calendar-date-time-input .date-picker .pika-single",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/calendar-date-time-input.scss",
+      "line": 23,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".calendar-date-time-input .date-picker .pika-single",
+      "property": "border",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/calendar-date-time-input.scss",
+      "line": 24,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-date-input .pika-single",
+      "property": "margin-left",
+      "value": "-1px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-input.scss",
+      "line": 65,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-date-input .pika-single",
+      "property": "margin-top",
+      "value": "1px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-input.scss",
+      "line": 66,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-date-input .pika-single .pika-row td .pika-button.pika-day",
+      "property": "box-shadow",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-input.scss",
+      "line": 70,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-date-input .pika-single .pika-row td .pika-button.pika-day",
+      "property": "border-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-input.scss",
+      "line": 71,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".custom-date-time-wrap .date-picker-wrapper",
+      "property": "flex",
+      "value": "1 1 auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/time-shortcut-picker.scss",
+      "line": 31,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 29,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single",
+      "property": "border",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 30,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single",
+      "property": "border-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 31,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 32,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single",
+      "property": "box-sizing",
+      "value": "border-box",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 33,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single .pika-button",
+      "property": "border-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 36,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single .pika-button",
+      "property": "text-align",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 37,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single .is-selected .pika-button",
+      "property": "box-shadow",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 42,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single .pika-lendar",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 47,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single .pika-lendar",
+      "property": "box-sizing",
+      "value": "border-box",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 48,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single .pika-lendar",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 49,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single .pika-lendar",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 50,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single .pika-table",
+      "property": "margin-top",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 54,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single .pika-row:last-child",
+      "property": "border-bottom",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 58,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".form-kit__control-calendar + .date-picker-container .pika-single .pika-row:hover",
+      "property": "background",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/form-kit/_control-calendar.scss",
+      "line": 62,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": true
+    },
+    {
+      "selector": ".d-modal.discourse-local-dates-create-modal .pika-single",
+      "property": "justify-content",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/modal/modal-overrides.scss",
+      "line": 555,
+      "column": 7,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".pika-single",
+      "property": "z-index",
+      "value": "9999",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "vendor/pikaday.scss",
+      "line": 35,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "vendor/pikaday.scss",
+      "line": 36,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "vendor/pikaday.scss",
+      "line": 37,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single",
+      "property": "color",
+      "value": "$pd-text-color",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "vendor/pikaday.scss",
+      "line": 38,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single",
+      "property": "background",
+      "value": "$pd-picker-bg",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "vendor/pikaday.scss",
+      "line": 39,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single",
+      "property": "border",
+      "value": "1px solid $pd-picker-border",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "vendor/pikaday.scss",
+      "line": 40,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single",
+      "property": "border-bottom-color",
+      "value": "$pd-picker-border-bottom",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "vendor/pikaday.scss",
+      "line": 41,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single",
+      "property": "font-family",
+      "value": "$pd-font-family",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "vendor/pikaday.scss",
+      "line": 42,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single.is-hidden",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "vendor/pikaday.scss",
+      "line": 45,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single.is-bound",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "vendor/pikaday.scss",
+      "line": 49,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single.is-bound",
+      "property": "box-shadow",
+      "value": "0 5px 15px -5px $pd-picker-shadow",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "vendor/pikaday.scss",
+      "line": 50,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single::before",
+      "property": "content",
+      "value": "\" \"",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "vendor/pikaday.scss",
+      "line": 60,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single::after",
+      "property": "content",
+      "value": "\" \"",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "vendor/pikaday.scss",
+      "line": 60,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single::before",
+      "property": "display",
+      "value": "table",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "vendor/pikaday.scss",
+      "line": 61,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single::after",
+      "property": "display",
+      "value": "table",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "vendor/pikaday.scss",
+      "line": 61,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-single::after",
+      "property": "clear",
+      "value": "both",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "vendor/pikaday.scss",
+      "line": 64,
+      "column": 16,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "vendor/pikaday.scss",
+      "line": 154,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table",
+      "property": "border-collapse",
+      "value": "collapse",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "vendor/pikaday.scss",
+      "line": 155,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table",
+      "property": "border-spacing",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "vendor/pikaday.scss",
+      "line": 156,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table",
+      "property": "border",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "vendor/pikaday.scss",
+      "line": 157,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table th",
+      "property": "width",
+      "value": "14.285714285714286%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "vendor/pikaday.scss",
+      "line": 161,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table td",
+      "property": "width",
+      "value": "14.285714285714286%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "vendor/pikaday.scss",
+      "line": 161,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table th",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "vendor/pikaday.scss",
+      "line": 162,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table td",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "vendor/pikaday.scss",
+      "line": 162,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table th",
+      "property": "color",
+      "value": "$pd-th-color",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var"
+        ]
+      },
+      "concern": "scss-var",
+      "file": "vendor/pikaday.scss",
+      "line": 166,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table th",
+      "property": "font-size",
+      "value": "12px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "vendor/pikaday.scss",
+      "line": 167,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table th",
+      "property": "line-height",
+      "value": "25px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "vendor/pikaday.scss",
+      "line": 168,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table th",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "vendor/pikaday.scss",
+      "line": 169,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table th",
+      "property": "text-align",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "vendor/pikaday.scss",
+      "line": 170,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table abbr",
+      "property": "border-bottom",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "vendor/pikaday.scss",
+      "line": 174,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".pika-table abbr",
+      "property": "cursor",
+      "value": "help",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "vendor/pikaday.scss",
+      "line": 175,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

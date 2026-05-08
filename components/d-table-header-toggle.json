@@ -1,0 +1,11 @@
+{
+  "name": "table-header-toggle",
+  "slug": "d-table-header-toggle",
+  "primaryFiles": [
+    "common/components/table-layout.scss"
+  ],
+  "identitySelectors": [
+    ".d-table__header-cell--sortable"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

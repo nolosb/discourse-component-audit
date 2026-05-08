@@ -1,0 +1,190 @@
+{
+  "component": {
+    "name": "breadcrumbs-container",
+    "slug": "d-breadcrumbs-container",
+    "primaryFiles": [
+      "common/components/d-breadcrumbs.scss"
+    ],
+    "identitySelectors": [
+      ".d-breadcrumbs"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.014Z",
+  "summary": {
+    "totalDeclarations": 7,
+    "ownDeclarations": 6,
+    "externalDeclarations": 1,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 7,
+    "uniqueSelectors": 4,
+    "valueBreakdown": {
+      "other": 3,
+      "css-var": 4
+    },
+    "concernBreakdown": {
+      "structural": 2,
+      "resolved": 4,
+      "hardcoded": 1
+    },
+    "mostOverridden": [
+      {
+        "property": "text-transform",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "text-transform",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "text-transform",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 1,
+    "externalFiles": [
+      "common/base/tag-settings.scss"
+    ],
+    "ownTokenizedPct": 100,
+    "ownTokenizedCount": 4,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 4,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 1
+  },
+  "own": [
+    {
+      "selector": ".d-breadcrumbs",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-breadcrumbs.scss",
+      "line": 2,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-breadcrumbs",
+      "property": "flex-wrap",
+      "value": "wrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/d-breadcrumbs.scss",
+      "line": 3,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-breadcrumbs",
+      "property": "margin",
+      "value": "var(--space-2) 0 var(--space-4) 0",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-breadcrumbs.scss",
+      "line": 4,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-breadcrumbs li .separator",
+      "property": "margin-right",
+      "value": "var(--space-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-breadcrumbs.scss",
+      "line": 18,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-breadcrumbs li .separator .d-icon",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-breadcrumbs.scss",
+      "line": 21,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-breadcrumbs li .separator .d-icon",
+      "property": "font-size",
+      "value": "var(--font-down-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-breadcrumbs.scss",
+      "line": 22,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".tag-settings .d-breadcrumbs",
+      "property": "text-transform",
+      "value": "capitalize",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/tag-settings.scss",
+      "line": 13,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

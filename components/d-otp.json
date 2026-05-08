@@ -1,0 +1,14 @@
+{
+  "name": "otp",
+  "slug": "d-otp",
+  "primaryFiles": [
+    "common/components/d-otp.scss"
+  ],
+  "identitySelectors": [
+    ".d-otp",
+    ".d-otp-group",
+    ".d-otp-slot",
+    ".d-otp-input"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

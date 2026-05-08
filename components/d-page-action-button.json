@@ -1,0 +1,12 @@
+{
+  "name": "page-action-button",
+  "slug": "d-page-action-button",
+  "primaryFiles": [
+    "common/components/d-page-header.scss"
+  ],
+  "identitySelectors": [
+    ".d-page-action-list-item",
+    ".d-page-action-button"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

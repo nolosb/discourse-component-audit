@@ -1,0 +1,283 @@
+{
+  "component": {
+    "name": "date-time-input",
+    "slug": "d-date-time-input",
+    "primaryFiles": [
+      "common/components/date-time-input.scss"
+    ],
+    "identitySelectors": [
+      ".d-date-time-input"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.054Z",
+  "summary": {
+    "totalDeclarations": 13,
+    "ownDeclarations": 11,
+    "externalDeclarations": 2,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 10,
+    "uniqueSelectors": 9,
+    "valueBreakdown": {
+      "other": 8,
+      "hardcoded": 5
+    },
+    "concernBreakdown": {
+      "structural": 6,
+      "hardcoded": 7
+    },
+    "mostOverridden": [
+      {
+        "property": "flex-grow",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "flex",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [],
+    "actionItems": [],
+    "existingDefs": [],
+    "externalFileCount": 2,
+    "externalFiles": [
+      "admin/admin_report_chart.scss",
+      "common/base/reviewables.scss"
+    ],
+    "ownTokenizedPct": 0,
+    "ownTokenizedCount": 0,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 7,
+    "overrideCoveragePct": null,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 0
+  },
+  "own": [
+    {
+      "selector": ".d-date-time-input",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/date-time-input.scss",
+      "line": 2,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-date-time-input",
+      "property": "box-sizing",
+      "value": "border-box",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/date-time-input.scss",
+      "line": 3,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-date-time-input",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/date-time-input.scss",
+      "line": 4,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-date-time-input .date-picker",
+      "property": "max-width",
+      "value": "unset",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-time-input.scss",
+      "line": 7,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-date-time-input .d-date-time-input",
+      "property": "margin-left",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-time-input.scss",
+      "line": 11,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-date-time-input .d-date-time-input",
+      "property": "flex",
+      "value": "1 1 auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/date-time-input.scss",
+      "line": 12,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-date-time-input .d-time-input",
+      "property": "width",
+      "value": "90px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-time-input.scss",
+      "line": 16,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-date-time-input .d-time-input .select-kit-header",
+      "property": "border-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-time-input.scss",
+      "line": 19,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-date-time-input .d-time-input .select-kit-header",
+      "property": "width",
+      "value": "90px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-time-input.scss",
+      "line": 20,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-date-time-input .d-date-input + .d-time-input",
+      "property": "margin-left",
+      "value": "1px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-time-input.scss",
+      "line": 25,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-date-time-input .d-time-input + .d-date-input",
+      "property": "margin-right",
+      "value": "1px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/date-time-input.scss",
+      "line": 29,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": "body.uc-reporting-improvements .admin-contents:not(.dashboard) .chart__dates .d-date-time-input",
+      "property": "flex-grow",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "admin/admin_report_chart.scss",
+      "line": 132,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".reviewable .reviewable-container .d-date-time-input",
+      "property": "flex",
+      "value": "1 1 auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/reviewables.scss",
+      "line": 152,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

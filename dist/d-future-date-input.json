@@ -1,0 +1,973 @@
+{
+  "component": {
+    "name": "future-date-input",
+    "slug": "d-future-date-input",
+    "primaryFiles": [
+      "common/select-kit/future-date-input-selector.scss"
+    ],
+    "identitySelectors": [
+      ".future-date-input",
+      ".future-date-input-selector"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.075Z",
+  "summary": {
+    "totalDeclarations": 47,
+    "ownDeclarations": 18,
+    "externalDeclarations": 29,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 15,
+    "uniqueSelectors": 28,
+    "valueBreakdown": {
+      "other": 23,
+      "css-var": 3,
+      "hardcoded": 21
+    },
+    "concernBreakdown": {
+      "hardcoded": 29,
+      "resolved": 3,
+      "structural": 15
+    },
+    "mostOverridden": [
+      {
+        "property": "align-items",
+        "count": 6,
+        "fileCount": 1
+      },
+      {
+        "property": "display",
+        "count": 6,
+        "fileCount": 1
+      },
+      {
+        "property": "width",
+        "count": 4,
+        "fileCount": 1
+      },
+      {
+        "property": "margin-left",
+        "count": 4,
+        "fileCount": 1
+      },
+      {
+        "property": "justify-content",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "height",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "margin-bottom",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "font-weight",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "margin-top",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-weight",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-weight",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 2,
+    "externalFiles": [
+      "admin/penalty.scss",
+      "common/base/modal.scss"
+    ],
+    "ownTokenizedPct": 18,
+    "ownTokenizedCount": 3,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 17,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 6
+  },
+  "own": [
+    {
+      "selector": ".select-kit.combobox.future-date-input-selector",
+      "property": "min-width",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 4,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combobox.future-date-input-selector .future-date-input-selector-header .btn-clear",
+      "property": "line-height",
+      "value": "var(--line-height-large)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 8,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combobox.future-date-input-selector .future-date-input-selector-datetime",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 13,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combobox.future-date-input-selector .future-date-input-selector-datetime",
+      "property": "margin-left",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 14,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combobox.future-date-input-selector .future-date-input-selector-datetime",
+      "property": "white-space",
+      "value": "nowrap",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 15,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combobox.future-date-input-selector .future-date-input-selector-datetime + svg",
+      "property": "margin-left",
+      "value": "0.25em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 18,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combobox.future-date-input-selector .future-date-input-selector-icons",
+      "property": "margin-right",
+      "value": "5px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 23,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combobox.future-date-input-selector .btn-clear",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 27,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combobox.future-date-input-selector .btn-clear",
+      "property": "margin-left",
+      "value": "5px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 28,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combobox.future-date-input-selector .future-date-input-selector-row .future-date-input-selector-icons",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 33,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".future-date-input .future-date-input-date-picker",
+      "property": "margin-top",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 43,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".future-date-input .future-date-input-time-picker",
+      "property": "margin-top",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 43,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".future-date-input .future-date-input-date-picker",
+      "property": "margin-bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 44,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".future-date-input .future-date-input-time-picker",
+      "property": "margin-bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 44,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".future-date-input .future-date-input-date-picker input",
+      "property": "margin-bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 47,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".future-date-input .future-date-input-time-picker input",
+      "property": "margin-bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 47,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".future-date-input .future-date-input-date-picker input",
+      "property": "margin-left",
+      "value": "5px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 48,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".future-date-input .future-date-input-time-picker input",
+      "property": "margin-left",
+      "value": "5px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/future-date-input-selector.scss",
+      "line": 48,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".silence-user-modal .penalty-duration-controls .future-date-input",
+      "property": "align-items",
+      "value": "end",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/penalty.scss",
+      "line": 26,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".suspend-user-modal .penalty-duration-controls .future-date-input",
+      "property": "align-items",
+      "value": "end",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/penalty.scss",
+      "line": 26,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".silence-user-modal .penalty-duration-controls .future-date-input",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/penalty.scss",
+      "line": 27,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".suspend-user-modal .penalty-duration-controls .future-date-input",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/penalty.scss",
+      "line": 27,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".silence-user-modal .penalty-duration-controls .future-date-input",
+      "property": "justify-content",
+      "value": "space-between",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/penalty.scss",
+      "line": 28,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".suspend-user-modal .penalty-duration-controls .future-date-input",
+      "property": "justify-content",
+      "value": "space-between",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/penalty.scss",
+      "line": 28,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".silence-user-modal .penalty-duration-controls .future-date-input input",
+      "property": "height",
+      "value": "34px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/penalty.scss",
+      "line": 31,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".suspend-user-modal .penalty-duration-controls .future-date-input input",
+      "property": "height",
+      "value": "34px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/penalty.scss",
+      "line": 31,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".silence-user-modal .penalty-duration-controls .future-date-input .control-group",
+      "property": "margin-bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/penalty.scss",
+      "line": 35,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".suspend-user-modal .penalty-duration-controls .future-date-input .control-group",
+      "property": "margin-bottom",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/penalty.scss",
+      "line": 35,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".silence-user-modal .penalty-duration-controls .future-date-input .control-group:first-child",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/penalty.scss",
+      "line": 38,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".suspend-user-modal .penalty-duration-controls .future-date-input .control-group:first-child",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/penalty.scss",
+      "line": 38,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".silence-user-modal .penalty-duration-controls .future-date-input .control-group:first-child label",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/penalty.scss",
+      "line": 41,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".suspend-user-modal .penalty-duration-controls .future-date-input .control-group:first-child label",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/penalty.scss",
+      "line": 41,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".silence-user-modal .penalty-duration-controls .future-date-input .control-group:first-child details",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/penalty.scss",
+      "line": 45,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".suspend-user-modal .penalty-duration-controls .future-date-input .control-group:first-child details",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "admin/penalty.scss",
+      "line": 45,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".silence-user-modal .penalty-duration-controls .future-date-input .future-date-input-date-picker",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/penalty.scss",
+      "line": 52,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".silence-user-modal .penalty-duration-controls .future-date-input .future-date-input-time-picker",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/penalty.scss",
+      "line": 52,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".suspend-user-modal .penalty-duration-controls .future-date-input .future-date-input-date-picker",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/penalty.scss",
+      "line": 52,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".suspend-user-modal .penalty-duration-controls .future-date-input .future-date-input-time-picker",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/penalty.scss",
+      "line": 52,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".silence-user-modal .penalty-duration-controls .future-date-input .future-date-input-date-picker",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/penalty.scss",
+      "line": 53,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".silence-user-modal .penalty-duration-controls .future-date-input .future-date-input-time-picker",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/penalty.scss",
+      "line": 53,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".suspend-user-modal .penalty-duration-controls .future-date-input .future-date-input-date-picker",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/penalty.scss",
+      "line": 53,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".suspend-user-modal .penalty-duration-controls .future-date-input .future-date-input-time-picker",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/penalty.scss",
+      "line": 53,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".silence-user-modal .penalty-duration-controls .future-date-input .future-date-input-date-picker",
+      "property": "margin-left",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/penalty.scss",
+      "line": 54,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".silence-user-modal .penalty-duration-controls .future-date-input .future-date-input-time-picker",
+      "property": "margin-left",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/penalty.scss",
+      "line": 54,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".suspend-user-modal .penalty-duration-controls .future-date-input .future-date-input-date-picker",
+      "property": "margin-left",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/penalty.scss",
+      "line": 54,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".suspend-user-modal .penalty-duration-controls .future-date-input .future-date-input-time-picker",
+      "property": "margin-left",
+      "value": "0.5em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "admin/penalty.scss",
+      "line": 54,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".ignore-duration-with-username-modal .future-date-input",
+      "property": "margin-top",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/modal.scss",
+      "line": 684,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

@@ -1,0 +1,485 @@
+{
+  "component": {
+    "name": "highlighted-code",
+    "slug": "d-highlighted-code",
+    "primaryFiles": [
+      "common/base/code_highlighting.scss"
+    ],
+    "identitySelectors": [
+      ".hljs"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.076Z",
+  "summary": {
+    "totalDeclarations": 0,
+    "ownDeclarations": 0,
+    "externalDeclarations": 0,
+    "customPropertyDefinitions": 22,
+    "uniqueProperties": 0,
+    "uniqueSelectors": 0,
+    "valueBreakdown": {},
+    "concernBreakdown": {},
+    "mostOverridden": [],
+    "missingCustomProps": [],
+    "actionItems": [],
+    "existingDefs": [
+      "--hljs-addition",
+      "--hljs-attr",
+      "--hljs-attribute",
+      "--hljs-bg",
+      "--hljs-builtin-name",
+      "--hljs-comment",
+      "--hljs-deletion",
+      "--hljs-keyword",
+      "--hljs-literal",
+      "--hljs-name",
+      "--hljs-number",
+      "--hljs-punctuation",
+      "--hljs-string",
+      "--hljs-symbol",
+      "--hljs-tag",
+      "--hljs-title",
+      "--hljs-variable"
+    ],
+    "externalFileCount": 0,
+    "externalFiles": [],
+    "ownTokenizedPct": 100,
+    "ownTokenizedCount": 0,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 0,
+    "overrideCoveragePct": null,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 0
+  },
+  "own": [],
+  "external": [],
+  "customPropertyDefinitions": [
+    {
+      "selector": ":root",
+      "property": "--hljs-attr",
+      "value": "#{$hljs-attr}",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "interpolation"
+        ]
+      },
+      "concern": "definition",
+      "file": "color_definitions.scss",
+      "line": 101,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-attribute",
+      "value": "#{$hljs-attribute}",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "interpolation"
+        ]
+      },
+      "concern": "definition",
+      "file": "color_definitions.scss",
+      "line": 102,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-addition",
+      "value": "#{$hljs-addition}",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "interpolation"
+        ]
+      },
+      "concern": "definition",
+      "file": "color_definitions.scss",
+      "line": 103,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-bg",
+      "value": "#{$hljs-bg}",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "interpolation"
+        ]
+      },
+      "concern": "definition",
+      "file": "color_definitions.scss",
+      "line": 104,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-comment",
+      "value": "#{$hljs-comment}",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "interpolation"
+        ]
+      },
+      "concern": "definition",
+      "file": "color_definitions.scss",
+      "line": 106,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-deletion",
+      "value": "#{$hljs-deletion}",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "interpolation"
+        ]
+      },
+      "concern": "definition",
+      "file": "color_definitions.scss",
+      "line": 107,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-keyword",
+      "value": "#{$hljs-keyword}",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "interpolation"
+        ]
+      },
+      "concern": "definition",
+      "file": "color_definitions.scss",
+      "line": 108,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-title",
+      "value": "#{$hljs-title}",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "interpolation"
+        ]
+      },
+      "concern": "definition",
+      "file": "color_definitions.scss",
+      "line": 109,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-name",
+      "value": "#{$hljs-name}",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "interpolation"
+        ]
+      },
+      "concern": "definition",
+      "file": "color_definitions.scss",
+      "line": 110,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-punctuation",
+      "value": "#{$hljs-punctuation}",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "interpolation"
+        ]
+      },
+      "concern": "definition",
+      "file": "color_definitions.scss",
+      "line": 111,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-symbol",
+      "value": "#{$hljs-symbol}",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "interpolation"
+        ]
+      },
+      "concern": "definition",
+      "file": "color_definitions.scss",
+      "line": 112,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-variable",
+      "value": "#{$hljs-variable}",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "interpolation"
+        ]
+      },
+      "concern": "definition",
+      "file": "color_definitions.scss",
+      "line": 113,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-string",
+      "value": "#{$hljs-string}",
+      "valueClassification": {
+        "primary": "scss-var",
+        "tags": [
+          "scss-var",
+          "interpolation"
+        ]
+      },
+      "concern": "definition",
+      "file": "color_definitions.scss",
+      "line": 114,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-comment",
+      "value": "#bba",
+      "valueClassification": {
+        "primary": "hardcoded-color",
+        "tags": [
+          "hardcoded-color"
+        ]
+      },
+      "concern": "definition",
+      "file": "qunit-custom.scss",
+      "line": 249,
+      "column": 5,
+      "atRuleContext": [
+        "@media (prefers-color-scheme: dark)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-number",
+      "value": "#aff",
+      "valueClassification": {
+        "primary": "hardcoded-color",
+        "tags": [
+          "hardcoded-color"
+        ]
+      },
+      "concern": "definition",
+      "file": "qunit-custom.scss",
+      "line": 250,
+      "column": 5,
+      "atRuleContext": [
+        "@media (prefers-color-scheme: dark)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-string",
+      "value": "#f99",
+      "valueClassification": {
+        "primary": "hardcoded-color",
+        "tags": [
+          "hardcoded-color"
+        ]
+      },
+      "concern": "definition",
+      "file": "qunit-custom.scss",
+      "line": 251,
+      "column": 5,
+      "atRuleContext": [
+        "@media (prefers-color-scheme: dark)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-literal",
+      "value": "#9ae",
+      "valueClassification": {
+        "primary": "hardcoded-color",
+        "tags": [
+          "hardcoded-color"
+        ]
+      },
+      "concern": "definition",
+      "file": "qunit-custom.scss",
+      "line": 252,
+      "column": 5,
+      "atRuleContext": [
+        "@media (prefers-color-scheme: dark)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-tag",
+      "value": "#99f",
+      "valueClassification": {
+        "primary": "hardcoded-color",
+        "tags": [
+          "hardcoded-color"
+        ]
+      },
+      "concern": "definition",
+      "file": "qunit-custom.scss",
+      "line": 253,
+      "column": 5,
+      "atRuleContext": [
+        "@media (prefers-color-scheme: dark)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-attribute",
+      "value": "#0ee",
+      "valueClassification": {
+        "primary": "hardcoded-color",
+        "tags": [
+          "hardcoded-color"
+        ]
+      },
+      "concern": "definition",
+      "file": "qunit-custom.scss",
+      "line": 254,
+      "column": 5,
+      "atRuleContext": [
+        "@media (prefers-color-scheme: dark)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-symbol",
+      "value": "#fbe",
+      "valueClassification": {
+        "primary": "hardcoded-color",
+        "tags": [
+          "hardcoded-color"
+        ]
+      },
+      "concern": "definition",
+      "file": "qunit-custom.scss",
+      "line": 255,
+      "column": 5,
+      "atRuleContext": [
+        "@media (prefers-color-scheme: dark)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-bg",
+      "value": "#333",
+      "valueClassification": {
+        "primary": "hardcoded-color",
+        "tags": [
+          "hardcoded-color"
+        ]
+      },
+      "concern": "definition",
+      "file": "qunit-custom.scss",
+      "line": 256,
+      "column": 5,
+      "atRuleContext": [
+        "@media (prefers-color-scheme: dark)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ":root",
+      "property": "--hljs-builtin-name",
+      "value": "#14aeea",
+      "valueClassification": {
+        "primary": "hardcoded-color",
+        "tags": [
+          "hardcoded-color"
+        ]
+      },
+      "concern": "definition",
+      "file": "qunit-custom.scss",
+      "line": 257,
+      "column": 5,
+      "atRuleContext": [
+        "@media (prefers-color-scheme: dark)"
+      ],
+      "mixinCalls": [],
+      "important": false
+    }
+  ]
+}

@@ -1,0 +1,3119 @@
+{
+  "component": {
+    "name": "dropdown-menu",
+    "slug": "d-dropdown-menu",
+    "primaryFiles": [
+      "common/float-kit/d-menu.scss"
+    ],
+    "identitySelectors": [
+      ".dropdown-menu",
+      ".dropdown-menu__item",
+      ".dropdown-menu__divider"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.057Z",
+  "summary": {
+    "totalDeclarations": 161,
+    "ownDeclarations": 34,
+    "externalDeclarations": 127,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 30,
+    "uniqueSelectors": 79,
+    "valueBreakdown": {
+      "hardcoded": 25,
+      "other": 75,
+      "css-var": 58,
+      "function": 3
+    },
+    "concernBreakdown": {
+      "hardcoded": 46,
+      "structural": 54,
+      "resolved": 58,
+      "review": 3
+    },
+    "mostOverridden": [
+      {
+        "property": "display",
+        "count": 16,
+        "fileCount": 3
+      },
+      {
+        "property": "visibility",
+        "count": 14,
+        "fileCount": 1
+      },
+      {
+        "property": "color",
+        "count": 13,
+        "fileCount": 4
+      },
+      {
+        "property": "font-size",
+        "count": 12,
+        "fileCount": 1
+      },
+      {
+        "property": "font-weight",
+        "count": 9,
+        "fileCount": 2
+      },
+      {
+        "property": "background",
+        "count": 7,
+        "fileCount": 4
+      },
+      {
+        "property": "margin-left",
+        "count": 6,
+        "fileCount": 1
+      },
+      {
+        "property": "min-width",
+        "count": 6,
+        "fileCount": 4
+      },
+      {
+        "property": "align-items",
+        "count": 5,
+        "fileCount": 1
+      },
+      {
+        "property": "justify-content",
+        "count": 4,
+        "fileCount": 2
+      },
+      {
+        "property": "position",
+        "count": 4,
+        "fileCount": 1
+      },
+      {
+        "property": "flex",
+        "count": 3,
+        "fileCount": 1
+      },
+      {
+        "property": "border-radius",
+        "count": 3,
+        "fileCount": 2
+      },
+      {
+        "property": "flex-grow",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "gap",
+        "count": 2,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "min-width",
+        "fileCount": 4,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "background",
+        "fileCount": 4,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 4,
+        "distinctValues": 7,
+        "hasDef": false
+      },
+      {
+        "property": "font-weight",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-radius",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "transform",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "max-width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "outline",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-inline",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "min-width",
+        "fileCount": 4,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "background",
+        "fileCount": 4,
+        "distinctValues": 3,
+        "hasDef": false
+      },
+      {
+        "property": "color",
+        "fileCount": 4,
+        "distinctValues": 7,
+        "hasDef": false
+      },
+      {
+        "property": "font-weight",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-radius",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "margin-left",
+        "fileCount": 1,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "gap",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "right",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "top",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "transform",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 4,
+        "hasDef": false
+      },
+      {
+        "property": "max-width",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "outline",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "height",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-inline",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 11,
+    "externalFiles": [
+      "common/base/discourse.scss",
+      "common/base/list-controls.scss",
+      "common/base/new-user.scss",
+      "common/base/sidebar-section-link.scss",
+      "common/components/drafts-dropdown-menu.scss",
+      "common/components/emoji-picker.scss",
+      "common/components/filter-navigation.scss",
+      "common/float-kit/d-menu-modal.scss",
+      "common/form-kit/_control-menu.scss",
+      "common/toolbar-popup-menu-options.scss",
+      "desktop/components/drafts-dropdown-menu.scss"
+    ],
+    "ownTokenizedPct": 66,
+    "ownTokenizedCount": 19,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 29,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 19
+  },
+  "own": [
+    {
+      "selector": ".dropdown-menu",
+      "property": "min-width",
+      "value": "200px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 94,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 95,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu",
+      "property": "flex-direction",
+      "value": "column",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 96,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu",
+      "property": "gap",
+      "value": "var(--d-sidebar-vertical-gap)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 97,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu",
+      "property": "padding",
+      "value": "var(--space-1)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 98,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 99,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu",
+      "property": "list-style",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 100,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__item .btn",
+      "property": "display",
+      "value": "inline-flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 104,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__item .btn",
+      "property": "gap",
+      "value": "var(--d-sidebar-section-link-prefix-margin-right)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 105,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__item .btn",
+      "property": "padding-inline",
+      "value": "var(--d-sidebar-row-horizontal-padding)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 106,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__item .btn",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 107,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__item .btn",
+      "property": "justify-content",
+      "value": "flex-start",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 108,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__item .btn",
+      "property": "background",
+      "value": "rgb(0, 0, 0, 0)",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function"
+        ]
+      },
+      "concern": "review",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 109,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__item .btn",
+      "property": "border-radius",
+      "value": "var(--d-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 110,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__item .btn:not(\n        .notifications-tracking-btn,\n        .--with-description,\n        .pinned-options-btn\n      )",
+      "property": "height",
+      "value": "var(--d-sidebar-row-height)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 117,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__item .btn:not(\n        .notifications-tracking-btn,\n        .--with-description,\n        .pinned-options-btn\n      )",
+      "property": "padding-block",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 118,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__item .btn.-selected",
+      "property": "background",
+      "value": "var(--d-hover)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 122,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__item .btn.btn-danger",
+      "property": "color",
+      "value": "var(--danger)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 126,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__item .btn.btn-danger .d-icon",
+      "property": "color",
+      "value": "inherit",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 129,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__item .btn .svg-icon",
+      "property": "width",
+      "value": "var(--d-sidebar-section-link-prefix-width)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 134,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__item .btn .svg-icon",
+      "property": "margin-right",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 135,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .dropdown-menu__item .btn:hover",
+      "property": "background",
+      "value": "var(--d-hover)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 141,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .dropdown-menu__item .btn:focus-visible",
+      "property": "background",
+      "value": "var(--d-hover)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 141,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .dropdown-menu__item .btn:hover",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 142,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .dropdown-menu__item .btn:focus-visible",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 142,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .dropdown-menu__item .btn:hover .d-icon",
+      "property": "color",
+      "value": "inherit",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 145,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .dropdown-menu__item .btn:focus-visible .d-icon",
+      "property": "color",
+      "value": "inherit",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 145,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .dropdown-menu__item .btn:hover.btn-danger",
+      "property": "background",
+      "value": "var(--danger-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 149,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .dropdown-menu__item .btn:focus-visible.btn-danger",
+      "property": "background",
+      "value": "var(--danger-low)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 149,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .dropdown-menu__item .btn:hover.btn-danger",
+      "property": "color",
+      "value": "var(--danger)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 150,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .dropdown-menu__item .btn:focus-visible.btn-danger",
+      "property": "color",
+      "value": "var(--danger)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 150,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .dropdown-menu__item .btn:hover.btn-danger .d-icon",
+      "property": "color",
+      "value": "var(--danger-hover)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 153,
+      "column": 15,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-no-touch .dropdown-menu__item .btn:focus-visible.btn-danger .d-icon",
+      "property": "color",
+      "value": "var(--danger-hover)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 153,
+      "column": 15,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".dropdown-menu__divider",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu.scss",
+      "line": 162,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".pref-email .dropdown-menu",
+      "property": "width",
+      "value": "120px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/discourse.scss",
+      "line": 1054,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".mobile-view .fk-d-menu-modal.list-control-toggle-link-content .dropdown-menu",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/list-controls.scss",
+      "line": 136,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".mobile-view .fk-d-menu-modal.list-control-toggle-link-content .dropdown-menu",
+      "property": "flex-direction",
+      "value": "column",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/list-controls.scss",
+      "line": 137,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".mobile-view .fk-d-menu-modal.list-control-toggle-link-content .dropdown-menu a",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/base/list-controls.scss",
+      "line": 140,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".mobile-view .fk-d-menu-modal.list-control-toggle-link-content .dropdown-menu a",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/list-controls.scss",
+      "line": 141,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".mobile-view .fk-d-menu-modal.list-control-toggle-link-content .dropdown-menu a.active",
+      "property": "background",
+      "value": "var(--d-selected)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/list-controls.scss",
+      "line": 144,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".mobile-view .fk-d-menu-modal.list-control-toggle-link-content .dropdown-menu a.active",
+      "property": "color",
+      "value": "var(--d-selected-text-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/list-controls.scss",
+      "line": 145,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".mobile-view .fk-d-menu-modal.list-control-toggle-link-content .dropdown-menu a.active",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/list-controls.scss",
+      "line": 146,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-messages-page .messages-dropdown-content .dropdown-menu__item .btn:hover .d-icon-d-unread",
+      "property": "color",
+      "value": "var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/new-user.scss",
+      "line": 220,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-messages-page .messages-dropdown-content .dropdown-menu__item .btn.is-selected",
+      "property": "background",
+      "value": "var(--d-selected)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/new-user.scss",
+      "line": 225,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".user-messages-page .messages-dropdown-content .dropdown-menu__item .btn.is-selected",
+      "property": "color",
+      "value": "var(--d-selected-text-color)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/new-user.scss",
+      "line": 226,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".sidebar-section-link-wrapper.dropdown-menu__item .sidebar-section-link",
+      "property": "height",
+      "value": "var(--d-sidebar-row-height)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/sidebar-section-link.scss",
+      "line": 156,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".sidebar-section-link-wrapper .dropdown-menu__item .sidebar-section-link",
+      "property": "height",
+      "value": "var(--d-sidebar-row-height)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/sidebar-section-link.scss",
+      "line": 156,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".sidebar-section-link-wrapper.dropdown-menu__item .sidebar-section-link",
+      "property": "padding-inline",
+      "value": "var(--d-sidebar-row-horizontal-padding)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/sidebar-section-link.scss",
+      "line": 157,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".sidebar-section-link-wrapper .dropdown-menu__item .sidebar-section-link",
+      "property": "padding-inline",
+      "value": "var(--d-sidebar-row-horizontal-padding)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/sidebar-section-link.scss",
+      "line": 157,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".sidebar-section-link-wrapper.dropdown-menu__item .sidebar-section-link",
+      "property": "border-radius",
+      "value": "var(--token-radius-normal)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/sidebar-section-link.scss",
+      "line": 158,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".sidebar-section-link-wrapper .dropdown-menu__item .sidebar-section-link",
+      "property": "border-radius",
+      "value": "var(--token-radius-normal)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/base/sidebar-section-link.scss",
+      "line": 158,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-drafts-menu-content .dropdown-menu .view-all-drafts",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/drafts-dropdown-menu.scss",
+      "line": 7,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-drafts-menu-content .dropdown-menu .view-all-drafts",
+      "property": "justify-content",
+      "value": "space-between",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/drafts-dropdown-menu.scss",
+      "line": 8,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-drafts-menu-content .dropdown-menu .view-all-drafts span:first-child",
+      "property": "color",
+      "value": "var(--primary-high)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/drafts-dropdown-menu.scss",
+      "line": 11,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".emoji-picker__diversity-menu.fk-d-menu .dropdown-menu",
+      "property": "min-width",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/emoji-picker.scss",
+      "line": 42,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu[data-identifier=\"filter-navigation-menu-list\"] .dropdown-menu",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/filter-navigation.scss",
+      "line": 12,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal .dropdown-menu li a:focus-visible",
+      "property": "outline",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 27,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal .dropdown-menu__item .btn",
+      "property": "border-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 32,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-touch .fk-d-menu-modal .dropdown-menu__item .btn:focus-visible",
+      "property": "background",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 37,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-touch .fk-d-menu-modal .dropdown-menu__item .btn:active",
+      "property": "background",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 37,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-touch .fk-d-menu-modal .dropdown-menu__item .btn:focus-visible",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 38,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-touch .fk-d-menu-modal .dropdown-menu__item .btn:active",
+      "property": "color",
+      "value": "var(--primary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 38,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-touch .fk-d-menu-modal .dropdown-menu__item .btn:focus-visible .d-icon",
+      "property": "color",
+      "value": "inherit",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 41,
+      "column": 15,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-touch .fk-d-menu-modal .dropdown-menu__item .btn:active .d-icon",
+      "property": "color",
+      "value": "inherit",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 41,
+      "column": 15,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-touch .fk-d-menu-modal .dropdown-menu__item .btn:focus-visible.btn-danger",
+      "property": "background",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 45,
+      "column": 15,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-touch .fk-d-menu-modal .dropdown-menu__item .btn:active.btn-danger",
+      "property": "background",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 45,
+      "column": 15,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-touch .fk-d-menu-modal .dropdown-menu__item .btn:focus-visible.btn-danger",
+      "property": "color",
+      "value": "var(--danger)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 46,
+      "column": 15,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-touch .fk-d-menu-modal .dropdown-menu__item .btn:active.btn-danger",
+      "property": "color",
+      "value": "var(--danger)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 46,
+      "column": 15,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-touch .fk-d-menu-modal .dropdown-menu__item .btn:focus-visible.btn-danger .d-icon",
+      "property": "color",
+      "value": "var(--danger-hover)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 49,
+      "column": 17,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".discourse-touch .fk-d-menu-modal .dropdown-menu__item .btn:active.btn-danger .d-icon",
+      "property": "color",
+      "value": "var(--danger-hover)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 49,
+      "column": 17,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal .dropdown-menu li > .btn",
+      "property": "padding",
+      "value": "0.75em 1rem",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 59,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".fk-d-menu-modal .dropdown-menu li > a",
+      "property": "padding",
+      "value": "0.75em 1rem",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/float-kit/d-menu-modal.scss",
+      "line": 59,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-menu-content .dropdown-menu",
+      "property": "min-width",
+      "value": "200px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/form-kit/_control-menu.scss",
+      "line": 18,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".form-kit__control-menu-content .dropdown-menu__item:hover",
+      "property": "background",
+      "value": "var(--d-hover)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/form-kit/_control-menu.scss",
+      "line": 23,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__options-content .dropdown-menu .btn.--active .d-button-label__active-icon",
+      "property": "visibility",
+      "value": "visible",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 85,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .btn.--active .d-button-label__active-icon",
+      "property": "visibility",
+      "value": "visible",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 85,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn.--active .d-button-label__active-icon",
+      "property": "visibility",
+      "value": "visible",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 85,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__options-content .dropdown-menu .btn.--active .d-button-label__active-icon",
+      "property": "margin-left",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 86,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .btn.--active .d-button-label__active-icon",
+      "property": "margin-left",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 86,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn.--active .d-button-label__active-icon",
+      "property": "margin-left",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 86,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__options-content .dropdown-menu .d-button-label",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 92,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 92,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 92,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__options-content .dropdown-menu .d-button-label",
+      "property": "flex",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 93,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label",
+      "property": "flex",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 93,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label",
+      "property": "flex",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 93,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__options-content .dropdown-menu .d-button-label",
+      "property": "justify-content",
+      "value": "space-between",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 94,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label",
+      "property": "justify-content",
+      "value": "space-between",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 94,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label",
+      "property": "justify-content",
+      "value": "space-between",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 94,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__options-content .dropdown-menu .d-button-label",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 95,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 95,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 95,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__options-content .dropdown-menu .d-button-label",
+      "property": "min-width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 96,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label",
+      "property": "min-width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 96,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label",
+      "property": "min-width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 96,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__options-content .dropdown-menu .d-button-label__active-icon",
+      "property": "visibility",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 99,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label__active-icon",
+      "property": "visibility",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 99,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label__active-icon",
+      "property": "visibility",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 99,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__options-content .dropdown-menu .d-button-label .shortcut",
+      "property": "margin-left",
+      "value": "var(--space-4)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 103,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label .shortcut",
+      "property": "margin-left",
+      "value": "var(--space-4)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 103,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label .shortcut",
+      "property": "margin-left",
+      "value": "var(--space-4)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 103,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn:hover .shortcut",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 117,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn:focus .shortcut",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 117,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn:focus-visible .shortcut",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 117,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .btn:hover .shortcut",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 117,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .btn:focus .shortcut",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 117,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .btn:focus-visible .shortcut",
+      "property": "display",
+      "value": "block",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 117,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn:hover .d-button-label__active-icon",
+      "property": "visibility",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 121,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn:focus .d-button-label__active-icon",
+      "property": "visibility",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 121,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn:focus-visible .d-button-label__active-icon",
+      "property": "visibility",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 121,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .btn:hover .d-button-label__active-icon",
+      "property": "visibility",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 121,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .btn:focus .d-button-label__active-icon",
+      "property": "visibility",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 121,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .btn:focus-visible .d-button-label__active-icon",
+      "property": "visibility",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 121,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 127,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label",
+      "property": "position",
+      "value": "relative",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 127,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label",
+      "property": "flex-grow",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 128,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label",
+      "property": "flex-grow",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 128,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 129,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 129,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 130,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 130,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label",
+      "property": "gap",
+      "value": "var(--space-4)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 131,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label",
+      "property": "gap",
+      "value": "var(--space-4)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 131,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label__active-icon",
+      "property": "visibility",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 134,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label__active-icon",
+      "property": "visibility",
+      "value": "hidden",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 134,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label__text",
+      "property": "padding-right",
+      "value": "var(--space-8)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 138,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label__text",
+      "property": "padding-right",
+      "value": "var(--space-8)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 138,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label .shortcut",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 142,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label .shortcut",
+      "property": "position",
+      "value": "absolute",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 142,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label .shortcut",
+      "property": "right",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 143,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label .shortcut",
+      "property": "right",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 143,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label .shortcut",
+      "property": "top",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 144,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label .shortcut",
+      "property": "top",
+      "value": "50%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 144,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label .shortcut",
+      "property": "transform",
+      "value": "translateY(-50%)",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function"
+        ]
+      },
+      "concern": "review",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 145,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label .shortcut",
+      "property": "transform",
+      "value": "translateY(-50%)",
+      "valueClassification": {
+        "primary": "function",
+        "tags": [
+          "function"
+        ]
+      },
+      "concern": "review",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 145,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label .shortcut",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 146,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label .shortcut",
+      "property": "display",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 146,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label .shortcut",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 147,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label .shortcut",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 147,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .d-button-label .shortcut",
+      "property": "font-size",
+      "value": "var(--font-down-1-rem)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 148,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__list-content .dropdown-menu .d-button-label .shortcut",
+      "property": "font-size",
+      "value": "var(--font-down-1-rem)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 148,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-1\"] .d-button-label__text",
+      "property": "font-size",
+      "value": "var(--font-up-2-rem)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 159,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-1\"] .d-icon[class*=\"d-icon-discourse\"]",
+      "property": "font-size",
+      "value": "var(--font-up-2-rem)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 159,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-1\"] .d-button-label__text",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 160,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-1\"] .d-icon[class*=\"d-icon-discourse\"]",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 160,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-2\"] .d-button-label__text",
+      "property": "font-size",
+      "value": "var(--font-up-1-rem)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 167,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-2\"] .d-icon",
+      "property": "font-size",
+      "value": "var(--font-up-1-rem)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 167,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-2\"] .d-button-label__text",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 168,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-2\"] .d-icon",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 168,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-3\"] .d-button-label__text",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 175,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-3\"] .d-icon",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 175,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-3\"] .d-button-label__text",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 176,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-3\"] .d-icon",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 176,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-4\"] .d-button-label__text",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 183,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-4\"] .d-icon",
+      "property": "font-weight",
+      "value": "bold",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 183,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-4\"] .d-button-label__text",
+      "property": "font-size",
+      "value": "var(--font-down-1-rem)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 184,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-4\"] .d-icon",
+      "property": "font-size",
+      "value": "var(--font-down-1-rem)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 184,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-paragraph\"] .d-button-label__text",
+      "property": "font-size",
+      "value": "var(--font-down-1-rem)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 191,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".toolbar-menu__heading-content .dropdown-menu .btn[data-name=\"heading-paragraph\"] .d-icon",
+      "property": "font-size",
+      "value": "var(--font-down-1-rem)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/toolbar-popup-menu-options.scss",
+      "line": 191,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-drafts-menu-content .dropdown-menu",
+      "property": "max-width",
+      "value": "350px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "desktop/components/drafts-dropdown-menu.scss",
+      "line": 2,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".topic-drafts-menu-content .dropdown-menu",
+      "property": "min-width",
+      "value": "275px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "desktop/components/drafts-dropdown-menu.scss",
+      "line": 3,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}

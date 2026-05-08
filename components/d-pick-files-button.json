@@ -1,0 +1,11 @@
+{
+  "name": "pick-files-button",
+  "slug": "d-pick-files-button",
+  "primaryFiles": [
+    "common/components/pick-files-button.scss"
+  ],
+  "identitySelectors": [
+    ".pick-files-button"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

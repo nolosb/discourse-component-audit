@@ -1,0 +1,11 @@
+{
+  "name": "navigation-item",
+  "slug": "d-navigation-item",
+  "primaryFiles": [
+    "common/components/navs.scss"
+  ],
+  "identitySelectors": [
+    ".d-navigation-item"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

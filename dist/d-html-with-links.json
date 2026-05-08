@@ -1,0 +1,35 @@
+{
+  "component": {
+    "name": "html-with-links",
+    "slug": "d-html-with-links",
+    "primaryFiles": [],
+    "identitySelectors": []
+  },
+  "generatedAt": "2026-04-30T21:40:46.079Z",
+  "summary": {
+    "totalDeclarations": 0,
+    "ownDeclarations": 0,
+    "externalDeclarations": 0,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 0,
+    "uniqueSelectors": 0,
+    "valueBreakdown": {},
+    "concernBreakdown": {},
+    "mostOverridden": [],
+    "missingCustomProps": [],
+    "actionItems": [],
+    "existingDefs": [],
+    "externalFileCount": 0,
+    "externalFiles": [],
+    "ownTokenizedPct": 100,
+    "ownTokenizedCount": 0,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 0,
+    "overrideCoveragePct": null,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 0
+  },
+  "own": [],
+  "external": [],
+  "customPropertyDefinitions": []
+}

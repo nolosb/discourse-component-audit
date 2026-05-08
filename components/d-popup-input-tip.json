@@ -1,0 +1,11 @@
+{
+  "name": "popup-input-tip",
+  "slug": "d-popup-input-tip",
+  "primaryFiles": [
+    "common/input_tip.scss"
+  ],
+  "identitySelectors": [
+    ".popup-tip"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

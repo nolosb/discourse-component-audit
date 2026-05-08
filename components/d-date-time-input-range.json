@@ -1,0 +1,11 @@
+{
+  "name": "date-time-input-range",
+  "slug": "d-date-time-input-range",
+  "primaryFiles": [
+    "common/components/date-time-input-range.scss"
+  ],
+  "identitySelectors": [
+    ".d-date-time-input-range"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

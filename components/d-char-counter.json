@@ -1,0 +1,12 @@
+{
+  "name": "char-counter",
+  "slug": "d-char-counter",
+  "primaryFiles": [
+    "common/components/char-counter.scss"
+  ],
+  "identitySelectors": [
+    ".char-counter",
+    ".char-counter__ratio"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

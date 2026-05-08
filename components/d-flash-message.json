@@ -1,0 +1,15 @@
+{
+  "name": "flash-message",
+  "slug": "d-flash-message",
+  "primaryFiles": [
+    "common/base/alert.scss"
+  ],
+  "identitySelectors": [
+    ".alert",
+    ".alert-success",
+    ".alert-error",
+    ".alert-warning",
+    ".alert-info"
+  ],
+  "cssCustomPropertyPrefixes": []
+}

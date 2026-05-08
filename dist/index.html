@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discourse Component Style Audit</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; line-height: 1.5; color: #111827; background: #f5f5f7; margin: 0; padding: 40px; max-width: 1200px; margin: 0 auto; }
+    code { font-family: "SF Mono", ui-monospace, monospace; font-size: 12px; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .header { background: #fff; border-radius: 12px; padding: 28px 32px; margin-bottom: 24px; border: 1px solid #e5e7eb; }
+    .header h1 { margin: 0 0 6px; font-size: 22px; }
+    .header-stats { display: flex; gap: 24px; color: #6b7280; font-size: 13px; margin: 0; }
+    .header-stats strong { color: #374151; }
+
+    .card { background: #fff; border-radius: 12px; padding: 8px 0; border: 1px solid #e5e7eb; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; }
+    th { text-align: left; padding: 10px 12px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #9ca3af; border-bottom: 2px solid #f3f4f6; white-space: nowrap; cursor: pointer; user-select: none; }
+    th:hover { color: #374151; }
+    th.r { text-align: right; }
+    th .sort-arrow { font-size: 9px; margin-left: 3px; opacity: 0.4; }
+    th.sorted .sort-arrow { opacity: 1; color: #2563eb; }
+    td { padding: 8px 12px; border-bottom: 1px solid #f3f4f6; }
+    td.num { text-align: right; font-variant-numeric: tabular-nums; color: #374151; }
+    td.action { color: #dc2626; font-weight: 600; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fafafa; }
+
+    .pct { font-weight: 700; font-size: 13px; font-variant-numeric: tabular-nums; display: inline-block; text-align: right; }
+    .mini-bar { display: flex; height: 4px; border-radius: 2px; overflow: hidden; gap: 1px; }
+
+    .legend { display: flex; gap: 14px; padding: 12px 16px 4px; }
+    .legend-item { font-size: 11px; color: #6b7280; display: flex; align-items: center; gap: 4px; }
+    .legend-dot { width: 8px; height: 8px; border-radius: 2px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Discourse Component Style Audit</h1>
+    <p class="header-stats">
+      <span>Generated <strong>2026-04-30</strong></span>
+      <span><strong>83</strong> components</span>
+      <span><strong>5616</strong> declarations (2575 own + 3041 ext)</span>
+      <span>Avg own <strong style="color:#854d0e">56%</strong></span>
+      <span>Avg coverage <strong style="color:#dc2626">2%</strong></span>
+    </p>
+  </div>
+  <div class="card">
+    <table>
+      <colgroup>
+        <col style="width:16%">
+        <col style="width:8%">
+        <col style="width:8%">
+        <col style="width:18%">
+        <col style="width:8%">
+        <col style="width:8%">
+        <col style="width:8%">
+        <col style="width:10%">
+        <col style="width:8%">
+      </colgroup>
+      <thead><tr>
+        <th data-sort="text">Component<span class="sort-arrow"></span></th>
+        <th class="r" data-sort="num">Own Tok.<span class="sort-arrow"></span></th>
+        <th class="r" data-sort="num">Ovr. Cov.<span class="sort-arrow"></span></th>
+        <th>Breakdown</th>
+        <th class="r" data-sort="num">Own<span class="sort-arrow"></span></th>
+        <th class="r" data-sort="num">External<span class="sort-arrow"></span></th>
+        <th class="r" data-sort="num">Ext Files<span class="sort-arrow"></span></th>
+        <th class="r" data-sort="num">Cust. Props<span class="sort-arrow"></span></th>
+        <th class="r" data-sort="num">Missing<span class="sort-arrow"></span></th>
+      </tr></thead>
+      <tbody><tr>
+      <td><a href="badges.html"><strong>badges</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">55%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">14%</span></td>
+      <td><div class="mini-bar"><div style="width:37%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#d97706;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:40%;background:#dc2626;min-width:2px"></div><div style="width:2%;background:#2563eb;min-width:2px"></div><div style="width:22%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">73</td>
+      <td class="num">144</td>
+      <td class="num">26</td>
+      <td class="num">3</td>
+      <td class="num action">18</td>
+    </tr>
+<tr>
+      <td><a href="d-async-content.html"><strong>async-content</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-autocomplete-results.html"><strong>autocomplete-results</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">28%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:25%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:51%;background:#dc2626;min-width:2px"></div><div style="width:5%;background:#2563eb;min-width:2px"></div><div style="width:18%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">56</td>
+      <td class="num">5</td>
+      <td class="num">2</td>
+      <td class="num">0</td>
+      <td class="num action">4</td>
+    </tr>
+<tr>
+      <td><a href="d-avatar-flair.html"><strong>avatar-flair</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">2%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:7%;background:#16a34a;min-width:2px"></div><div style="width:9%;background:#d97706;min-width:2px"></div><div style="width:60%;background:#dc2626;min-width:2px"></div><div style="width:24%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">113</td>
+      <td class="num">121</td>
+      <td class="num">9</td>
+      <td class="num">0</td>
+      <td class="num action">14</td>
+    </tr>
+<tr>
+      <td><a href="d-badge-button.html"><strong>badge-button</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">57%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:33%;background:#16a34a;min-width:2px"></div><div style="width:6%;background:#854d0e;min-width:2px"></div><div style="width:42%;background:#dc2626;min-width:2px"></div><div style="width:19%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">16</td>
+      <td class="num">20</td>
+      <td class="num">4</td>
+      <td class="num">0</td>
+      <td class="num action">14</td>
+    </tr>
+<tr>
+      <td><a href="d-badge-card.html"><strong>badge-card</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">44%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:31%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:36%;background:#dc2626;min-width:2px"></div><div style="width:2%;background:#2563eb;min-width:2px"></div><div style="width:28%;background:#d1d5db;min-width:2px"></div><div style="width:2%;background:#93c5fd;min-width:2px"></div></div></td>
+      <td class="num">61</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">2</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-breadcrumbs-container.html"><strong>breadcrumbs-container</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:57%;background:#16a34a;min-width:2px"></div><div style="width:14%;background:#dc2626;min-width:2px"></div><div style="width:29%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">6</td>
+      <td class="num">1</td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td class="num action">1</td>
+    </tr>
+<tr>
+      <td><a href="d-breadcrumbs-item.html"><strong>breadcrumbs-item</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:50%;background:#16a34a;min-width:2px"></div><div style="width:50%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">4</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-button.html"><strong>d-button</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">57%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">19%</span></td>
+      <td><div class="mini-bar"><div style="width:40%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#d97706;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:39%;background:#dc2626;min-width:2px"></div><div style="width:2%;background:#2563eb;min-width:2px"></div><div style="width:16%;background:#d1d5db;min-width:2px"></div><div style="width:2%;background:#93c5fd;min-width:2px"></div></div></td>
+      <td class="num">101</td>
+      <td class="num">701</td>
+      <td class="num">75</td>
+      <td class="num">51</td>
+      <td class="num action">39</td>
+    </tr>
+<tr>
+      <td><a href="d-calendar-date-time-input.html"><strong>calendar-date-time-input</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">13%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:6%;background:#16a34a;min-width:2px"></div><div style="width:6%;background:#854d0e;min-width:2px"></div><div style="width:44%;background:#dc2626;min-width:2px"></div><div style="width:44%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">30</td>
+      <td class="num">2</td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td class="num action">2</td>
+    </tr>
+<tr>
+      <td><a href="d-cdn-img.html"><strong>cdn-img</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-char-counter.html"><strong>char-counter</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">75%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:50%;background:#16a34a;min-width:2px"></div><div style="width:17%;background:#dc2626;min-width:2px"></div><div style="width:33%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">6</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-color-picker-choice.html"><strong>color-picker-choice</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:7%;background:#854d0e;min-width:2px"></div><div style="width:50%;background:#dc2626;min-width:2px"></div><div style="width:43%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">14</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-color-picker.html"><strong>color-picker</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">14%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:6%;background:#16a34a;min-width:2px"></div><div style="width:3%;background:#854d0e;min-width:2px"></div><div style="width:56%;background:#dc2626;min-width:2px"></div><div style="width:36%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">20</td>
+      <td class="num">16</td>
+      <td class="num">2</td>
+      <td class="num">0</td>
+      <td class="num action">9</td>
+    </tr>
+<tr>
+      <td><a href="d-combo-button.html"><strong>combo-button</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">13%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:11%;background:#16a34a;min-width:2px"></div><div style="width:78%;background:#dc2626;min-width:2px"></div><div style="width:11%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">9</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-conditional-in-element.html"><strong>conditional-in-element</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-conditional-loading-section.html"><strong>conditional-loading-section</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">29%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:13%;background:#16a34a;min-width:2px"></div><div style="width:4%;background:#854d0e;min-width:2px"></div><div style="width:50%;background:#dc2626;min-width:2px"></div><div style="width:33%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">11</td>
+      <td class="num">13</td>
+      <td class="num">2</td>
+      <td class="num">0</td>
+      <td class="num action">8</td>
+    </tr>
+<tr>
+      <td><a href="d-conditional-loading-spinner.html"><strong>conditional-loading-spinner</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:12%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#d97706;min-width:2px"></div><div style="width:3%;background:#854d0e;min-width:2px"></div><div style="width:74%;background:#dc2626;min-width:2px"></div><div style="width:2%;background:#2563eb;min-width:2px"></div><div style="width:9%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">12</td>
+      <td class="num">57</td>
+      <td class="num">16</td>
+      <td class="num">0</td>
+      <td class="num action">19</td>
+    </tr>
+<tr>
+      <td><a href="d-cook-text.html"><strong>cook-text</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:26%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:60%;background:#dc2626;min-width:2px"></div><div style="width:13%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">0</td>
+      <td class="num">103</td>
+      <td class="num">10</td>
+      <td class="num">0</td>
+      <td class="num action">29</td>
+    </tr>
+<tr>
+      <td><a href="d-copy-button.html"><strong>copy-button</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-count-i18n.html"><strong>count-i18n</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-custom-html.html"><strong>custom-html</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-date-input.html"><strong>date-input</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">20%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:13%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#d97706;min-width:2px"></div><div style="width:57%;background:#dc2626;min-width:2px"></div><div style="width:28%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">38</td>
+      <td class="num">9</td>
+      <td class="num">4</td>
+      <td class="num">0</td>
+      <td class="num action">4</td>
+    </tr>
+<tr>
+      <td><a href="d-date-picker.html"><strong>date-picker</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:7%;background:#d97706;min-width:2px"></div><div style="width:3%;background:#854d0e;min-width:2px"></div><div style="width:51%;background:#dc2626;min-width:2px"></div><div style="width:39%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">9</td>
+      <td class="num">62</td>
+      <td class="num">8</td>
+      <td class="num">0</td>
+      <td class="num action">21</td>
+    </tr>
+<tr>
+      <td><a href="d-date-time-input-range.html"><strong>date-time-input-range</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:18%;background:#16a34a;min-width:2px"></div><div style="width:45%;background:#dc2626;min-width:2px"></div><div style="width:36%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">1</td>
+      <td class="num">10</td>
+      <td class="num">3</td>
+      <td class="num">0</td>
+      <td class="num action">3</td>
+    </tr>
+<tr>
+      <td><a href="d-date-time-input.html"><strong>date-time-input</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:54%;background:#dc2626;min-width:2px"></div><div style="width:46%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">11</td>
+      <td class="num">2</td>
+      <td class="num">2</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-decorated-html.html"><strong>decorated-html</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-dropdown-menu.html"><strong>dropdown-menu</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">66%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:36%;background:#16a34a;min-width:2px"></div><div style="width:29%;background:#dc2626;min-width:2px"></div><div style="width:2%;background:#2563eb;min-width:2px"></div><div style="width:34%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">34</td>
+      <td class="num">127</td>
+      <td class="num">11</td>
+      <td class="num">0</td>
+      <td class="num action">19</td>
+    </tr>
+<tr>
+      <td><a href="d-editor.html"><strong>editor</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">32%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">5%</span></td>
+      <td><div class="mini-bar"><div style="width:21%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#d97706;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:48%;background:#dc2626;min-width:2px"></div><div style="width:30%;background:#d1d5db;min-width:2px"></div><div style="width:2%;background:#93c5fd;min-width:2px"></div></div></td>
+      <td class="num">186</td>
+      <td class="num">94</td>
+      <td class="num">10</td>
+      <td class="num">1</td>
+      <td class="num action">27</td>
+    </tr>
+<tr>
+      <td><a href="d-empty-state.html"><strong>empty-state</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">29%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:22%;background:#16a34a;min-width:2px"></div><div style="width:56%;background:#dc2626;min-width:2px"></div><div style="width:22%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">27</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-expanding-text-area.html"><strong>expanding-text-area</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-filter-input.html"><strong>filter-input</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">21%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:10%;background:#16a34a;min-width:2px"></div><div style="width:13%;background:#854d0e;min-width:2px"></div><div style="width:57%;background:#dc2626;min-width:2px"></div><div style="width:20%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">18</td>
+      <td class="num">42</td>
+      <td class="num">12</td>
+      <td class="num">0</td>
+      <td class="num action">15</td>
+    </tr>
+<tr>
+      <td><a href="d-flash-message.html"><strong>flash-message</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">62%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:34%;background:#16a34a;min-width:2px"></div><div style="width:44%;background:#dc2626;min-width:2px"></div><div style="width:2%;background:#2563eb;min-width:2px"></div><div style="width:19%;background:#d1d5db;min-width:2px"></div><div style="width:2%;background:#93c5fd;min-width:2px"></div></div></td>
+      <td class="num">24</td>
+      <td class="num">72</td>
+      <td class="num">20</td>
+      <td class="num">0</td>
+      <td class="num action">13</td>
+    </tr>
+<tr>
+      <td><a href="d-future-date-input.html"><strong>future-date-input</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">18%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:6%;background:#16a34a;min-width:2px"></div><div style="width:62%;background:#dc2626;min-width:2px"></div><div style="width:32%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">18</td>
+      <td class="num">29</td>
+      <td class="num">2</td>
+      <td class="num">0</td>
+      <td class="num action">6</td>
+    </tr>
+<tr>
+      <td><a href="d-highlighted-code.html"><strong>highlighted-code</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">17</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-horizontal-overflow-nav.html"><strong>horizontal-overflow-nav</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">27%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:16%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:38%;background:#dc2626;min-width:2px"></div><div style="width:3%;background:#2563eb;min-width:2px"></div><div style="width:33%;background:#d1d5db;min-width:2px"></div><div style="width:8%;background:#93c5fd;min-width:2px"></div></div></td>
+      <td class="num">58</td>
+      <td class="num">15</td>
+      <td class="num">5</td>
+      <td class="num">2</td>
+      <td class="num action">3</td>
+    </tr>
+<tr>
+      <td><a href="d-html-with-links.html"><strong>html-with-links</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-icon-grid-picker.html"><strong>d-icon-grid-picker</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">36%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:26%;background:#16a34a;min-width:2px"></div><div style="width:3%;background:#854d0e;min-width:2px"></div><div style="width:37%;background:#dc2626;min-width:2px"></div><div style="width:4%;background:#2563eb;min-width:2px"></div><div style="width:31%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">98</td>
+      <td class="num">3</td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td class="num action">3</td>
+    </tr>
+<tr>
+      <td><a href="d-input-tip.html"><strong>input-tip</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">40%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:29%;background:#16a34a;min-width:2px"></div><div style="width:36%;background:#dc2626;min-width:2px"></div><div style="width:7%;background:#2563eb;min-width:2px"></div><div style="width:29%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">14</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-interpolated-translation.html"><strong>interpolated-translation</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-light-dark-img.html"><strong>light-dark-img</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-load-more.html"><strong>load-more</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:56%;background:#dc2626;min-width:2px"></div><div style="width:44%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">8</td>
+      <td class="num">1</td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td class="num action">1</td>
+    </tr>
+<tr>
+      <td><a href="d-menu.html"><strong>d-menu</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">25%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:23%;background:#16a34a;min-width:2px"></div><div style="width:4%;background:#854d0e;min-width:2px"></div><div style="width:39%;background:#dc2626;min-width:2px"></div><div style="width:5%;background:#2563eb;min-width:2px"></div><div style="width:28%;background:#d1d5db;min-width:2px"></div><div style="width:2%;background:#93c5fd;min-width:2px"></div></div></td>
+      <td class="num">47</td>
+      <td class="num">495</td>
+      <td class="num">23</td>
+      <td class="num">0</td>
+      <td class="num action">52</td>
+    </tr>
+<tr>
+      <td><a href="d-modal.html"><strong>d-modal</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">17%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">10%</span></td>
+      <td><div class="mini-bar"><div style="width:16%;background:#16a34a;min-width:2px"></div><div style="width:4%;background:#854d0e;min-width:2px"></div><div style="width:51%;background:#dc2626;min-width:2px"></div><div style="width:2%;background:#2563eb;min-width:2px"></div><div style="width:27%;background:#d1d5db;min-width:2px"></div><div style="width:2%;background:#93c5fd;min-width:2px"></div></div></td>
+      <td class="num">301</td>
+      <td class="num">193</td>
+      <td class="num">20</td>
+      <td class="num">3</td>
+      <td class="num action">36</td>
+    </tr>
+<tr>
+      <td><a href="d-multi-select.html"><strong>multi-select</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">35%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:22%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:42%;background:#dc2626;min-width:2px"></div><div style="width:34%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">48</td>
+      <td class="num">2</td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td class="num action">2</td>
+    </tr>
+<tr>
+      <td><a href="d-nav-item.html"><strong>nav-item</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">55%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">15%</span></td>
+      <td><div class="mini-bar"><div style="width:20%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:45%;background:#dc2626;min-width:2px"></div><div style="width:2%;background:#2563eb;min-width:2px"></div><div style="width:33%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">43</td>
+      <td class="num">89</td>
+      <td class="num">13</td>
+      <td class="num">10</td>
+      <td class="num action">19</td>
+    </tr>
+<tr>
+      <td><a href="d-navigation-item.html"><strong>navigation-item</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-number-field.html"><strong>number-field</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-otp.html"><strong>otp</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">12%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:8%;background:#16a34a;min-width:2px"></div><div style="width:54%;background:#dc2626;min-width:2px"></div><div style="width:4%;background:#2563eb;min-width:2px"></div><div style="width:34%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">50</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-page-action-button.html"><strong>page-action-button</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:33%;background:#16a34a;min-width:2px"></div><div style="width:67%;background:#dc2626;min-width:2px"></div></div></td>
+      <td class="num">1</td>
+      <td class="num">2</td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td class="num action">2</td>
+    </tr>
+<tr>
+      <td><a href="d-page-header.html"><strong>page-header</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">39%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:24%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:28%;background:#dc2626;min-width:2px"></div><div style="width:46%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">46</td>
+      <td class="num">4</td>
+      <td class="num">3</td>
+      <td class="num">0</td>
+      <td class="num action">3</td>
+    </tr>
+<tr>
+      <td><a href="d-page-subheader.html"><strong>page-subheader</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">38%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:18%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:32%;background:#dc2626;min-width:2px"></div><div style="width:48%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">41</td>
+      <td class="num">3</td>
+      <td class="num">2</td>
+      <td class="num">0</td>
+      <td class="num action">2</td>
+    </tr>
+<tr>
+      <td><a href="d-password-field.html"><strong>password-field</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-pick-files-button.html"><strong>pick-files-button</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:100%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-popup-input-tip.html"><strong>popup-input-tip</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">40%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:29%;background:#16a34a;min-width:2px"></div><div style="width:36%;background:#dc2626;min-width:2px"></div><div style="width:7%;background:#2563eb;min-width:2px"></div><div style="width:29%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">14</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-radio-button.html"><strong>radio-button</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-relative-date.html"><strong>relative-date</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:48%;background:#16a34a;min-width:2px"></div><div style="width:28%;background:#dc2626;min-width:2px"></div><div style="width:24%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">0</td>
+      <td class="num">25</td>
+      <td class="num">8</td>
+      <td class="num">0</td>
+      <td class="num action">6</td>
+    </tr>
+<tr>
+      <td><a href="d-relative-time-picker.html"><strong>relative-time-picker</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:44%;background:#dc2626;min-width:2px"></div><div style="width:56%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">8</td>
+      <td class="num">1</td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-responsive-table.html"><strong>responsive-table</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">64%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:45%;background:#16a34a;min-width:2px"></div><div style="width:3%;background:#854d0e;min-width:2px"></div><div style="width:28%;background:#dc2626;min-width:2px"></div><div style="width:23%;background:#d1d5db;min-width:2px"></div><div style="width:2%;background:#93c5fd;min-width:2px"></div></div></td>
+      <td class="num">78</td>
+      <td class="num">41</td>
+      <td class="num">5</td>
+      <td class="num">2</td>
+      <td class="num action">14</td>
+    </tr>
+<tr>
+      <td><a href="d-save-controls.html"><strong>save-controls</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:25%;background:#16a34a;min-width:2px"></div><div style="width:46%;background:#dc2626;min-width:2px"></div><div style="width:29%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">0</td>
+      <td class="num">24</td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td class="num action">11</td>
+    </tr>
+<tr>
+      <td><a href="d-second-factor-input.html"><strong>second-factor-input</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:11%;background:#16a34a;min-width:2px"></div><div style="width:6%;background:#854d0e;min-width:2px"></div><div style="width:56%;background:#dc2626;min-width:2px"></div><div style="width:28%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">0</td>
+      <td class="num">18</td>
+      <td class="num">2</td>
+      <td class="num">0</td>
+      <td class="num action">9</td>
+    </tr>
+<tr>
+      <td><a href="d-segmented-control.html"><strong>d-segmented-control</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">49%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:32%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:30%;background:#dc2626;min-width:2px"></div><div style="width:4%;background:#2563eb;min-width:2px"></div><div style="width:32%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">55</td>
+      <td class="num">1</td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td class="num action">1</td>
+    </tr>
+<tr>
+      <td><a href="d-select.html"><strong>select</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">44%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:39%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#d97706;min-width:2px"></div><div style="width:11%;background:#854d0e;min-width:2px"></div><div style="width:39%;background:#dc2626;min-width:2px"></div><div style="width:9%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">42</td>
+      <td class="num">2</td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td class="num action">1</td>
+    </tr>
+<tr>
+      <td><a href="d-small-user-list.html"><strong>small-user-list</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:9%;background:#16a34a;min-width:2px"></div><div style="width:36%;background:#dc2626;min-width:2px"></div><div style="width:55%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">0</td>
+      <td class="num">11</td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td class="num action">5</td>
+    </tr>
+<tr>
+      <td><a href="d-stat-tiles.html"><strong>stat-tiles</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">27%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:20%;background:#16a34a;min-width:2px"></div><div style="width:53%;background:#dc2626;min-width:2px"></div><div style="width:27%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">15</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-table-header-toggle.html"><strong>table-header-toggle</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-tap-tile-grid.html"><strong>tap-tile-grid</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">42%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:29%;background:#16a34a;min-width:2px"></div><div style="width:12%;background:#854d0e;min-width:2px"></div><div style="width:29%;background:#dc2626;min-width:2px"></div><div style="width:29%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">17</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-tap-tile.html"><strong>tap-tile</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">45%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:31%;background:#16a34a;min-width:2px"></div><div style="width:13%;background:#854d0e;min-width:2px"></div><div style="width:31%;background:#dc2626;min-width:2px"></div><div style="width:25%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">15</td>
+      <td class="num">1</td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td class="num action">1</td>
+    </tr>
+<tr>
+      <td><a href="d-text-field.html"><strong>text-field</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:50%;background:#dc2626;min-width:2px"></div><div style="width:50%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">0</td>
+      <td class="num">6</td>
+      <td class="num">3</td>
+      <td class="num">0</td>
+      <td class="num action">2</td>
+    </tr>
+<tr>
+      <td><a href="d-textarea.html"><strong>textarea</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-time-input.html"><strong>time-input</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">13%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:5%;background:#16a34a;min-width:2px"></div><div style="width:5%;background:#854d0e;min-width:2px"></div><div style="width:65%;background:#dc2626;min-width:2px"></div><div style="width:25%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">13</td>
+      <td class="num">7</td>
+      <td class="num">2</td>
+      <td class="num">0</td>
+      <td class="num action">4</td>
+    </tr>
+<tr>
+      <td><a href="d-time-shortcut-picker.html"><strong>time-shortcut-picker</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">18%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"><div style="width:10%;background:#16a34a;min-width:2px"></div><div style="width:5%;background:#854d0e;min-width:2px"></div><div style="width:40%;background:#dc2626;min-width:2px"></div><div style="width:45%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">20</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-toggle-password-mask.html"><strong>toggle-password-mask</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">20%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:50%;background:#16a34a;min-width:2px"></div><div style="width:40%;background:#dc2626;min-width:2px"></div><div style="width:10%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">6</td>
+      <td class="num">4</td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td class="num action">1</td>
+    </tr>
+<tr>
+      <td><a href="d-toggle-switch.html"><strong>d-toggle-switch</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">47%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:27%;background:#16a34a;min-width:2px"></div><div style="width:5%;background:#854d0e;min-width:2px"></div><div style="width:27%;background:#dc2626;min-width:2px"></div><div style="width:2%;background:#2563eb;min-width:2px"></div><div style="width:37%;background:#d1d5db;min-width:2px"></div><div style="width:3%;background:#93c5fd;min-width:2px"></div></div></td>
+      <td class="num">57</td>
+      <td class="num">3</td>
+      <td class="num">2</td>
+      <td class="num">2</td>
+      <td class="num action">2</td>
+    </tr>
+<tr>
+      <td><a href="d-user-avatar-flair.html"><strong>user-avatar-flair</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">2%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:6%;background:#16a34a;min-width:2px"></div><div style="width:10%;background:#d97706;min-width:2px"></div><div style="width:60%;background:#dc2626;min-width:2px"></div><div style="width:24%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">113</td>
+      <td class="num">118</td>
+      <td class="num">9</td>
+      <td class="num">0</td>
+      <td class="num action">13</td>
+    </tr>
+<tr>
+      <td><a href="d-user-avatar.html"><strong>user-avatar</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:8%;background:#16a34a;min-width:2px"></div><div style="width:3%;background:#854d0e;min-width:2px"></div><div style="width:76%;background:#dc2626;min-width:2px"></div><div style="width:2%;background:#2563eb;min-width:2px"></div><div style="width:11%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">0</td>
+      <td class="num">116</td>
+      <td class="num">28</td>
+      <td class="num">0</td>
+      <td class="num action">15</td>
+    </tr>
+<tr>
+      <td><a href="d-user-info.html"><strong>user-info</strong></a></td>
+      <td class="num"><span class="pct" style="color:#dc2626">27%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:15%;background:#16a34a;min-width:2px"></div><div style="width:55%;background:#dc2626;min-width:2px"></div><div style="width:30%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">33</td>
+      <td class="num">20</td>
+      <td class="num">5</td>
+      <td class="num">0</td>
+      <td class="num action">10</td>
+    </tr>
+<tr>
+      <td><a href="d-user-link.html"><strong>user-link</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-user-stat.html"><strong>user-stat</strong></a></td>
+      <td class="num"><span class="pct" style="color:#16a34a">100%</span></td>
+      <td class="num"><span style="color:#9ca3af">N/A</span></td>
+      <td><div class="mini-bar"></div></td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td class="num action"><span style="color:#16a34a">0</span></td>
+    </tr>
+<tr>
+      <td><a href="d-user-status-message.html"><strong>user-status-message</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">50%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">0%</span></td>
+      <td><div class="mini-bar"><div style="width:21%;background:#16a34a;min-width:2px"></div><div style="width:21%;background:#dc2626;min-width:2px"></div><div style="width:57%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">3</td>
+      <td class="num">11</td>
+      <td class="num">4</td>
+      <td class="num">0</td>
+      <td class="num action">4</td>
+    </tr>
+<tr>
+      <td><a href="nav-pills.html"><strong>nav-pills</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">53%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">17%</span></td>
+      <td><div class="mini-bar"><div style="width:23%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:44%;background:#dc2626;min-width:2px"></div><div style="width:2%;background:#2563eb;min-width:2px"></div><div style="width:31%;background:#d1d5db;min-width:2px"></div></div></td>
+      <td class="num">63</td>
+      <td class="num">101</td>
+      <td class="num">14</td>
+      <td class="num">10</td>
+      <td class="num action">20</td>
+    </tr>
+<tr>
+      <td><a href="topic-map.html"><strong>topic-map</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">34%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">6%</span></td>
+      <td><div class="mini-bar"><div style="width:21%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:32%;background:#dc2626;min-width:2px"></div><div style="width:43%;background:#d1d5db;min-width:2px"></div><div style="width:2%;background:#93c5fd;min-width:2px"></div></div></td>
+      <td class="num">86</td>
+      <td class="num">56</td>
+      <td class="num">2</td>
+      <td class="num">3</td>
+      <td class="num action">16</td>
+    </tr>
+<tr>
+      <td><a href="user-card.html"><strong>user-card</strong></a></td>
+      <td class="num"><span class="pct" style="color:#854d0e">41%</span></td>
+      <td class="num"><span class="pct" style="color:#dc2626">14%</span></td>
+      <td><div class="mini-bar"><div style="width:24%;background:#16a34a;min-width:2px"></div><div style="width:2%;background:#854d0e;min-width:2px"></div><div style="width:38%;background:#dc2626;min-width:2px"></div><div style="width:34%;background:#d1d5db;min-width:2px"></div><div style="width:3%;background:#93c5fd;min-width:2px"></div></div></td>
+      <td class="num">283</td>
+      <td class="num">38</td>
+      <td class="num">2</td>
+      <td class="num">3</td>
+      <td class="num action">6</td>
+    </tr></tbody>
+    </table>
+    <div class="legend">
+      <span class="legend-item"><span class="legend-dot" style="background:#16a34a"></span>resolved</span><span class="legend-item"><span class="legend-dot" style="background:#d97706"></span>scss-var</span><span class="legend-item"><span class="legend-dot" style="background:#854d0e"></span>mixed</span><span class="legend-item"><span class="legend-dot" style="background:#dc2626"></span>hardcoded</span><span class="legend-item"><span class="legend-dot" style="background:#2563eb"></span>review</span><span class="legend-item"><span class="legend-dot" style="background:#d1d5db"></span>structural</span><span class="legend-item"><span class="legend-dot" style="background:#93c5fd"></span>definition</span>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('th[data-sort]').forEach(th => {
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const idx = [...th.parentNode.children].indexOf(th);
+        const type = th.dataset.sort;
+        const asc = th.classList.contains('sorted') && th.dataset.dir === 'asc' ? false : true;
+
+        table.querySelectorAll('th').forEach(h => { h.classList.remove('sorted'); h.dataset.dir = ''; });
+        th.classList.add('sorted');
+        th.dataset.dir = asc ? 'asc' : 'desc';
+        th.querySelector('.sort-arrow').textContent = asc ? ' ▲' : ' ▼';
+        table.querySelectorAll('th:not(.sorted) .sort-arrow').forEach(a => a.textContent = '');
+
+        const rows = [...tbody.querySelectorAll('tr')];
+        rows.sort((a, b) => {
+          const aCell = a.children[idx];
+          const bCell = b.children[idx];
+          let aVal, bVal;
+          if (type === 'num') {
+            aVal = parseFloat(aCell.textContent.replace(/[^0-9.-]/g, ''));
+            bVal = parseFloat(bCell.textContent.replace(/[^0-9.-]/g, ''));
+            if (isNaN(aVal)) aVal = -1;
+            if (isNaN(bVal)) bVal = -1;
+          } else {
+            aVal = aCell.textContent.trim().toLowerCase();
+            bVal = bCell.textContent.trim().toLowerCase();
+          }
+          if (aVal < bVal) return asc ? -1 : 1;
+          if (aVal > bVal) return asc ? 1 : -1;
+          return 0;
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

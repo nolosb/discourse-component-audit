@@ -1,0 +1,1372 @@
+{
+  "component": {
+    "name": "filter-input",
+    "slug": "d-filter-input",
+    "primaryFiles": [
+      "common/components/filter-input.scss"
+    ],
+    "identitySelectors": [
+      ".filter-input-container",
+      ".filter-input"
+    ]
+  },
+  "generatedAt": "2026-04-30T21:40:46.068Z",
+  "summary": {
+    "totalDeclarations": 60,
+    "ownDeclarations": 18,
+    "externalDeclarations": 42,
+    "customPropertyDefinitions": 0,
+    "uniqueProperties": 21,
+    "uniqueSelectors": 26,
+    "valueBreakdown": {
+      "other": 27,
+      "css-var": 14,
+      "hardcoded": 19
+    },
+    "concernBreakdown": {
+      "structural": 12,
+      "resolved": 6,
+      "hardcoded": 34,
+      "mixed": 8
+    },
+    "mostOverridden": [
+      {
+        "property": "flex",
+        "count": 6,
+        "fileCount": 4
+      },
+      {
+        "property": "outline",
+        "count": 5,
+        "fileCount": 2
+      },
+      {
+        "property": "border",
+        "count": 5,
+        "fileCount": 2
+      },
+      {
+        "property": "box-shadow",
+        "count": 5,
+        "fileCount": 2
+      },
+      {
+        "property": "background",
+        "count": 3,
+        "fileCount": 3
+      },
+      {
+        "property": "width",
+        "count": 3,
+        "fileCount": 2
+      },
+      {
+        "property": "min-height",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "min-width",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "border-color",
+        "count": 2,
+        "fileCount": 2
+      },
+      {
+        "property": "padding-left",
+        "count": 2,
+        "fileCount": 1
+      },
+      {
+        "property": "margin",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "padding",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "border-radius",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "box-sizing",
+        "count": 1,
+        "fileCount": 1
+      },
+      {
+        "property": "font-size",
+        "count": 1,
+        "fileCount": 1
+      }
+    ],
+    "missingCustomProps": [
+      {
+        "property": "background",
+        "fileCount": 3,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "outline",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "box-shadow",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "min-height",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "min-width",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "border-color",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-radius",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-column",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "actionItems": [
+      {
+        "property": "background",
+        "fileCount": 3,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "outline",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "box-shadow",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "width",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "min-height",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "min-width",
+        "fileCount": 2,
+        "distinctValues": 2,
+        "hasDef": false
+      },
+      {
+        "property": "border-color",
+        "fileCount": 2,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "border-radius",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "font-size",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "grid-column",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "margin-bottom",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      },
+      {
+        "property": "padding-left",
+        "fileCount": 1,
+        "distinctValues": 1,
+        "hasDef": false
+      }
+    ],
+    "existingDefs": [],
+    "externalFileCount": 12,
+    "externalFiles": [
+      "admin/admin_filter_controls.scss",
+      "admin/color_palettes.scss",
+      "common/base/edit-category.scss",
+      "common/base/login-signup-page.scss",
+      "common/components/add-pm-participants.scss",
+      "common/components/d-icon-grid-picker.scss",
+      "common/components/emoji-picker.scss",
+      "common/components/keyboard_shortcuts.scss",
+      "common/components/time-input.scss",
+      "common/select-kit/combo-box.scss",
+      "common/select-kit/multi-select.scss",
+      "common/select-kit/select-kit.scss"
+    ],
+    "ownTokenizedPct": 21,
+    "ownTokenizedCount": 3,
+    "ownScssVarCount": 0,
+    "ownThemedTotal": 14,
+    "overrideCoveragePct": 0,
+    "overrideCoveredCount": 0,
+    "overrideTotal": 15
+  },
+  "own": [
+    {
+      "selector": ".filter-input-container",
+      "property": "display",
+      "value": "flex",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/filter-input.scss",
+      "line": 4,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container",
+      "property": "align-items",
+      "value": "center",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/filter-input.scss",
+      "line": 5,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container",
+      "property": "justify-content",
+      "value": "space-between",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/filter-input.scss",
+      "line": 6,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container",
+      "property": "border",
+      "value": "var(--d-input-border)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/filter-input.scss",
+      "line": 7,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container",
+      "property": "border-radius",
+      "value": "var(--d-input-border-radius)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/filter-input.scss",
+      "line": 8,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container",
+      "property": "box-sizing",
+      "value": "border-box",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/filter-input.scss",
+      "line": 9,
+      "column": 3,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container .filter-input",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/filter-input.scss",
+      "line": 17,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container .filter-input:focus",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/filter-input.scss",
+      "line": 17,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container .filter-input",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/filter-input.scss",
+      "line": 18,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container .filter-input:focus",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/filter-input.scss",
+      "line": 18,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container .filter-input",
+      "property": "border",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/filter-input.scss",
+      "line": 19,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container .filter-input:focus",
+      "property": "border",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/filter-input.scss",
+      "line": 19,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container .filter-input",
+      "property": "outline",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/filter-input.scss",
+      "line": 20,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container .filter-input:focus",
+      "property": "outline",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/filter-input.scss",
+      "line": 20,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".chat-browse-view__actions .filter-input-container .filter-input",
+      "property": "width",
+      "value": "210px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/filter-input.scss",
+      "line": 24,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.from(md)"
+      ],
+      "mixinCalls": [
+        "viewport.from(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".chat-browse-view__actions .filter-input-container .filter-input:focus",
+      "property": "width",
+      "value": "210px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/filter-input.scss",
+      "line": 24,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.from(md)"
+      ],
+      "mixinCalls": [
+        "viewport.from(md)"
+      ],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container .d-icon",
+      "property": "color",
+      "value": "var(--primary-medium)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/filter-input.scss",
+      "line": 30,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".filter-input-container .d-icon",
+      "property": "margin",
+      "value": "0 0.5rem",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/filter-input.scss",
+      "line": 31,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    }
+  ],
+  "external": [
+    {
+      "selector": ".admin-filter-controls .filter-input-container",
+      "property": "flex",
+      "value": "1 1 auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/admin_filter_controls.scss",
+      "line": 7,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".color-palette__filters .filter-input-container",
+      "property": "flex",
+      "value": "4 1 auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "admin/color_palettes.scss",
+      "line": 100,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "div.edit-category .edit-category-tab-tags .select-kit.tag-chooser .filter-input",
+      "property": "min-width",
+      "value": "250px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/base/edit-category.scss",
+      "line": 265,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".login-fullpage .input-group input:not(.filter-input):focus",
+      "property": "outline",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/login-signup-page.scss",
+      "line": 228,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".signup-fullpage .input-group input:not(.filter-input):focus",
+      "property": "outline",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/login-signup-page.scss",
+      "line": 228,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".invites-show .input-group input:not(.filter-input):focus",
+      "property": "outline",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/login-signup-page.scss",
+      "line": 228,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".password-reset-page .input-group input:not(.filter-input):focus",
+      "property": "outline",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/base/login-signup-page.scss",
+      "line": 228,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".login-fullpage .input-group input:not(.filter-input):focus",
+      "property": "border",
+      "value": "1px solid var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/login-signup-page.scss",
+      "line": 229,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".signup-fullpage .input-group input:not(.filter-input):focus",
+      "property": "border",
+      "value": "1px solid var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/login-signup-page.scss",
+      "line": 229,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".invites-show .input-group input:not(.filter-input):focus",
+      "property": "border",
+      "value": "1px solid var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/login-signup-page.scss",
+      "line": 229,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".password-reset-page .input-group input:not(.filter-input):focus",
+      "property": "border",
+      "value": "1px solid var(--tertiary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/login-signup-page.scss",
+      "line": 229,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".login-fullpage .input-group input:not(.filter-input):focus",
+      "property": "box-shadow",
+      "value": "0 0 0 2px rgb(var(--tertiary-rgb), 0.25)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "function",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/login-signup-page.scss",
+      "line": 230,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".signup-fullpage .input-group input:not(.filter-input):focus",
+      "property": "box-shadow",
+      "value": "0 0 0 2px rgb(var(--tertiary-rgb), 0.25)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "function",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/login-signup-page.scss",
+      "line": 230,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".invites-show .input-group input:not(.filter-input):focus",
+      "property": "box-shadow",
+      "value": "0 0 0 2px rgb(var(--tertiary-rgb), 0.25)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "function",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/login-signup-page.scss",
+      "line": 230,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".password-reset-page .input-group input:not(.filter-input):focus",
+      "property": "box-shadow",
+      "value": "0 0 0 2px rgb(var(--tertiary-rgb), 0.25)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var",
+          "function",
+          "hardcoded"
+        ]
+      },
+      "concern": "mixed",
+      "file": "common/base/login-signup-page.scss",
+      "line": 230,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".add-pm-participants.modal .invite.modal-panel .body .group-access-control .select-kit.multi-select input.filter-input",
+      "property": "padding-left",
+      "value": "8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/add-pm-participants.scss",
+      "line": 66,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".invite-link.modal-panel .body .group-access-control .select-kit.multi-select input.filter-input",
+      "property": "padding-left",
+      "value": "8px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/add-pm-participants.scss",
+      "line": 66,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".add-pm-participants.modal .invite.modal-panel .body .invite-user-input .input-wrapper .filter-input",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/add-pm-participants.scss",
+      "line": 89,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".invite-link.modal-panel .body .invite-user-input .input-wrapper .filter-input",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/add-pm-participants.scss",
+      "line": 89,
+      "column": 11,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__filter.filter-input-container",
+      "property": "border-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 84,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-icon-grid-picker__filter.filter-input-container",
+      "property": "background",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/d-icon-grid-picker.scss",
+      "line": 85,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".emoji-picker__filter.filter-input-container",
+      "property": "border-color",
+      "value": "transparent",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/components/emoji-picker.scss",
+      "line": 87,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".emoji-picker__filter.filter-input-container",
+      "property": "background",
+      "value": "var(--secondary)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/components/emoji-picker.scss",
+      "line": 88,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#keyboard-shortcuts-help .filter-input-container",
+      "property": "grid-column",
+      "value": "1 / -1",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/components/keyboard_shortcuts.scss",
+      "line": 53,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": "#keyboard-shortcuts-help .filter-input-container",
+      "property": "margin-bottom",
+      "value": "1em",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/keyboard_shortcuts.scss",
+      "line": 54,
+      "column": 5,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".d-time-input .combo-box .select-kit-filter .filter-input",
+      "property": "min-width",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/components/time-input.scss",
+      "line": 33,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combo-box .select-kit-filter .filter-input",
+      "property": "flex",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/select-kit/combo-box.scss",
+      "line": 20,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combo-box .select-kit-filter .filter-input:focus",
+      "property": "flex",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/select-kit/combo-box.scss",
+      "line": 20,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.combo-box .select-kit-filter .filter-input:active",
+      "property": "flex",
+      "value": "1",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/select-kit/combo-box.scss",
+      "line": 20,
+      "column": 9,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit.multi-select .multi-select-header .select-kit-header--filter .select-kit-filter .filter-input",
+      "property": "min-height",
+      "value": "auto",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/multi-select.scss",
+      "line": 95,
+      "column": 13,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit .select-kit-filter .filter-input",
+      "property": "background",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/select-kit.scss",
+      "line": 310,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit .select-kit-filter .filter-input",
+      "property": "margin",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/select-kit.scss",
+      "line": 311,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit .select-kit-filter .filter-input",
+      "property": "padding",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/select-kit.scss",
+      "line": 312,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit .select-kit-filter .filter-input",
+      "property": "flex",
+      "value": "1 0 0px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "structural",
+      "file": "common/select-kit/select-kit.scss",
+      "line": 313,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit .select-kit-filter .filter-input",
+      "property": "outline",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/select-kit.scss",
+      "line": 314,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit .select-kit-filter .filter-input",
+      "property": "border",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/select-kit.scss",
+      "line": 315,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit .select-kit-filter .filter-input",
+      "property": "border-radius",
+      "value": "0",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/select-kit.scss",
+      "line": 316,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit .select-kit-filter .filter-input",
+      "property": "box-shadow",
+      "value": "none",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/select-kit.scss",
+      "line": 317,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit .select-kit-filter .filter-input",
+      "property": "width",
+      "value": "100%",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/select-kit.scss",
+      "line": 318,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit .select-kit-filter .filter-input",
+      "property": "box-sizing",
+      "value": "border-box",
+      "valueClassification": {
+        "primary": "other",
+        "tags": []
+      },
+      "concern": "structural",
+      "file": "common/select-kit/select-kit.scss",
+      "line": 319,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit .select-kit-filter .filter-input",
+      "property": "min-height",
+      "value": "30px",
+      "valueClassification": {
+        "primary": "hardcoded",
+        "tags": [
+          "hardcoded"
+        ]
+      },
+      "concern": "hardcoded",
+      "file": "common/select-kit/select-kit.scss",
+      "line": 320,
+      "column": 7,
+      "atRuleContext": [],
+      "mixinCalls": [],
+      "important": false
+    },
+    {
+      "selector": ".select-kit .select-kit-filter .filter-input",
+      "property": "font-size",
+      "value": "var(--font-0)",
+      "valueClassification": {
+        "primary": "css-var",
+        "tags": [
+          "css-var"
+        ]
+      },
+      "concern": "resolved",
+      "file": "common/select-kit/select-kit.scss",
+      "line": 323,
+      "column": 9,
+      "atRuleContext": [
+        "@include viewport.until(sm)"
+      ],
+      "mixinCalls": [
+        "viewport.until(sm)"
+      ],
+      "important": false
+    }
+  ],
+  "customPropertyDefinitions": []
+}
